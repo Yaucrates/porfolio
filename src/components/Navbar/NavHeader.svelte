@@ -17,4 +17,8 @@
         <ChevronRight className="opacity-0 group-hover:opacity-100 group-hover:rotate-[360deg] transition-all duration-500" />
         <h1 class="text-lg hover:text-neutral-400 transition-all duration-300">Projects</h1>
     </a>
+    <a href="/resume" class="flex items-center group">
+        <ChevronRight className="opacity-0 group-hover:opacity-100 group-hover:rotate-[360deg] transition-all duration-500" />
+        <h1 class="text-lg hover:text-neutral-400 transition-all duration-300">Resume</h1>
+    </a>
 </div>
