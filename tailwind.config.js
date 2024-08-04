@@ -2,6 +2,9 @@
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
+        screens: {
+            'base': '810px'
+        },
 		extend: {
             colors: {
                 neutral: {

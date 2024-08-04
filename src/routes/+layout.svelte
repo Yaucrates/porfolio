@@ -18,7 +18,7 @@
 </script>
 
 <Navbar />
-<div class="ml-48">
+<div class="base:ml-48">
     <slot />
 </div>
 
