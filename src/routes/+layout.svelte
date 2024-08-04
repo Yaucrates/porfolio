@@ -1,7 +1,8 @@
 <script lang="ts">
     // import type { LayoutData } from './$types';
+    import '../app.css'
     import { onNavigate } from '$app/navigation';
-	import Navbar from '../components/Navbar.svelte';
+	import Navbar from '../components/Navbar/Navbar.svelte';
     
     onNavigate((navigation) => {
         if (!document.startViewTransition) return;
