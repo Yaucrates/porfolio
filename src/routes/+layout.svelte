@@ -2,13 +2,24 @@
 	import Logo from "../components/sidebar/Logo.svelte";
 	import MajorLink from "../components/sidebar/Major-Link.svelte";
     // import type { LayoutData } from './$types';
+    import { onNavigate } from '$app/navigation';
+    
+    onNavigate((navigation) => {
+        if (!document.startViewTransition) return;
+	    return new Promise((resolve) => {
+            document.startViewTransition(async () => {
+                resolve();
+                await navigation.complete;
+            });
+        });
+    });
     
     // export let data: LayoutData;
 </script>
 
 
 <nav class="h-screen w-48 border-e-2 fixed flex flex-col border-neutral-800">
-    <div class="w-full h-60 py-7 px-2 flex flex-col justify-around">
+    <div class="transition w-full h-60 py-7 px-2 flex flex-col justify-around">
         <Logo />
         <MajorLink href="/about" name="About" />
         <MajorLink href="/experience" name="Experience" />
@@ -28,5 +39,42 @@
 
     * {
         font-family: "Poppins";
+    }
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+    }
+
+    @keyframes fade-out {
+        to {
+            opacity: 0;
+        }
+    }
+
+    @keyframes slide-from-right {
+        from {
+            transform: translateX(30px);
+        }
+    }
+
+    @keyframes slide-to-left {
+        to {
+            transform: translateX(-30px);
+        }
+    }
+
+    :root::view-transition-old(root) {
+        animation: 90ms cubic-bezier(0.4, 0, 1, 1) both fade-out, 300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
+    }
+
+    :root::view-transition-new(root) {
+        animation: 210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in, 300ms cubic-bezier(0.4, 0, 0.2, 1) both
+                slide-from-right;
+    }
+
+    .transition {
+        view-transition-name: header;
     }
 </style>
