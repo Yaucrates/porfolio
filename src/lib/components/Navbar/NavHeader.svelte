@@ -1,6 +1,6 @@
 <script>
-	import ChevronRight from "../SVGs/ChevronRight.svelte";
-	import Logo from "./Logo.svelte";
+	import ChevronRight from "$lib/components/SVGs/ChevronRight.svelte";
+	import Logo from "$lib/components/Navbar/Logo.svelte";
 </script>
 
 <div class="w-full h-60 px-2 my-2 flex flex-col justify-around">

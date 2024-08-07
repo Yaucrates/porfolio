@@ -1,7 +1,7 @@
 <script>
-	import NavHeader from "./NavHeader.svelte";
-	import NavBody from "./NavBody.svelte";
-	import NavFooter from "./NavFooter.svelte";
+	import NavHeader from "$lib/components/Navbar/NavHeader.svelte";
+	import NavBody from "$lib/components/Navbar/NavBody.svelte";
+	import NavFooter from "$lib/components/Navbar/NavFooter.svelte";
 </script>
 
 <nav class="hidden transition h-screen w-48 border-e-2 fixed base:flex flex-col border-neutral-800 select-none">

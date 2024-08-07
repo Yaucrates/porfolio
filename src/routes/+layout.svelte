@@ -2,7 +2,7 @@
     // import type { LayoutData } from './$types';
     import '../app.css'
     import { onNavigate } from '$app/navigation';
-	import Navbar from '../components/Navbar/Navbar.svelte';
+	import Navbar from "$lib/components/Navbar/Navbar.svelte";
     
     onNavigate((navigation) => {
         if (!document.startViewTransition) return;
