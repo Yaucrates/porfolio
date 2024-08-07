@@ -2,7 +2,8 @@
     // import type { LayoutData } from './$types';
     import '../app.css'
     import { onNavigate } from '$app/navigation';
-	import Navbar from "$lib/components/Navbar/Navbar.svelte";
+	import SideNav from "$lib/components/SideNav/SideNav.svelte";
+	import Header from '$lib/components/Header/Header.svelte';
     
     onNavigate((navigation) => {
         if (!document.startViewTransition) return;
@@ -17,7 +18,9 @@
     // export let data: LayoutData;
 </script>
 
-<Navbar />
+<SideNav />
+<Header />
+
 <div class="md:ml-48">
     <slot />
 </div>
