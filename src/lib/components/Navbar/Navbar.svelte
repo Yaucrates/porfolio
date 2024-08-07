@@ -4,7 +4,7 @@
 	import NavFooter from "$lib/components/Navbar/NavFooter.svelte";
 </script>
 
-<nav class="hidden transition h-screen w-48 border-e-2 fixed base:flex flex-col border-neutral-800 select-none">
+<nav class="hidden transition h-screen w-48 border-e-2 fixed md:flex flex-col border-neutral-800 select-none">
     <NavHeader />
     <NavBody />
     <NavFooter />
