@@ -5,5 +5,5 @@
 html, body, :root {
     color: #eee;
     background: #171717;
-    /*view-transition-name: none; REMOVES FADE IN/OUT*/ 
+    height: 100%;
 }

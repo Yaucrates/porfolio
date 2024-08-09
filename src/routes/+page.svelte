@@ -7,7 +7,7 @@
 </script>
 
 <OnMount>
-    <div class="h-screen flex justify-center items-center select-none">
+    <div class="h-full flex justify-center items-center select-none">
         <div class="w-3/4 gap-6 flex flex-col justify-center">
             <h3 in:fly={{ y: 200, duration: 1300 }} class="text-[14px] min-[350px]:text-[4vw] sm:text-2xl text-cyan-500">Hi, my name is</h3>
             <div class="text-[21px] min-[350px]:text-[6vw] md:text-[5.4vw] font-bold">

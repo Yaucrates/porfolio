@@ -19,10 +19,11 @@
 </script>
 
 <SideNav />
-<Header />
-
-<div class="md:ml-48">
-    <slot />
+<div class="md:ml-48 h-full flex flex-col">
+    <Header />
+    <div class="flex-grow">
+        <slot />
+    </div>
 </div>
 
 <style>
