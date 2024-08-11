@@ -20,7 +20,7 @@
         <ImageSlider {image_paths} />
     </div>
 
-    <div class="w-full flex flex-col lg:flex-row items-center justify-center gap-16 my-20">
+    <div class="w-full flex flex-col lg:flex-row items-center justify-center lg:gap-16 mt-10 sm:mt-20">
         <div class="p-4 min-[400px]:p-16 lg:p-0 lg:w-2/5 flex flex-col gap-4">
             <div class="flex items-center gap-4">
                 <div class="text-2xl text-nowrap flex gap-2">
@@ -46,9 +46,47 @@
                 </p>
             </div>
         </div>
+
         <div class="relative w-fit h-fit group rounded-lg aspect-square">
             <img src="headshot.webp" alt="headshot" class="h-64 w-64 relative z-10 group-hover:-translate-x-1 group-hover:-translate-y-1 transition-all duration-100"/>
             <div class="w-full h-full absolute top-0 left-0 border-2 border-cyan-800 bg-transparent translate-x-3 group-hover:translate-x-4 translate-y-3 group-hover:translate-y-4 transition-all duration-100 z-0"></div>
+        </div>
+    </div>
+
+    <div class="w-full flex flex-col-reverse lg:flex-row items-center justify-center lg:gap-16 my-10">
+        <div class="relative lg:w-2/5 lg:h-2/5">
+            <div class="bg-gradient-to-r from-neutral-900 from-0% to-transparent to-50% h-full w-full absolute top-0 left-0 z-10 pointer-events-none"/>
+            <div class="bg-gradient-to-l from-neutral-900 from-0% to-transparent to-50% h-full w-full absolute top-0 right-0 z-10 pointer-events-none"/>
+            <img src="utk.webp" alt="headshot" class="rounded-lg" />
         </div>        
+
+        <div class="p-4 min-[400px]:p-16 lg:p-0 lg:w-2/5 flex flex-col gap-4">
+            <div class="flex items-center gap-4">
+                <div class="text-2xl text-nowrap flex gap-2">
+                    <span class="text-cyan-500">2.</span>
+                    <span class="font-semibold text-neutral-200">Education</span>
+                </div>
+                <hr class="w-full border-[1px] border-neutral-300"/>
+            </div>
+            <div class="text-lg flex flex-col gap-4 text-neutral-400">
+                <p>
+                    I am currently studying Computer Science at the Tickle College of Engineering
+                    at the University of Tennessee, Knoxville. Although that's where my formal study
+                    of many subjects took place, it's where not where most of my education stemmed from.
+                </p>
+                <p>
+                    Since my childhood, the internet has taught me more than school ever could. I was (and
+                    still am) a vey curious child. Beginning my sophomore year of high school, I started getting
+                    interested in learning many topics that my school did not offer, so I turned to the
+                    web.
+                </p>
+                <p>
+                    Since then, I've taken around over a dozen online courses (my two favorites being CS50x and
+                    18.06sc) and continue learning things that interest me. I've written a couple blogs on Medium
+                    reviewing these courses. They have now been transfered to my blog. I am currently working on
+                    my own courses to be able to give back to the community.
+                </p>
+            </div>
+        </div>
     </div>
 </div>
