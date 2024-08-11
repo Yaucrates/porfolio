@@ -13,7 +13,7 @@
         
         const maxPixels = -track.offsetWidth / 2; // -100 * (track.offsetWidth - body.offsetWidth) / track.offsetWidth
         const maxPercentage = -100 * (track.offsetWidth - body.offsetWidth) / track.offsetWidth
-        const duration = 1000 * image_paths.length;
+        const duration = 2500 * image_paths.length;
 
         track.animate({
             transform: `translate(calc(${maxPixels}px - 2vmin), -50%)`
