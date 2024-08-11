@@ -7,6 +7,9 @@ export default {
                 neutral: {
                     925: '#101010'
                 }
+            },
+            zIndex: {
+                'max': '9999',
             }
         }
 	},

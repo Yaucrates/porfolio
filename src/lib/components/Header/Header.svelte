@@ -3,7 +3,7 @@
 	import Nav from "./Nav.svelte";
 </script>
 
-<div class="md:hidden p-4 flex justify-between items-center z-50">
+<div class="md:hidden p-4 flex justify-between items-center z-max">
     <Logo />
     <Nav />
 </div>
