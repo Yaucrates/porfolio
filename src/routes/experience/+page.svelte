@@ -39,8 +39,8 @@
             
             <div class="w-full h-full flex z-10">
                 <div class="h-full w-full px-20 pt-32 pb-10 flex flex-col gap-4 justify-center items-center">
-                    <h2 class="w-3/4 lg:w-1/2 text-3xl font-medium">Power Line and Transmission Data</h2>
-                    <p class="w-3/4 lg:w-1/2 text-neutral-400">Focused on creating ways of retrieving and easily accessing data for power lines and transmission.</p>
+                    <h2 class="w-3/4 lg:w-1/2 text-3xl font-medium">CS Teacher's Assistant</h2>
+                    <p class="w-3/4 lg:w-1/2 text-neutral-400">Provided support to students with their code by assisting in generating ideas, helping debug code, and clarifying concepts.</p>
                 </div>
             </div>
         </div>
