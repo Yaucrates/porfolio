@@ -11,8 +11,8 @@
 <div class="w-full py-32 gap-32 flex flex-col justify-center items-center">
 
     <OnMount>
-        <div in:fly={{ y: 200, duration: 1300 }} class="min-h-[500px] w-5/6 md:w-4/5 lg:w-3/4 border-2 flex flex-col rounded-lg bg-[rgb(30,30,30)] border-neutral-800 relative hover:shadow-2xl hover:shadow-neutral-700 transition-all duration-300">
-            <img src="tva-work.webp" alt="tva" class="w-full h-full absolute bottom-0 left-0 opacity-40 rounded-lg"/>
+        <div in:fly={{ y: 200, duration: 1300 }} class="min-h-[500px] w-5/6 md:w-4/5 lg:w-3/4 border-2 flex flex-col rounded-lg bg-[rgb(30,30,30)] border-neutral-800 relative hover:shadow-2xl hover:shadow-neutral-700 transition-all duration-300 overflow-hidden">
+            <img src="tva-work.webp" alt="tva" class="w-full h-full absolute bottom-0 left-0 opacity-40 rounded-lg object-cover"/>
             
             <header class="flex justify-between items-center py-8 px-12 z-10">
                 <h1 class="uppercase">May 2024 - Current | Database Engineer Intern</h1>
@@ -27,10 +27,10 @@
             </div>
         </div>
     </OnMount>
-
+    
     <OnMount>
-        <div in:fly={{ y: 200, duration: 1300 }} class="min-h-[500px] w-5/6 md:w-4/5 lg:w-3/4 border-2 flex flex-col rounded-lg bg-[rgb(30,30,30)] border-neutral-800 relative hover:shadow-2xl hover:shadow-neutral-700 transition-all duration-300">
-            <img src="utk.webp" alt="tva" class="w-full h-full absolute bottom-0 left-0 opacity-40 rounded-lg"/>
+        <div in:fly={{ y: 400, duration: 1100 }} class="min-h-[500px] w-5/6 md:w-4/5 lg:w-3/4 border-2 flex flex-col rounded-lg bg-[rgb(30,30,30)] border-neutral-800 relative hover:shadow-2xl hover:shadow-neutral-700 transition-all duration-300 overflow-hidden">
+            <img src="utk.webp" alt="tva" class="w-full h-full absolute bottom-0 left-0 opacity-40 rounded-lg object-cover"/>
             
             <header class="flex justify-between items-center py-8 px-12 z-10">
                 <h1 class="uppercase">August 2023 - May 2024 | Teacher's Assistant</h1>
@@ -45,5 +45,4 @@
             </div>
         </div>
     </OnMount>
-
 </div>
