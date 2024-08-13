@@ -16,6 +16,7 @@
             <li><a href="/about" class="flex gap-2 hover:text-cyan-500 duration-300"><span class="text-cyan-500">1.</span>About</a></li>
             <li><a href="/experience" class="flex gap-2 hover:text-cyan-500 duration-300"><span class="text-cyan-500">2.</span>Experience</a></li>
             <li><a href="/projects" class="flex gap-2 hover:text-cyan-500 duration-300"><span class="text-cyan-500">3.</span>Projects</a></li>
+            <li><a href="/contact" class="flex gap-2 hover:text-cyan-500 duration-300"><span class="text-cyan-500">4.</span>Contact</a></li>
         </ul>
     </div>
 </nav>
