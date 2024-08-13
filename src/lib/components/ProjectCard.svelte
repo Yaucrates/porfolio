@@ -21,8 +21,8 @@
                         </svg>
                     </div>
                     <p class="text-sm text-neutral-400"><span class="text-neutral-300">{subtitle}</span> -- {description}</p>
-                    <div class="w-full h-full hidden min-[400px]:flex relative">
-                        <img src={src} class="translate-y-12 group-hover:translate-y-8 transition-all duration-300 absolute bottom-0" alt="alt"/>
+                    <div class="w-full h-full hidden min-[400px]:flex justify-center relative">
+                        <img {src} class="h-5/6 translate-y-8 group-hover:translate-y-0 transition-all duration-300 absolute bottom-0" alt="alt"/>
                     </div>
                 </div>
             </div>
