@@ -8,10 +8,7 @@
 </script>
 
 <OnMount>
-    <div in:fly={{ y: 200, duration: 1300 }} class="py-10 gap-10 h-full flex flex-col justify-center items-center">
-        <p class="text-lg">
-            Checkout my resume <a href="https://drive.google.com/file/d/1N-R5zF4zIZY0U26gKk62BidB75kiD7YS/view?usp=sharing" target="_blank" class="text-cyan-500 underline underline-offset-2">here</a>.
-        </p>
+    <div in:fly={{ y: 200, duration: 1300 }} class="py-16 gap-12 h-full flex flex-col justify-center items-center">
         <ProjectCard href="https://www.yousifabdulhussein.com/" title="Personal Portfolio" subtitle="August 24'" description="Designed my personal portfolio to help showcase what I'm working on!" src="Personal-Portfolio.webp" />
         <ProjectCard href="https://www.dormdojo.com/" title="Dorm Dojo" subtitle="E-Commerce Project -- May 24'" description="An E-Commerce site that hooked into the shopify API to make a headless storefront." src="DormDojoHomepage.webp" />
         <ProjectCard title="Impart Education" subtitle="Web Project -- Febuary 24'" description="An educational website that is now deprecated." src="impart-education.webp" />
