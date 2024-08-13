@@ -17,8 +17,4 @@
         <ChevronRight className="opacity-0 group-hover:opacity-100 group-hover:rotate-[360deg] transition-all duration-500" />
         <h1 class="text-lg group-hover:text-cyan-500 transition-all duration-300">Projects</h1>
     </a>
-    <a href="/ideas" class="w-fit flex items-center group">
-        <ChevronRight className="opacity-0 group-hover:opacity-100 group-hover:rotate-[360deg] transition-all duration-500" />
-        <h1 class="text-lg group-hover:text-cyan-500 transition-all duration-300">Ideas</h1>
-    </a>
 </header>
