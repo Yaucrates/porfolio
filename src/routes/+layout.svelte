@@ -1,4 +1,6 @@
 <script lang="ts">
+    export const prerender = true;
+
     // import type { LayoutData } from './$types';
     import '../app.css'
     import { onNavigate } from '$app/navigation';
