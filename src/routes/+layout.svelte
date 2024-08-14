@@ -4,6 +4,7 @@
     import { onNavigate } from '$app/navigation';
 	import SideNav from "$lib/components/SideNav/SideNav.svelte";
 	import Header from '$lib/components/Header/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
     
     onNavigate((navigation) => {
         if (!document.startViewTransition) return;
@@ -23,6 +24,7 @@
     <Header />
     <div class="flex-grow">
         <slot />
+        <Footer />
     </div>
 </div>
 
