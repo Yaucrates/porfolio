@@ -3,6 +3,11 @@
 	import { fly } from "svelte/transition";
 </script>
 
+<svelte:head>
+	<title>Contact</title>
+	<meta name="description" content="Contact Yousif Abdulhussein." />
+</svelte:head>
+
 <OnMount>
     <div in:fly={{ y: 200, duration: 1300 }} class="w-full h-full gap-4 flex flex-col justify-center items-center">
         <h1 class="text-4xl font-bold w-1/2 text-center">Get In Touch</h1>

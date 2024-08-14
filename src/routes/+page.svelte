@@ -6,6 +6,11 @@
     // export let data: PageData;
 </script>
 
+<svelte:head>
+	<title>Home</title>
+	<meta name="description" content="Homepage for Yousif Abdulhussein's Personal Site." />
+</svelte:head>
+
 <OnMount>
     <div class="h-full flex justify-center items-center">
         <div class="w-4/5 gap-6 flex flex-col justify-center">

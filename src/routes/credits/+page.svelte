@@ -1,8 +1,12 @@
 <script>
 	import OnMount from "$lib/components/OnMount.svelte";
 	import { fly } from "svelte/transition";
-
 </script>
+
+<svelte:head>
+	<title>Credits</title>
+	<meta name="description" content="Credits to where Yousif got inspiration from when making this site." />
+</svelte:head>
 
 <OnMount>
     <div in:fly={{ y: 200, duration: 1300 }} class="text-xl w-full h-full gap-2 flex flex-col justify-center items-center">

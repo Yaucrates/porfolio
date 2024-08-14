@@ -7,6 +7,10 @@
     // export let data: PageData;
 </script>
 
+<svelte:head>
+	<title>Experience</title>
+	<meta name="description" content="Take a look a Yousif's work history." />
+</svelte:head>
 
 <OnMount>
     <div in:fly={{ y: 200, duration: 1300 }} class="w-full py-32 gap-32 flex flex-col justify-center items-center">

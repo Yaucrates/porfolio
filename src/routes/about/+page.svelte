@@ -14,6 +14,11 @@
     ]
 </script>
 
+<svelte:head>
+	<title>About Me</title>
+	<meta name="description" content="All about Yousif Abdulhussein." />
+</svelte:head>
+
 <OnMount>
     <div class="w-full flex flex-col gap-4">
         <div in:fly={{ y: 200, duration: 1300 }} class="w-full h-[56vmin] relative select-none">
