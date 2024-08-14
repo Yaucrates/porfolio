@@ -2,9 +2,9 @@
     // import type { LayoutData } from './$types';
     import '../app.css'
     import { onNavigate } from '$app/navigation';
-	import SideNav from "$lib/components/SideNav/SideNav.svelte";
-	import Header from '$lib/components/Header/Header.svelte';
-	import Footer from '$lib/components/Footer.svelte';
+	import SideNav from "$lib/components/Navigation/SideNav.svelte";
+	import Header from '$lib/components/Navigation/Header.svelte';
+	import Footer from '$lib/components/Navigation/Footer.svelte';
     
     onNavigate((navigation) => {
         if (!document.startViewTransition) return;
