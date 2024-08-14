@@ -40,7 +40,7 @@
     <div id="image-track" class="w-max" role="presentation"
     >
         {#each doubled_paths as path, i (i)}
-            <img class="image" src={path} alt="slider" draggable="false"/>
+            <img class="image" src={`/about-slider/${path}`} alt="slider" draggable="false"/>
         {/each}
     </div>
 </div>
