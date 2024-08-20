@@ -24,7 +24,7 @@
                         </p>
                     </div>
                     <div class="flex flex-col sm:flex-row justify-between text-neutral-400 mt-auto">
-                        <p>{blog.authors.join(", ")}</p>
+                        <p>{Array.isArray(blog.authors) ? blog.authors.join(", ") : ""}</p>
                         <p>{blog.date}</p>
                     </div>
                 </div>

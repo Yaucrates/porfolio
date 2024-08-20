@@ -1,9 +1,9 @@
 ---
-title: 'How I Learned Linear Algebra'
-description: 'This is a medium article I wrote a few years back on my study of Linear Algebra.'
-date: '2021-07-30'
+title: "How I Learned Linear Algebra"
+description: "This is a medium article I wrote a few years back on my study of Linear Algebra."
+date: "2021-07-30"
 authors:
-    - 'Yousif Abdulhussein'
+    - "Yousif Abdulhussein"
 tags:
     - Review
 archived: false
