@@ -1,0 +1,68 @@
+---
+title: 'How I Learned Linear Algebra'
+description: 'This is a medium article I wrote a few years back on my study of Linear Algebra.'
+date: '2021-07-30'
+authors:
+    - 'Yousif Abdulhussein'
+tags:
+    - Review
+archived: false
+---
+
+# How I Self-Taught Myself Linear Algebra in a Month (w/o Calculus) 👋
+
+<div class="flex justify-center">
+    <div class="w-3/4">
+
+        ![Introduction to Linear Algebra ](/src/blog/self-taught-linear-algebra/header.webp)
+
+    </div>
+</div>
+
+> I recently completed MIT’s Linear Algebra Course taught by Gilbert Strang (aka 18.06sc). This is my review of its strengths and weaknesses. I will also be giving tips and extra resources you can use.
+
+## Why Did I choose MIT 18.06sc?
+
+I’ve started to get extremely interested in computer science and physics (more specifically AI and Quantum Computers). Since I was going to be taking Calculus this upcoming semester I decided to move ahead to linear algebra. This decision definitely affected me while learning linear algebra. More on that in a bit.
+
+I looked up the best textbooks to learn linear algebra, and I saw a bunch of people recommending this course. I decided to try it out by watching the first few lectures, and I was hooked. Gilbert Strang’s teaching is nothing short of incredible.
+
+## Calculus and Differential Equations:
+
+I know some calculus from just hearing about it, but I hadn’t studied it. When it came up in 18.06sc I was lost, but I could easily still understand the rest of the lecture even when this came up. I skipped lecture 23 due to the fact that it focused on differential equations. That said, I picked up the next lecture without feeling like I missed something vital in the previous lecture.
+
+Knowing what I know now, I wouldn’t recommend taking this course before calculus ~~and differential equations~~ unless you have a good reason to. If you do, when it comes up, try to understand the linear algebra side as best as you can, if you can, and move on. Don’t worry too much about it.
+
+## Course Structure:
+
+**Recommended Reading:** If you get the textbook required for the course (you really really really should), the course lists what sections you should read before the lecture. I did this every time, and whatever I didn’t understand in the book, I understood after the lecture.
+
+**Lecture:** The lecture (usually around 50 minutes) will tie up anything you didn’t understand in the reading. Gilbert Strang walks you through the ideas in a seamless and intuitive way. If you have a solid grasp of everything before, you will be able to keep up pretty well. I preferred these lectures on 2x speed, but on the more difficult ones I did lower it to 1x speed.
+
+**Homework:** The homework was a few questions. I felt like these questions were more so testing how well you understood it, and not for practice. I recommend doing a few problems in the book to get some extra practice in as well.
+
+**Exams:** The exams weren’t bad if you’ve understood everything you’ve learned for it. I used the exams to see what I did and didn’t know, then afterwards I reviewed my weak spots.
+
+**Recitation:** Personally I didn’t enjoy them too much, some were bad, some where good. If you want you can skip them in my opinion.
+
+## Time Commitment:
+
+You can take your time since this is a self-paced course, but I went at a rate of around a lecture a day to finish it before school starts for me. It took 1–3 hours each day depending on the difficulty of the lesson that day. Some of the lessons were super easy because 3Blue1Brown talked about them in [Essence of Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab).
+
+If you plan on learning linear algebra in a month, you’ll probably be putting in 15–25 hours a week. I don’t recommend doing it in a month like me. The reason for me going at this pace is I wanted to get it done before school started back up.
+
+## Helpful Resources:
+
+3Blue1Brown’s [Essence of Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) is a must if you want to have intuition and understand it. It makes going at a fast pace so much easier because you’ll already have a visual/intuitive grasp on a bunch of topics.
+
+Zach Star has a few videos on applications of linear algebra that are great and just interesting. [Video 1](https://www.youtube.com/watch?v=rowWM-MijXU). [Video 2](https://www.youtube.com/watch?v=4csuTO7UTMo). [Video 3](https://www.youtube.com/watch?v=i8FukKfMKCI).
+
+Any online matrix calculator. Sometimes, if I see a pattern in matrices, I test them out in calculators. I think this helps solidify what you’ve learned (and sometimes you’ll see some cool patterns that were never mentioned).
+
+A good tip is that if you’re stuck, move on. You might understand it after reading a bit more or watching the lecture. If you’re still stuck google, youtube, and khan academy are your friends. I never felt as if I needed anything too deep from these sources since the book and lectures did the job really well. I usually only used google to clarify things.
+
+## Conclusion and Final Thoughts
+
+I would recommend this course to anyone wanting to learn linear algebra. I recommend everyone take their time to understand all the material and work through a handful more problems in the book than just given in the homework.
+
+An understanding of calculus and differential equations will help you in this course to gain a better appreciation and understanding for linear algebra (and calculus/differential equations).

@@ -10,8 +10,11 @@ export default {
             },
             zIndex: {
                 'max': '9999',
+            },
+            screens: {
+                'xs': '400px',
             }
         }
 	},
-	plugins: []
+	plugins: [require('@tailwindcss/typography')]
 };
