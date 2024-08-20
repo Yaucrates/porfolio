@@ -11,16 +11,9 @@ archived: false
 
 # How I Self-Taught Myself Linear Algebra in a Month (w/o Calculus) 👋
 
-<!--
-<div className="flex justify-center">
-    <ImageSSR
-        src="/blog_images/itla.jpg"
-        alt="Course Textbook Image"
-        height={700}
-        width={394}
-    />
+<div class="flex justify-center">
+    <div>123</div>
 </div>
--->
 
 > I recently completed MIT’s Linear Algebra Course taught by Gilbert Strang (aka 18.06sc). This is my review of its strengths and weaknesses. I will also be giving tips and extra resources you can use.
 
@@ -70,8 +63,8 @@ I would recommend this course to anyone wanting to learn linear algebra. I recom
 
 An understanding of calculus and differential equations will help you in this course to gain a better appreciation and understanding for linear algebra (and calculus/differential equations).
 
-```ts
-functions greet(name: string) {
+```js
+functions greet(name) {
     console.log(`Hey ${name}! 👋`);
 }
-``
+```
