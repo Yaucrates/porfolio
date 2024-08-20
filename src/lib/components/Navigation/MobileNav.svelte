@@ -1,7 +1,15 @@
 <script>
     let expanded = false;
 
-    const toggle = () => expanded = !expanded;
+    const toggle = () => {
+        expanded = !expanded;
+
+        if (expanded) {
+            document.body.style.position = 'fixed';
+        } else {
+            document.body.style.position = 'static';
+        }
+    }
 </script>
 
 <button on:click={toggle} aria-expanded={expanded} type="button" class="transitionButton group relative h-6 w-6 z-30" style="--width:1.75rem;--thickness:0.125rem;--gap:0.4rem;--color:#06b6d4;--duration:300ms">
