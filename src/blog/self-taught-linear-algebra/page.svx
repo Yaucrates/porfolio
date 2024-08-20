@@ -5,18 +5,18 @@ date: '2021-07-30'
 authors:
     - 'Yousif Abdulhussein'
 tags:
-    - Misc
+    - Review
 archived: false
 ---
 
 # How I Self-Taught Myself Linear Algebra in a Month (w/o Calculus) 👋
 
 <div class="flex justify-center">
-    <di class="w-3/4">
+    <div class="w-3/4">
 
         ![Introduction to Linear Algebra ](/src/blog/self-taught-linear-algebra/header.webp)
 
-    </di>
+    </div>
 </div>
 
 > I recently completed MIT’s Linear Algebra Course taught by Gilbert Strang (aka 18.06sc). This is my review of its strengths and weaknesses. I will also be giving tips and extra resources you can use.
