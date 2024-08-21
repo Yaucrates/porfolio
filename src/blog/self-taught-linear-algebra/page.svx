@@ -9,12 +9,12 @@ tags:
 archived: false
 ---
 
-# How I Self-Taught Myself Linear Algebra in a Month (w/o Calculus)
+# How I Self-Taught Myself Linear Algebra in a Month (w/o Calculus) 👋
 
 <div class="flex justify-center">
     <div class="w-3/4">
 
-
+        ![Introduction to Linear Algebra ](/blog/self-taught-linear-algebra/header.webp)
 
     </div>
 </div>
