@@ -14,7 +14,7 @@ archived: false
 <div class="flex justify-center bg-white rounded-full">
     <div class="w-1/2">
 
-        ![Introduction to Linear Algebra ](/src/blog/mit-edx-calculus-course-review/header.webp)
+
 
     </div>
 </div>

@@ -14,7 +14,7 @@ archived: false
 <div class="flex justify-center">
     <div class="w-3/4">
 
-        ![Introduction to Linear Algebra ](/src/blog/self-taught-linear-algebra/header.webp)
+
 
     </div>
 </div>
