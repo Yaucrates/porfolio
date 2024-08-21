@@ -9,7 +9,7 @@ tags:
 archived: false
 ---
 
-# How I Self-Taught Myself Linear Algebra in a Month (w/o Calculus) 👋
+# How I Self-Taught Myself Linear Algebra in a Month (w/o Calculus)
 
 <div class="flex justify-center">
     <div class="w-3/4">
