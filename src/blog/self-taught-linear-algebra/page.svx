@@ -14,7 +14,7 @@ archived: false
 <div class="flex justify-center">
     <div class="w-3/4">
 
-        ![Introduction to Linear Algebra ](/blog/self-taught-linear-algebra/header.webp)
+        ![Introduction to Linear Algebra by Gilbert Strang](/blog/self-taught-linear-algebra/header.webp)
 
     </div>
 </div>
