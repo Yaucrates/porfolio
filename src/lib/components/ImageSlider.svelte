@@ -1,9 +1,9 @@
 <script lang="ts">
     import { onMount } from "svelte";
 
-    export let image_paths: string[];
+    export let images: string[];
 
-    const doubled_paths = [...image_paths, ...image_paths];
+    const doubled_paths = [...images, ...images];
 
     let track: HTMLElement | null = null,
         body: HTMLElement | null = null;
@@ -13,7 +13,7 @@
         
         const maxPixels = -track.offsetWidth / 2; // -100 * (track.offsetWidth - body.offsetWidth) / track.offsetWidth
         const maxPercentage = -100 * (track.offsetWidth - body.offsetWidth) / track.offsetWidth
-        const duration = 2500 * image_paths.length;
+        const duration = 2500 * images.length;
 
         track.animate({
             transform: `translate(calc(${maxPixels}px - 2vmin), -50%)`
@@ -40,7 +40,7 @@
     <div id="image-track" class="w-max" role="presentation"
     >
         {#each doubled_paths as path, i (i)}
-            <img class="image" src={`/about-slider/${path}`} alt="slider" draggable="false"/>
+            <img class="image" src={`/about/about-slider/${path}`} alt="slider" draggable="false"/>
         {/each}
     </div>
 </div>

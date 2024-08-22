@@ -3,7 +3,7 @@
 	import OnMount from "$lib/components/OnMount.svelte";
 	import { fly } from "svelte/transition";
 
-    const image_paths = [
+    const images = [
         "brothers.webp",
         "peak-aura.webp",
         "competition.webp",
@@ -25,7 +25,7 @@
             <div class="w-full h-full px-8 flex justify-center items-center absolute z-20 uppercase">
                 <h1 class="header-gradient text-5xl sm:text-7xl font-black text-center text-neutral-300">Yousif <br class="block md:hidden"/> <span class="hidden min-[400px]:block">Abdulhussein</span></h1>
             </div>
-            <ImageSlider {image_paths} />
+            <ImageSlider {images} />
         </div>
 
         <div in:fly={{ y: 400, duration: 1100 }} class="w-full flex flex-col lg:flex-row items-center justify-center lg:gap-16 mt-10 sm:mt-20">
@@ -56,7 +56,7 @@
             </div>
 
             <div class="relative w-fit h-fit group rounded-lg aspect-square">
-                <img src="headshot.webp" alt="headshot" class="h-64 w-64 relative z-10 group-hover:-translate-x-1 group-hover:-translate-y-1 transition-all duration-100"/>
+                <img src="/about/headshot.webp" alt="headshot" class="h-64 w-64 relative z-10 group-hover:-translate-x-1 group-hover:-translate-y-1 transition-all duration-100"/>
                 <div class="w-full h-full absolute top-0 left-0 border-2 border-cyan-800 bg-transparent translate-x-3 group-hover:translate-x-4 translate-y-3 group-hover:translate-y-4 transition-all duration-100 z-0"></div>
             </div>
         </div>
@@ -65,7 +65,7 @@
             <div class="relative lg:w-2/5 lg:h-2/5">
                 <div class="bg-gradient-to-r from-neutral-900 from-0% to-transparent to-50% h-full w-full absolute top-0 left-0 z-10 pointer-events-none"/>
                 <div class="bg-gradient-to-l from-neutral-900 from-0% to-transparent to-50% h-full w-full absolute top-0 right-0 z-10 pointer-events-none"/>
-                <img src="utk.webp" alt="headshot" class="rounded-lg" />
+                <img src="/about/utk.webp" alt="headshot" class="rounded-lg" />
             </div>        
 
             <div class="p-4 min-[400px]:p-16 lg:p-0 lg:w-2/5 flex flex-col gap-4">
