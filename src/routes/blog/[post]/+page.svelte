@@ -8,7 +8,7 @@
 </svelte:head>
 
 <div class="w-full flex justify-center py-24 p-8">
-    <section class="max-w-prose w-full prose prose-invert">
+    <section class="max-w-prose w-full prose prose-invert text-justify">
         <svelte:component this={data.post.content} />
     </section>
 </div>
