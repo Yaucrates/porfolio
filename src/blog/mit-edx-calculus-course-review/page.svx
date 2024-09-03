@@ -1,12 +1,8 @@
 ---
 title: "A Review of MIT’s edX Calculus Course"
-description: "This is a medium article I wrote a few years back on MIT's edX Course."
 date: "2022-06-10"
-authors:
-  - "Yousif Abdulhussein"
 tags:
   - Review
-archived: false
 ---
 
 # A Review of MIT’s edX Calculus Course 

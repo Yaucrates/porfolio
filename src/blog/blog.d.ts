@@ -12,8 +12,6 @@ interface Blog extends BlogMetadata { // Spread Metadata properties into Blog
 
 interface BlogMetadata {
     title: string,
-    description: string,
     date: string,
-    authors: string[],
     tags: string[],
 }
