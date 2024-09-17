@@ -40,16 +40,16 @@
                 <div class="text-lg flex flex-col gap-4 text-neutral-400">
                     <p>
                         Hello! My name is Yousif, and I love creating cool things. My love for engineering
-                        originated from playing minecraft as a kid. Turns out, learning to design redstone
+                        originated from playing Minecraft as a kid. Turns out, learning to design redstone
                         contraptions teaches you a lot about engineering.
                     </p>
                     <p>
                         Fast-forward to today, and I'm a junior at the University of Tennessee Knoxville
-                        studying Computer Science. My interest lie in numerous fields, but Quantum Computers
+                        studying Computer Science. My interests lie in numerous fields, but Quantum Computers
                         have particularly caught my eye.
                     </p>
                     <p>
-                        Outside of work, my hobbies include calesthenics, making videos, and finding ways of
+                        Outside of work, my hobbies include calisthenics, making videos, and finding ways of
                         worrying my parents (to their dismay, I've gotten interested in skydiving).
                     </p>
                 </div>
@@ -78,20 +78,20 @@
                 </div>
                 <div class="text-lg flex flex-col gap-4 text-neutral-400">
                     <p>
-                        I am currently studying Computer Science at the Tickle College of Engineering
-                        at the University of Tennessee, Knoxville. Although that's where my formal study
-                        of many subjects took place, it's where not where most of my education stemmed from.
+                        I am currently studying Computer Science at the Tickle College of Engineering at the
+                        University of Tennessee, Knoxville. Although that's where my formal study of many subjects
+                        took place, it's not where most of my education stemmed from.
                     </p>
                     <p>
                         Since my childhood, the internet has taught me more than school ever could. I was (and
-                        still am) a vey curious child. Beginning my sophomore year of high school, I started getting
+                        still am) a very curious child. Beginning my sophomore year of high school, I started getting
                         interested in learning many topics that my school did not offer, so I turned to the
                         web.
                     </p>
                     <p>
-                        Since then, I've taken around over a dozen online courses (my two favorites being CS50x and
+                        Since then, I've taken over a dozen online courses (my two favorites being CS50x and
                         18.06sc) and continue learning things that interest me. I've written a couple blogs on Medium
-                        reviewing these courses. They have now been transfered to my blog. I am currently working on
+                        reviewing these courses. They have now been transferred to my blog. I am currently working on
                         my own courses to be able to give back to the community.
                     </p>
                 </div>
