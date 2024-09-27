@@ -1,15 +1,28 @@
 <script>
     let expanded = false;
+    let scrollPosition = 0;
 
     const toggle = () => {
         expanded = !expanded;
 
         if (expanded) {
+            // Save the current scroll position
+            scrollPosition = window.scrollY;
+
+            // Prevent scrolling
+            document.body.style.top = `-${scrollPosition}px`;
             document.body.style.position = 'fixed';
+            document.body.style.width = '100%';
+            document.body.style.overflowY = 'scroll'; // Keeps the scrollbar visible to avoid layout shift
         } else {
-            document.body.style.position = 'static';
+            // Restore the scroll position
+            document.body.style.position = '';
+            document.body.style.top = '';
+            document.body.style.width = '';
+            document.body.style.overflowY = '';
+            window.scrollTo(0, scrollPosition); // Reset the scroll position
         }
-    }
+    };
 </script>
 
 <button on:click={toggle} aria-expanded={expanded} type="button" class="transitionButton group relative h-6 w-6 z-30" style="--width:1.75rem;--thickness:0.125rem;--gap:0.4rem;--color:#06b6d4;--duration:300ms">

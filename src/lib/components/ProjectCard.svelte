@@ -6,7 +6,7 @@
     export let href: string | null = null;
 </script>
 
-<a {href} class="w-3/4 h-60 min-[400px]:h-96 md:h-[30rem] lg:h-[42rem] p-px bg-border-gradient rounded-2xl group">
+<a {href} target="_blank" class="w-3/4 h-60 min-[400px]:h-96 md:h-[30rem] lg:h-[42rem] p-px bg-border-gradient rounded-2xl group">
     <div class="w-full h-full p-2 bg-neutral-850 rounded-2xl">
         <div class="w-full h-full p-px bg-border-gradient border-[1px] border-neutral-800 hover:border-neutral-700 transition-all duration-300 rounded-2xl relative">
             <div class="w-full h-full bg-neutral-800 relative overflow-hidden">
