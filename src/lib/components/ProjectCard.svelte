@@ -9,7 +9,7 @@
 
 <a {href} {target} class="w-3/4 h-60 min-[400px]:h-96 md:h-[30rem] lg:h-[42rem] p-px bg-border-gradient rounded-2xl group">
     <div class="w-full h-full p-2 bg-neutral-850 rounded-2xl">
-        <div class="w-full h-full p-px bg-border-gradient border-[1px] border-neutral-800 hover:border-neutral-700 transition-all duration-300 rounded-2xl relative">
+        <div class="w-full h-full p-px bg-border-gradient border-[1px] border-neutral-800 hover:border-neutral-700 transition-all duration-300 rounded-2xl relative overflow-hidden">
             <div class="w-full h-full bg-neutral-800 relative overflow-hidden">
                 <div class="bg-gradient opacity-0 group-hover:opacity-100 w-full h-full absolute transition-all duration-300 z-10"></div>
                 <div class="w-full h-full p-10 pb-0 gap-2 flex flex-col bg-neutral-800 bg-transparent rounded-2xl z-20 absolute">
