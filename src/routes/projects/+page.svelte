@@ -14,6 +14,7 @@
 
 <OnMount>
     <div in:fly={{ y: 200, duration: 1300 }} class="py-16 gap-12 h-full flex flex-col justify-center items-center">
+        <ProjectCard title="Impart Education" subtitle="September 14'" description="An education platform." src="/projects/impart-education-new.webp" />
         <ProjectCard href="https://www.yousifabdulhussein.com/" title="Personal Portfolio" subtitle="August 24'" description="Designed my personal portfolio to help showcase what I'm working on!" src="/projects/Personal-Portfolio.webp" />
         <ProjectCard href="https://www.dormdojo.com/" title="Dorm Dojo" subtitle="E-Commerce Project -- May 24'" description="An E-Commerce site that hooked into the shopify API to make a headless storefront." src="/projects/DormDojoHomepage.webp" />
         <ProjectCard title="Impart Education (Deprecated Project)" subtitle="Web Project -- Febuary 24'" description="An educational website that is now deprecated." src="/projects/impart-education.webp" />
