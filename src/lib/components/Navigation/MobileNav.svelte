@@ -1,26 +1,18 @@
 <script>
     let expanded = false;
-    let scrollPosition = 0;
 
     const toggle = () => {
         expanded = !expanded;
 
         if (expanded) {
-            // Save the current scroll position
-            scrollPosition = window.scrollY;
+            // Scroll to the top of the page
+            window.scrollTo({ top: 0, behavior: 'smooth' });
 
-            // Prevent scrolling
-            document.body.style.top = `-${scrollPosition}px`;
-            document.body.style.position = 'fixed';
-            document.body.style.width = '100%';
-            document.body.style.overflowY = 'scroll'; // Keeps the scrollbar visible to avoid layout shift
+            // Disable scrolling
+            document.body.style.overflow = 'hidden';
         } else {
-            // Restore the scroll position
-            document.body.style.position = '';
-            document.body.style.top = '';
-            document.body.style.width = '';
-            document.body.style.overflowY = '';
-            window.scrollTo(0, scrollPosition); // Reset the scroll position
+            // Enable scrolling
+            document.body.style.overflow = 'auto';
         }
     };
 </script>
