@@ -1,9 +1,7 @@
 <script lang="ts">
     import '../app.css'
     import { onNavigate } from '$app/navigation';
-    // import SideNav from '$lib/components/navigation/SideNav.svelte';
-	// import Header from '$lib/components/navigation/Header.svelte';
-	// import Footer from '$lib/components/navigation/Footer.svelte';
+    import SideNav from '$lib/components/navigation/SideNav.svelte';
 
     let { children } = $props();
     
@@ -18,7 +16,7 @@
     });
 </script>
 
-<!-- <SideNav /> -->
+<SideNav />
 <div class="md:ml-48 h-full flex flex-col">
     <!-- <Header /> -->
     <div class="flex-grow">
