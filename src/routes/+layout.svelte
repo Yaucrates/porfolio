@@ -2,6 +2,7 @@
     import '../app.css'
     import { onNavigate } from '$app/navigation';
     import SideNav from '$lib/components/navigation/SideNav.svelte';
+    import Header from '$lib/components/navigation/Header.svelte';
 
     let { children } = $props();
     
@@ -18,7 +19,7 @@
 
 <SideNav />
 <div class="md:ml-48 h-full flex flex-col">
-    <!-- <Header /> -->
+    <Header />
     <div class="flex-grow">
         {@render children()}
         <!-- <Footer /> -->
