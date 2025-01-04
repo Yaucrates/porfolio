@@ -4,8 +4,8 @@
         subtitle: string,
         description: string,
         src: string,
-        href: string | null,
-        target: string | null,
+        href?: string | null,
+        target?: string | null,
     };
 
     let { title, subtitle, description, src, href = null, target = "_blank" }: Props = $props();
