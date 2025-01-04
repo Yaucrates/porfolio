@@ -8,7 +8,7 @@
 
 <nav class="hidden transitionClass h-screen w-48 border-e-2 fixed md:flex flex-col border-neutral-800 select-none z-max">
     <header class="w-full h-60 px-2 my-2 flex flex-col justify-around">
-        <!-- <div class="px-5 pt-3 w-full h-fit flex justify-end"><Logo /></div> -->
+        <div class="px-5 pt-3 w-full h-fit flex justify-end"><Logo /></div>
         <!-- <MainLink name="About"/> -->
         <!-- <MainLink name="Experience"/> -->
         <!-- <MainLink name="Projects"/> -->
