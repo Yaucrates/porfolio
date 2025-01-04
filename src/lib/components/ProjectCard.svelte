@@ -4,8 +4,13 @@
         subtitle: string,
         description: string,
         src: string,
+<<<<<<< HEAD
         href: string | null,
         target: string | null,
+=======
+        href?: string | null,
+        target?: string | null,
+>>>>>>> dev
     };
 
     let { title, subtitle, description, src, href = null, target = "_blank" }: Props = $props();

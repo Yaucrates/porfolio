@@ -2,8 +2,13 @@
     import '../app.css'
     import { onNavigate } from '$app/navigation';
     import SideNav from '$lib/components/navigation/SideNav.svelte';
+<<<<<<< HEAD
 	import Header from '$lib/components/navigation/Header.svelte';
 	import Footer from '$lib/components/navigation/Footer.svelte';
+=======
+    import Header from '$lib/components/navigation/Header.svelte';
+    import Footer from '$lib/components/navigation/Footer.svelte';
+>>>>>>> dev
 
     let { children } = $props();
     
