@@ -1,16 +1,9 @@
 <script>
     import Logo from "$lib/components/logos/Logo.svelte";
-<<<<<<< HEAD:src/lib/components/Navigation/SideNav.svelte
-	import MainLink from "./Block/MainLink.svelte";
-	import Socials from "./Block/Socials.svelte";
-	import Misc from "./Block/Misc.svelte";
-	import PersonalWork from "./Block/Personal-Work.svelte";
-=======
     import MainLink from "$lib/components/navigation/block/MainLink.svelte";
     import Misc from "$lib/components/navigation/block/Misc.svelte";
     import PersonalWork from "$lib/components/navigation/block/Personal-Work.svelte";
     import Socials from "$lib/components/navigation/block/Socials.svelte";
->>>>>>> dev:src/lib/components/navigation/SideNav.svelte
 </script>
 
 <nav class="hidden transitionClass h-screen w-48 border-e-2 fixed md:flex flex-col border-neutral-800 select-none z-max">
