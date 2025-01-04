@@ -15,6 +15,10 @@ const config = {
 		adapter: adapter()
 	},
 
+    compilerOptions: {
+        runes: true,
+    },
+
     extensions: [".svelte", ".svx"]
 };
 
