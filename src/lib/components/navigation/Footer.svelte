@@ -1,7 +1,7 @@
 <script>
-	import Misc from "./Block/Misc.svelte";
-	import PersonalWork from "./Block/Personal-Work.svelte";
-    import Socials from "./Block/Socials.svelte";
+	import Misc from "$lib/components/navigation/block/Misc.svelte";
+	import PersonalWork from "$lib/components/navigation/block/Personal-Work.svelte";
+    import Socials from "$lib/components/navigation/block/Socials.svelte";
 </script>
 
 <footer class="md:hidden w-full flex justify-center items-center p-7 border-t-2 border-neutral-800">
