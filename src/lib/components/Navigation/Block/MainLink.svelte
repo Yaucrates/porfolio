@@ -1,7 +1,7 @@
 <script lang="ts">
-	import ChevronRight from "$lib/components/Logos/ChevronRight.svelte";
+    import ChevronRight from "$lib/components/logos/ChevronRight.svelte";
 
-    export let name: string;
+    let { name }: { name: string } = $props();
 </script>
 
 <a href={`/${name.toLowerCase().replace(' ', '-')}`} class="w-fit flex items-center group">

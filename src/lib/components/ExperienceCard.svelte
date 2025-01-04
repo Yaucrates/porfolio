@@ -2,11 +2,15 @@
 	import { fly } from "svelte/transition";
 	import OnMount from "./OnMount.svelte";
 
-    export let header: string;
-    export let title: string;
-    export let description: string;
-    export let background_src: string;
-    export let logo_src: string;
+    interface Props {
+        header: string,
+        title: string,
+        description: string,
+        background_src: string,
+        logo_src: string,
+    }
+
+    let { header, title, description, background_src, logo_src }: Props = $props();
 </script>
 
 <OnMount>

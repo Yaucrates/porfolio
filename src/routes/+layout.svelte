@@ -1,10 +1,11 @@
 <script lang="ts">
-    // import type { LayoutData } from './$types';
     import '../app.css'
     import { onNavigate } from '$app/navigation';
-	import SideNav from "$lib/components/Navigation/SideNav.svelte";
-	import Header from '$lib/components/Navigation/Header.svelte';
-	import Footer from '$lib/components/Navigation/Footer.svelte';
+    import SideNav from '$lib/components/navigation/SideNav.svelte';
+	import Header from '$lib/components/navigation/Header.svelte';
+	import Footer from '$lib/components/navigation/Footer.svelte';
+
+    let { children } = $props();
     
     onNavigate((navigation) => {
         if (!document.startViewTransition) return;
@@ -15,15 +16,13 @@
             });
         });
     });
-    
-    // export let data: LayoutData;
 </script>
 
 <SideNav />
 <div class="md:ml-48 h-full flex flex-col">
     <Header />
     <div class="flex-grow">
-        <slot />
+        {@render children()}
         <Footer />
     </div>
 </div>

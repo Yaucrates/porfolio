@@ -1,10 +1,14 @@
 <script lang="ts">
-    export let title: string;
-    export let subtitle: string;
-    export let description: string;
-    export let src: string;
-    export let href: string | null = null;
-    export let target: string | null = "_blank";
+    interface Props {
+        title: string,
+        subtitle: string,
+        description: string,
+        src: string,
+        href: string | null,
+        target: string | null,
+    };
+
+    let { title, subtitle, description, src, href = null, target = "_blank" }: Props = $props();
 </script>
 
 <a {href} {target} class="w-3/4 h-60 min-[400px]:h-96 md:h-[30rem] lg:h-[42rem] p-px bg-border-gradient rounded-2xl group">

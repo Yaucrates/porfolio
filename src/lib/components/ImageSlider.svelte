@@ -1,7 +1,7 @@
 <script lang="ts">
     import { onMount } from "svelte";
 
-    export let images: string[];
+    let { images }: { images: string[] } = $props();
 
     const doubled_paths = [...images, ...images];
 
@@ -35,8 +35,8 @@
 </script>
 
 <div id="body" class="w-full h-full overflow-hidden relative" lang="ts">
-    <div class="bg-gradient-to-r from-neutral-900 from-0% to-transparent to-80% h-full w-full absolute top-0 left-0 z-10 pointer-events-none"/>
-    <div class="bg-gradient-to-l from-neutral-900 from-0% to-transparent to-80% h-full w-full absolute top-0 right-0 z-10 pointer-events-none"/>
+    <div class="bg-gradient-to-r from-neutral-900 from-0% to-transparent to-80% h-full w-full absolute top-0 left-0 z-10 pointer-events-none"></div>
+    <div class="bg-gradient-to-l from-neutral-900 from-0% to-transparent to-80% h-full w-full absolute top-0 right-0 z-10 pointer-events-none"></div>
     <div id="image-track" class="w-max" role="presentation"
     >
         {#each doubled_paths as path, i (i)}

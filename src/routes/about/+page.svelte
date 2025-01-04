@@ -28,7 +28,7 @@
             <ImageSlider {images} />
         </div>
 
-        <div in:fly={{ y: 400, duration: 1100 }} class="w-full flex flex-col lg:flex-row items-center justify-center lg:gap-16 mt-10 sm:mt-20">
+        <div in:fly={{ y: 400, duration: 1300 }} class="w-full flex flex-col lg:flex-row items-center justify-center lg:gap-16 mt-10 sm:mt-20">
             <div class="p-4 min-[400px]:p-16 lg:p-0 lg:w-2/5 flex flex-col gap-4">
                 <div class="flex items-center gap-4">
                     <div class="text-2xl text-nowrap flex gap-2">
@@ -61,10 +61,10 @@
             </div>
         </div>
 
-        <div in:fly={{ y: 600, duration: 900 }} class="w-full flex flex-col-reverse lg:flex-row items-center justify-center lg:gap-16 my-10">
+        <div in:fly={{ y: 600, duration: 1300 }} class="w-full flex flex-col-reverse lg:flex-row items-center justify-center lg:gap-16 my-10">
             <div class="relative lg:w-2/5 lg:h-2/5">
-                <div class="bg-gradient-to-r from-neutral-900 from-0% to-transparent to-50% h-full w-full absolute top-0 left-0 z-10 pointer-events-none"/>
-                <div class="bg-gradient-to-l from-neutral-900 from-0% to-transparent to-50% h-full w-full absolute top-0 right-0 z-10 pointer-events-none"/>
+                <div class="bg-gradient-to-r from-neutral-900 from-0% to-transparent to-50% h-full w-full absolute top-0 left-0 z-10 pointer-events-none"></div>
+                <div class="bg-gradient-to-l from-neutral-900 from-0% to-transparent to-50% h-full w-full absolute top-0 right-0 z-10 pointer-events-none"></div>
                 <img src="/about/utk.webp" alt="headshot" class="rounded-lg" />
             </div>        
 

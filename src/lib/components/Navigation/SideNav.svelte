@@ -1,5 +1,5 @@
 <script>
-	import Logo from "../Logos/Logo.svelte";
+    import Logo from "$lib/components/logos/Logo.svelte";
 	import MainLink from "./Block/MainLink.svelte";
 	import Socials from "./Block/Socials.svelte";
 	import Misc from "./Block/Misc.svelte";
@@ -16,10 +16,10 @@
     </header>
     <div class="w-full p-7 gap-12 border-y-2 flex flex-col border-neutral-800">
         <PersonalWork />
-        <Misc />
+        <Socials />
     </div>
     <div class="w-full p-7">
-        <Socials />
+        <Misc />
     </div>
 </nav>
 

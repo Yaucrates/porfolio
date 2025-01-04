@@ -1,10 +1,7 @@
 <script lang="ts">
-    // import type { PageData } from './$types';
     import ProjectCard from "$lib/components/ProjectCard.svelte";
     import OnMount from "$lib/components/OnMount.svelte"
     import { fly } from "svelte/transition"
-    
-    // export let data: PageData;
 </script>
 
 <svelte:head>
