@@ -91,8 +91,8 @@
                     <p>
                         Since then, I've taken over a dozen online courses (my two favorites being CS50x and
                         18.06sc) and continue learning things that interest me. I've written a couple blogs on Medium
-                        reviewing these courses. They have now been transferred to my blog. I am currently working on
-                        my own courses to be able to give back to the community.
+                        reviewing these courses. I am currently working on my <a target="_blank" href="https://www.imparteducation.com/" class="underline text-blue-300 hover:text-blue-400 transition">education
+                        project</a> to be able to give back to the community that helped me.
                     </p>
                 </div>
             </div>

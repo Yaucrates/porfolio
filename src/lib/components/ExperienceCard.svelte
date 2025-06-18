@@ -19,7 +19,7 @@
         
         <header class="flex justify-between items-center py-8 px-12 z-10">
             <h1 class="uppercase">{header}</h1>
-            <img src={logo_src} class="hidden sm:block rounded-sm m-4" alt="TVA Logo" width="24" height="24"/>
+            <img src={logo_src} class="hidden sm:block rounded-sm m-4" alt="Company Logo" width="24" height="24" aria-hidden={true}/>
         </header>
         
         <div class="w-full h-full flex z-10">

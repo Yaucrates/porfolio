@@ -16,7 +16,7 @@
                 <h1 in:fly={{ y: 400, duration: 1300 }} class="text-neutral-300">Yousif Abdulhussein.</h1>
                 <h2 in:fly={{ y: 600, duration: 1300 }} class="text-neutral-400">I turn vision into action.</h2>
             </div>
-            <p in:fly={{ y: 800, duration: 1300 }} class="sm:w-2/3 text-base sm:text-lg text-neutral-400">I’m a computer science major passionate about creating exceptional digital experiences. Currently, I’m focused on learning and building software through academic projects and personal initiatives.</p>
+            <p in:fly={{ y: 800, duration: 1300 }} class="sm:w-2/3 text-base sm:text-lg text-neutral-400">I’m a computer science major passionate about creating exceptional digital experiences. Currently, I’m focused on creating software that empowers people to take control of their own education.</p>
         </div>
     </div>
 </OnMount>
