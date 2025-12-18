@@ -16,7 +16,7 @@
             <a href="MAILTO:abdulhusseinyousifh@gmail.com" class="border-[1px] p-2 text-xl text-cyan-500 font-light border-cyan-500 hover:bg-cyan-950 rounded-md transition-all duration-300">
                 Say Hello 👋
             </a>
-            <a href="https://drive.google.com/file/d/1X6J7nLOHZ4HBeZC9yDAZf4nsqh3wWseo/view?usp=sharing" target="_blank" class="text-cyan-500 text-xl font-light">Checkout my resume.</a>
+            <a href="https://drive.google.com/file/d/1OOn3SAXYzs1Afp0jggbK3_E11tgMZ9wj/view?usp=sharing" target="_blank" class="text-cyan-500 text-xl font-light">Checkout my resume.</a>
         </div>
     </div>
 </OnMount>
