@@ -1,4 +1,6 @@
 <script lang="ts">
+    import GithubLogoWhite from "./logos/GithubLogoWhite.svelte";
+
     interface Props {
         title: string,
         subtitle: string,
@@ -6,9 +8,18 @@
         src: string,
         href?: string | null,
         target?: string | null,
+        githubLink?: string | null,
     };
 
-    let { title, subtitle, description, src, href = null, target = "_blank" }: Props = $props();
+    let { title, subtitle, description, src, href = null, target = "_blank", githubLink = null }: Props = $props();
+    
+    function handleGithubClick(e: MouseEvent) {
+        e.stopPropagation();
+        e.preventDefault();
+        if (githubLink) {
+            window.open(githubLink, '_blank');
+        }
+    }
 </script>
 
 <a {href} {target} class="w-3/4 h-60 min-[400px]:h-96 md:h-[30rem] lg:h-[42rem] p-px bg-border-gradient rounded-2xl group">
@@ -18,7 +29,14 @@
                 <div class="bg-gradient opacity-0 group-hover:opacity-100 w-full h-full absolute transition-all duration-300 z-10"></div>
                 <div class="w-full h-full p-10 pb-0 gap-2 flex flex-col bg-neutral-800 bg-transparent rounded-2xl z-20 absolute">
                     <div class="flex justify-between">
-                        <h1 class="text-2xl">{title}</h1>
+                        <div class="flex gap-4 justify-center">
+                            <h1 class="text-2xl">{title}</h1>
+                            {#if githubLink}
+                                <button onclick={handleGithubClick} class="cursor-pointer hover:-translate-y-0.5 transition-all duration-300" aria-label="View on GitHub">
+                                    <GithubLogoWhite scale={0.25} />
+                                </button>
+                            {/if}
+                        </div>
                         <svg xmlns="http://www.w3.org/2000/svg" class={`${href ? "" : "hidden"} group-hover:translate-x-3 transition-all duration-300`} width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M5 12l14 0" />
