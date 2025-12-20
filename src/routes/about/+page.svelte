@@ -44,13 +44,13 @@
                         contraptions teaches you a lot about engineering.
                     </p>
                     <p>
-                        Fast-forward to today, and I'm a junior at the University of Tennessee Knoxville
-                        studying Computer Science. My interests lie in numerous fields, but Quantum Computers
-                        have particularly caught my eye.
+                        Fast-forward to today, and I'm new Computer Science grad from the University of
+                        Tennessee Knoxville. My interests lie in numerous fields, but low level systems
+                        and indie hacking have caught my eye.
                     </p>
                     <p>
                         Outside of work, my hobbies include calisthenics, making videos, and finding ways of
-                        worrying my parents (to their dismay, I've gotten interested in skydiving).
+                        worrying my parents (much to their dismay, I've gotten interested in skydiving).
                     </p>
                 </div>
             </div>
@@ -78,15 +78,15 @@
                 </div>
                 <div class="text-lg flex flex-col gap-4 text-neutral-400">
                     <p>
-                        I am currently studying Computer Science at the Tickle College of Engineering at the
-                        University of Tennessee, Knoxville. Although that's where my formal study of many subjects
-                        took place, it's not where most of my education stemmed from.
+                        I graduated from the Tickle College of Engineering at the University of Tennessee,
+                        Knoxville with a bachelor's in Computer Science. Although that's where my formal study
+                        of many subjects took place, it's not where most of my education stemmed from.
                     </p>
                     <p>
                         Since my childhood, the internet has taught me more than school ever could. I was (and
-                        still am) a very curious child. Beginning my sophomore year of high school, I started getting
-                        interested in learning many topics that my school did not offer, so I turned to the
-                        web.
+                        still am) a very curious child. Beginning my sophomore year of high school, I started
+                        getting interested in learning many topics that my school did not offer, so I turned to
+                        the web.
                     </p>
                     <p>
                         Since then, I've taken over a dozen online courses (my two favorites being CS50x and
