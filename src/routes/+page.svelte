@@ -75,7 +75,7 @@
                 to take control of their own <a href="https://www.imparteducation.com/" class="text-cyan-500 underline decoration-dashed decoration-1 transition-all duration-300">education</a>.
             </p>
 
-            <div class="flex gap-4 items-center">
+            <div class="flex flex-wrap gap-4 items-center">
                 <a
                     href="https://github.com/Yaucrates"
                     target="_blank"
@@ -98,7 +98,7 @@
                 <span class="font-thin">|</span>
                 <a
                     href="/about"
-                    class="gap-2 flex text-neutral-400 hover:text-neutral-200 transition-colors duration-300 group"
+                    class="gap-2 flex justify-center items-center text-neutral-400 hover:text-neutral-200 transition-colors duration-300 group"
                 >
                     More about me <span class="group-hover:translate-x-1 transition-all duration-300">→</span>
                 </a>
