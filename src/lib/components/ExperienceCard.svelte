@@ -24,7 +24,7 @@
         </header>
         
         <div class="w-full h-full flex z-10">
-            <div class="h-full w-full min-[400px]:px-20 pt-32 pb-10 flex flex-col gap-4 justify-center items-center">
+            <div class="h-full w-full pt-32 pb-10 flex flex-col gap-4 justify-center items-center">
                 <h2 class="w-3/4 lg:w-1/2 text-3xl font-medium">{title}</h2>
                 <p class="w-3/4 lg:w-1/2 text-neutral-400">{description}</p>
             </div>
