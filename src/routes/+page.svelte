@@ -69,10 +69,10 @@
         <div class="max-w-3xl flex flex-col gap-6">
             <h1 class="text-5xl md:text-4xl font-bold text-neutral-200">Hey! I'm <span class="text-cyan-500">Yousif Abdulhussein</span></h1>
             <p class="text-lg text-neutral-400">
-                I'm currently working as a SWE @ <a href="https://www.asknexus.ai/" class="underline decoration-dashed decoration-1 transition-all duration-300">Nexus</a>.
+                I'm currently working as a SWE @ <a href="https://www.asknexus.ai/" class="text-cyan-500 underline decoration-dashed decoration-1 transition-all duration-300">Nexus</a>.
                 I love writing software actually helps people. Currently, I’m diving into the
                 world of indie hacking and am focused on creating software that empowers people
-                to take control of their own <a href="https://www.imparteducation.com/" class="underline decoration-dashed decoration-1 transition-all duration-300">education</a>.
+                to take control of their own <a href="https://www.imparteducation.com/" class="text-cyan-500 underline decoration-dashed decoration-1 transition-all duration-300">education</a>.
             </p>
 
             <div class="flex gap-4 items-center">

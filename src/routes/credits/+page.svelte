@@ -13,6 +13,7 @@
         <p class="text-center">This website was inspired by the following people:</p>
         <p>Layout - <a href="https://www.ethanchng.com/" target="_blank" class="text-cyan-500">Ethan Chng</a></p>
         <p>Hero - <a href="https://jasoncameron.dev/" target="_blank" class="text-cyan-500">Jason Cameron</a></p>
+        <p>Case Studies - <a href="https://www.rachelchen.tech/" target="_blank" class="text-cyan-500">Rachel Chen</a></p>
         <p>Design - <a href="https://brittanychiang.com/" target="_blank" class="text-cyan-500">Brittany Chiang</a></p>
         <p>Project Cards - <a href="https://www.perryw.ca/" target="_blank" class="text-cyan-500">Perry Wang</a></p>
     </div>
