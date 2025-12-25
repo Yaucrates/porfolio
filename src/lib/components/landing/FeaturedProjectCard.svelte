@@ -34,39 +34,41 @@
 	></div>
 
 	<!-- Content -->
-	<div class="relative z-10 p-6 flex flex-col gap-4">
-		<!-- Header -->
-		<div class="flex justify-between items-start">
-			<div>
-				<h3 class="text-xl font-semibold text-neutral-200">{project.title}</h3>
-				{#if project.githubRepo}
-					<p class="text-sm text-neutral-500">
-						{project.githubOwner || 'Yaucrates'} / {project.githubRepo}
-					</p>
-				{/if}
-			</div>
-			<div class="group-hover:-translate-y-1 transition-transform duration-300">
-				{#if project.githubRepo}
-					<GithubLogoWhite scale={0.2} />
-				{:else}
-					<StackLogo scale={1} />
-				{/if}
-			</div>
-		</div>
+	<div class="h-full relative z-10 p-6 flex flex-col justify-between">
+        <div class="flex flex-col gap-4">
+            <!-- Header -->
+            <div class="flex justify-between items-start">
+                <div>
+                    <h3 class="text-xl font-semibold text-neutral-200">{project.title}</h3>
+                    {#if project.githubRepo}
+                        <p class="text-sm text-neutral-500">
+                            {project.githubOwner || 'Yaucrates'} / {project.githubRepo}
+                        </p>
+                    {/if}
+                </div>
+                <div class="group-hover:-translate-y-1 transition-transform duration-300">
+                    {#if project.githubRepo}
+                        <GithubLogoWhite scale={0.2} />
+                    {:else}
+                        <StackLogo scale={1} />
+                    {/if}
+                </div>
+            </div>
 
-		<!-- Description -->
-		<p class="text-neutral-400 text-sm">{project.description}</p>
+            <!-- Description -->
+            <p class="text-neutral-400 text-sm">{project.description}</p>
 
-		<!-- Tech stack tags -->
-		<div class="flex flex-wrap gap-2">
-			{#each project.techStack as tech}
-				<span
-					class="px-2 py-1 text-xs rounded-md bg-neutral-800 text-neutral-400 border border-neutral-700"
-				>
-					{tech}
-				</span>
-			{/each}
-		</div>
+            <!-- Tech stack tags -->
+            <div class="flex flex-wrap gap-2">
+                {#each project.techStack as tech}
+                    <span
+                        class="px-2 py-1 text-xs rounded-md bg-neutral-800 text-neutral-400 border border-neutral-700"
+                    >
+                        {tech}
+                    </span>
+                {/each}
+            </div>
+        </div>
 
 		<!-- Image preview -->
 		<div class="mt-2 rounded-lg overflow-hidden border border-neutral-800">
@@ -75,16 +77,6 @@
 				alt={project.title}
 				class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-300"
 			/>
-		</div>
-
-		<!-- Footer metrics -->
-		<div class="flex items-center gap-2 text-xs text-neutral-500">
-			{#if project.contributors}
-				<span>{project.contributors} contributions</span>
-			{/if}
-			{#if project.contributorName}
-				<span>by {project.contributorName}</span>
-			{/if}
 		</div>
 	</div>
 </a>
