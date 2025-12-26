@@ -3,20 +3,18 @@
     import OnMount from "$lib/components/OnMount.svelte";
     import { fly } from "svelte/transition";
 
-    $effect(() => {
-        navState.sections = [
-            { id: "overview", label: "Overview" },
-            { id: "challenge", label: "The Challenge" },
-            { id: "solution", label: "The Solution" },
-            { id: "execution", label: "Execution" },
-            { id: "impact", label: "Impact" }
-        ];
-    });
+    navState.sections = [
+        { id: "overview", label: "Overview" },
+        { id: "challenge", label: "The Challenge" },
+        { id: "solution", label: "The Solution" },
+        { id: "execution", label: "Execution" },
+        { id: "impact", label: "Impact" }
+    ];
 </script>
 
 <OnMount>
     <div in:fly={{ y: 200, duration: 1300 }} class="text-[#e5e5e5] min-h-screen pt-44 pb-24">
-        <div class="w-full aspect-square absolute top-0 gradient-bg"></div>
+        <div class="w-full min-h-screen absolute top-0 gradient-bg"></div>
         <!-- Hero Section -->
         <section id="overview" class="max-w-6xl mx-auto px-6">
             <header class="text-center mb-16">
@@ -271,7 +269,7 @@
 <style>
     .gradient-bg {
         pointer-events: none;
-        background: radial-gradient(ellipse at top, rgba(0, 170, 255, 0.25) 0%, rgba(6, 182, 212, 0) 75%);
+        background: radial-gradient(ellipse at top, rgba(0, 170, 255, 0.25) 0%, rgba(6, 182, 212, 0) 85%);
     }
 
     section {
