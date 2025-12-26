@@ -4,6 +4,48 @@
     import Showcase from "$lib/components/Showcase.svelte";
     import { fly } from "svelte/transition";
 
+    // Re-adding Impart specific data for authenticity
+    const plannedModules = [
+        {
+            label: "Units 1-3",
+            title: "The Foundations",
+            desc: "Master the building blocks of Python: Function, Variables, Conditionals, and Loops.",
+            status: "Free Preview",
+            active: true
+        },
+        {
+            label: "Units 4-6",
+            title: "Algorithms & Data",
+            desc: "Write efficient code. Learn Data Structures, Mutability, and Object Oriented Programming.",
+            status: "In Development",
+            active: false
+        },
+        {
+            label: "Units 7-10",
+            title: "Engineering",
+            desc: "Build real-world applications. Master Libraries, APIs, Async programming, and File I/O.",
+            status: "In Development",
+            active: false
+        }
+    ];
+
+    const testimonials = [
+        {
+            name: "Sarah Jenkins",
+            role: "UX Designer",
+            initials: "SJ",
+            quote: "The interactive demos were the first time I actually understood how a neural network works. Instant pre-order.",
+            color: "from-purple-500 to-indigo-500"
+        },
+        {
+            name: "Marcus Chen",
+            role: "CS Undergrad",
+            initials: "MC",
+            quote: "My university professors still teach on whiteboards. This feels like what CS education should look like in 2025.",
+            color: "from-blue-500 to-cyan-500"
+        }
+    ];
+
     navState.sections = [
         { id: "overview", label: "Overview" },
         { id: "challenge", label: "The Challenge" },
@@ -16,106 +58,106 @@
 <OnMount>
     <div in:fly={{ y: 200, duration: 1300 }} class="text-[#e5e5e5] min-h-screen pt-44 pb-24">
         <div class="w-full min-h-screen absolute top-0 gradient-bg"></div>
+        
         <!-- Hero Section -->
         <section id="overview" class="max-w-6xl mx-auto px-6">
             <header class="text-center mb-16">
-                <h1 class="text-5xl md:text-6xl font-medium text-white tracking-tight mb-4">Impart Education</h1>
-                <p class="text-neutral-500 text-lg">Impart — 2025</p>
+                <h1 class="text-5xl md:text-6xl font-medium text-white tracking-tight mb-4 italic">Impart Education</h1>
+                <p class="text-neutral-500 text-lg uppercase tracking-widest font-light">Computer Science, Decoded — 2025</p>
             </header>
         </section>
 
         <!-- Main Showcase -->
-        <section id="showcase" class="max-w-6xl mx-auto pb-24 px-6 relative">
+        <section id="showcase" class="max-w-7xl mx-auto pb-24 px-16 md:px-20 relative">
             <Showcase showBrowserChrome>
                 {#snippet children()}
-                    <!-- Impart Nav -->
-                    <nav class="absolute top-6 left-10 flex items-center gap-6 z-10">
-                        <div class="flex items-center gap-2 font-bold tracking-tighter text-xl">
-                            <span class="text-cyan-500">|</span>IMPART
+                    <!-- Impart Landing Page Mock -->
+                    <div class="w-full h-full bg-[#0a0a0a] flex flex-col items-center justify-center relative overflow-hidden p-8">
+                        <!-- BG Glow -->
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-red-500/10 blur-[100px] rounded-full"></div>
+                        
+                        <!-- Nav -->
+                        <nav class="absolute top-6 left-10 flex items-center gap-6 z-10">
+                            <div class="flex items-center gap-2 font-black tracking-tighter text-xl text-white">
+                                <span class="text-red-600">|</span>IMPART
+                            </div>
+                        </nav>
+
+                        <!-- Hero Content -->
+                        <div class="text-center z-10 max-w-xl">
+                            <div class="mb-4 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/20">
+                                <span class="flex h-1.5 w-1.5 rounded-full bg-orange-500 animate-pulse"></span>
+                                <span class="text-orange-300 text-[10px] font-bold uppercase tracking-wider">Presale Live</span>
+                            </div>
+                            <h2 class="text-5xl font-bold text-white tracking-tight leading-[1.1] mb-6">
+                                Computer Science, <br />
+                                <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400">Decoded.</span>
+                            </h2>
+                            <p class="text-neutral-400 text-sm leading-relaxed mb-8 px-10">
+                                We're building the curriculum we wish we had. 
+                                Deep theory taught with the visual clarity of a world-class production.
+                            </p>
+                            <button class="px-8 py-3 bg-white text-black rounded-lg font-bold text-sm hover:scale-105 transition-transform">
+                                Pre-order Course ($24)
+                            </button>
                         </div>
-                        <span class="text-neutral-400 text-sm font-medium border-l border-neutral-700 pl-6">Learning Platform</span>
-                    </nav>
 
-                    <!-- Main Content -->
-                    <div class="text-center max-w-2xl z-10 px-6">
-                        <h2 class="text-4xl font-bold my-8">Empowering students through interactive learning</h2>
-                        <p class="text-neutral-400 text-sm leading-relaxed mb-8 px-4 md:px-10">
-                            A comprehensive learning platform designed to make education accessible, engaging, and personalized for students of all backgrounds.
-                        </p>
-
-                        <button class="px-8 py-3 bg-gradient-to-r from-[#0ea5e9] to-[#06b6d4] rounded-full font-bold text-sm flex items-center gap-2 mx-auto hover:scale-105 transition-all duration-300 shadow-lg shadow-cyan-500/20">
-                            Explore the Platform
-                            <span class="text-lg">→</span>
-                        </button>
-
-                        <p class="mt-4 text-[10px] text-neutral-500 uppercase tracking-widest font-semibold">
-                            Available on Web, iOS, and Android<br/>
-                            Trusted by educators and students worldwide
-                        </p>
-                    </div>
-
-                    <!-- Education Illustration -->
-                    <div class="absolute left-1/4 top-1/2 -translate-y-1/2 opacity-30 grayscale hidden lg:block">
-                        <div class="text-6xl rotate-12">📚</div>
-                    </div>
-
-                    <!-- Platform Preview Image -->
-                    <div class="mt-auto w-[65%] max-w-lg mb-[-10%] pointer-events-none drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-10">
-                        <div class="w-full aspect-video bg-neutral-800/50 border border-neutral-700 rounded-lg flex items-center justify-center text-neutral-600 text-sm">
-                            [Platform Screenshot/Mockup]
+                        <!-- Twirling Tiles Placeholder (Visual Hook) -->
+                        <div class="mt-12 flex gap-2">
+                           {#each Array(5) as _, i}
+                                <div class="w-8 h-32 bg-gradient-to-b from-red-500/20 to-transparent border-t border-red-500/40 rounded-full" 
+                                     style="animation: wave 2s ease-in-out infinite {i * 0.2}s"></div>
+                           {/each}
                         </div>
                     </div>
                 {/snippet}
 
                 {#snippet leftCard()}
-                    <div class="w-6 h-6 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-xs font-bold mb-4">1</div>
-                    <p class="text-sm font-medium mb-4 text-neutral-200">
-                        Personalized Learning Paths
-                    </p>
-
-                    <div class="bg-[#171717] rounded-xl p-4 border border-neutral-800 mb-4">
-                        <div class="w-full aspect-video border-2 border-dashed border-neutral-800 rounded relative flex items-center justify-center text-xs text-neutral-600">
-                            [ Learning Path UI ]
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="p-2 rounded bg-red-500/10 border border-red-500/20 text-red-500">
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
                         </div>
+                        <span class="text-xs font-mono text-neutral-500 uppercase tracking-widest">Unit 01</span>
                     </div>
-
-                    <p class="text-[10px] text-neutral-400 leading-tight italic">
-                        AI-powered recommendations adapt to each student's learning style and pace.
+                    <p class="text-sm font-bold mb-2 text-white">The Foundations</p>
+                    <p class="text-[11px] text-neutral-400 leading-relaxed mb-6">
+                        Master the building blocks: Functions, Variables, Conditionals, and Loops.
                     </p>
+                    <div class="h-1 w-full bg-neutral-800 rounded-full overflow-hidden">
+                        <div class="h-full w-1/3 bg-red-500"></div>
+                    </div>
+                    <div class="flex justify-between mt-2">
+                        <span class="text-[9px] text-red-500 font-bold uppercase">Free Preview</span>
+                        <span class="text-[9px] text-neutral-600">33% Complete</span>
+                    </div>
                 {/snippet}
 
                 {#snippet rightCard()}
-                    <div class="flex justify-between items-start mb-4">
-                        <div class="flex items-center gap-2 text-xs font-semibold text-cyan-400">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Interactive Learning Features
-                        </div>
-                        <button class="text-neutral-500 hover:text-white transition-colors duration-300">×</button>
-                    </div>
-
-                    <h4 class="text-sm font-bold mb-2 text-white">Real-time Progress Tracking</h4>
-                    <p class="text-[11px] text-neutral-400 mb-4 leading-relaxed">
-                        Students can monitor their progress with instant feedback, detailed analytics, and milestone celebrations.
-                    </p>
-
-                    <div class="bg-[#171717] rounded-xl p-4 border border-neutral-800 aspect-video relative flex items-center justify-center mb-4">
-                        <div class="w-full h-full flex items-center justify-center">
-                            <div class="w-12 h-12 rounded-full border-2 border-cyan-500 animate-pulse shadow-[0_0_15px_rgba(6,182,212,0.5)] flex items-center justify-center">
-                                <span class="text-[10px] text-cyan-400 font-bold">85%</span>
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <span class="text-red-500 font-bold tracking-wider text-[10px] uppercase mb-1 block">Presale Pricing</span>
+                            <div class="flex items-baseline gap-2">
+                                <span class="text-3xl font-bold text-white">$24</span>
+                                <span class="text-sm text-neutral-500 line-through">$95</span>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="flex justify-between items-center">
-                        <button class="text-[10px] text-cyan-400 underline decoration-cyan-400/30 underline-offset-4 hover:text-cyan-300 transition-colors duration-300">Learn More</button>
-                        <div class="flex items-center gap-4">
-                            <div class="flex gap-1.5">
-                                <div class="w-1.5 h-1.5 rounded-full bg-cyan-500"></div>
-                                <div class="w-1.5 h-1.5 rounded-full bg-neutral-700"></div>
-                            </div>
-                            <button class="px-4 py-1.5 bg-cyan-500 hover:bg-cyan-600 rounded text-[11px] font-bold transition-all duration-300">Next</button>
+                        <div class="bg-red-500/10 text-red-400 text-[9px] font-bold px-2 py-1 rounded border border-red-500/20">
+                            75% OFF
                         </div>
                     </div>
+
+                    <ul class="space-y-3 mb-6">
+                        {#each ['Lifetime access', 'Discord access', 'Interactive Labs'] as feat}
+                        <li class="flex items-center gap-2 text-[10px] text-neutral-300 font-medium">
+                            <svg class="w-3 h-3 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                            {feat}
+                        </li>
+                        {/each}
+                    </ul>
+
+                    <button class="w-full py-2 bg-neutral-100 hover:bg-white text-black text-xs font-bold rounded transition-colors">
+                        Lock in Price
+                    </button>
                 {/snippet}
             </Showcase>
         </section>
@@ -124,25 +166,19 @@
         <section class="max-w-6xl mx-auto px-6 pb-24">
             <div class="grid md:grid-cols-2 gap-12 border-b border-neutral-900 pb-16">
                 <div>
-                    <h3 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-6 font-bold">My Role</h3>
+                    <h3 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-6 font-bold">Project Goal</h3>
                     <p class="text-sm leading-relaxed mb-8">
-                        <span class="text-white font-bold">Product Designer</span> — Impart Education Team
+                        <span class="text-white font-bold">Replace passive learning</span> with active intuition. Impart Education is designed for students who find traditional 2-hour video lectures ineffective.
                     </p>
-                    <p class="text-xs text-neutral-400 leading-relaxed mb-8">
-                        User research, learning experience design, prototyping, accessibility, usability testing
-                    </p>
-                    <h3 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-6 font-bold">Tools</h3>
+                    <h3 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-6 font-bold">Tech Stack</h3>
                     <p class="text-xs text-neutral-400 leading-relaxed">
-                        Figma, Adobe Creative Suite, User Testing Platforms, Analytics Tools
+                        SvelteKit, Tailwind CSS, GSAP for animations, Canvas API for interactive technical demos.
                     </p>
                 </div>
                 <div>
-                    <h3 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-6 font-bold">Overview</h3>
+                    <h3 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-6 font-bold">Philosophy</h3>
                     <p class="text-sm leading-relaxed text-neutral-300">
-                        Impart Education is an innovative EdTech platform designed to transform how students engage with learning materials. Our mission was to create an accessible, personalized learning experience that adapts to each student's unique needs.
-                    </p>
-                    <p class="text-sm leading-relaxed text-neutral-300 mt-4">
-                        I led the product design for the core learning platform, focusing on creating intuitive interfaces that promote engagement while maintaining accessibility standards for diverse learners.
+                        "University moves too slow. Bootcamps skip the fundamentals." Impart targets the sweet spot: deep computer science theory taught with the visual clarity of a high-end production.
                     </p>
                 </div>
             </div>
@@ -150,25 +186,22 @@
 
         <!-- Challenge Section -->
         <section id="challenge" class="max-w-6xl mx-auto py-24 px-6">
-            <div class="bg-neutral-900 border border-neutral-800 rounded-3xl p-12">
-                <h3 class="text-xs uppercase tracking-[0.2em] text-cyan-500 mb-8 font-bold">The Challenge</h3>
-                <h2 class="text-3xl font-medium text-white mb-8">Making quality education accessible and engaging for all students.</h2>
-                <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-neutral-900 border border-neutral-800 rounded-3xl p-12 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-red-500/5 blur-3xl rounded-full"></div>
+                <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-8 font-bold">The Challenge</h3>
+                <h2 class="text-3xl font-medium text-white mb-8 max-w-xl">Dry delivery and "weeder" courses make CS inaccessible.</h2>
+                <div class="grid md:grid-cols-2 gap-8 relative z-10">
                     <p class="text-neutral-400 text-sm leading-relaxed">
-                        Traditional learning platforms often fail to address diverse learning needs, creating barriers for students with different backgrounds and learning styles. We needed to design an experience that was both engaging and inclusive, while providing meaningful feedback to support student growth.
+                        Computer Science is often gate-kept by overly academic language and dry, static materials. The challenge was to take complex topics like Neural Networks and Memory Management and make them feel tactile and intuitive through interaction.
                     </p>
                     <div class="flex flex-col gap-3">
-                        <div class="bg-neutral-850 p-4 rounded-lg flex items-center gap-4">
-                            <span class="text-xl">🎓</span>
-                            <div class="text-[11px] uppercase tracking-wider font-bold text-neutral-200">Maintaining student engagement over time</div>
+                        <div class="bg-neutral-950 p-4 rounded-lg border border-white/5 flex items-center gap-4">
+                            <span class="text-red-500">✕</span>
+                            <div class="text-[11px] uppercase tracking-wider font-bold text-neutral-400">2-Hour Lecture Fatigue</div>
                         </div>
-                        <div class="bg-neutral-850 p-4 rounded-lg flex items-center gap-4">
-                            <span class="text-xl">♿</span>
-                            <div class="text-[11px] uppercase tracking-wider font-bold text-neutral-200">Ensuring accessibility for diverse learners</div>
-                        </div>
-                        <div class="bg-neutral-850 p-4 rounded-lg flex items-center gap-4">
-                            <span class="text-xl">📊</span>
-                            <div class="text-[11px] uppercase tracking-wider font-bold text-neutral-200">Measuring and improving learning outcomes</div>
+                        <div class="bg-neutral-950 p-4 rounded-lg border border-white/5 flex items-center gap-4">
+                            <span class="text-red-500">✕</span>
+                            <div class="text-[11px] uppercase tracking-wider font-bold text-neutral-400">Static, Non-Interactive Code</div>
                         </div>
                     </div>
                 </div>
@@ -177,68 +210,45 @@
 
         <!-- Solution Section -->
         <section id="solution" class="max-w-6xl mx-auto py-24 px-6">
-            <h3 class="text-xs uppercase tracking-[0.2em] text-cyan-500 mb-8 font-bold">The Solution</h3>
-            <h2 class="text-4xl font-medium text-white mb-6">An adaptive, student-centered learning platform.</h2>
-            <p class="text-neutral-400 max-w-2xl mb-12">
-                We created a comprehensive learning ecosystem that combines personalized content delivery, interactive assessments, and real-time progress tracking to create an engaging educational experience for every student.
-            </p>
+            <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-8 font-bold">The Solution</h3>
+            <h2 class="text-4xl font-medium text-white mb-12">The Impart Standard</h2>
 
-            <div class="grid md:grid-cols-3 gap-4">
-                <div class="bg-neutral-900 p-6 rounded border-l-4 border-neutral-700">
-                    <h4 class="text-sm font-bold text-white mb-2">Interactive Learning Modules</h4>
-                    <p class="text-xs text-neutral-400 leading-relaxed">
-                        Engaging multimedia content with quizzes, interactive exercises, and hands-on activities to reinforce learning.
-                    </p>
-                </div>
-                <div class="bg-neutral-900 p-6 rounded border-l-4 border-cyan-500">
-                    <h4 class="text-sm font-bold text-white mb-2">Personalized Learning Paths</h4>
-                    <p class="text-xs text-neutral-400 leading-relaxed">
-                        AI-powered recommendations that adapt to each student's pace, learning style, and areas needing improvement.
-                    </p>
-                </div>
-                <div class="bg-neutral-900 p-6 rounded border-l-4 border-neutral-700">
-                    <h4 class="text-sm font-bold text-white mb-2">Real-time Progress Insights</h4>
-                    <p class="text-xs text-neutral-400 leading-relaxed">
-                        Comprehensive analytics dashboard showing achievement milestones, strengths, and growth opportunities.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Execution Section -->
-        <section id="execution" class="max-w-6xl mx-auto py-24 px-6">
-            <h3 class="text-xs uppercase tracking-[0.2em] text-cyan-500 mb-8 font-bold">Execution</h3>
-            <h2 class="text-4xl font-medium text-white mb-12">Complete learning journey.</h2>
-            <div class="w-full aspect-[2/1] bg-neutral-900 border border-dashed border-neutral-800 rounded-xl flex items-center justify-center text-neutral-600 italic p-8">
-                <div class="text-center">
-                    <p class="text-sm mb-4">[ User Journey Diagram ]</p>
-                    <p class="text-xs text-neutral-500">Sign Up → Onboarding → Course Selection → Interactive Lessons → Practice & Quizzes → Progress Tracking → Mastery & Certification</p>
-                </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                {#each plannedModules as module}
+                    <div class="bg-neutral-900/50 p-8 rounded-2xl border border-white/5 hover:border-red-500/30 transition-colors group">
+                        <div class="text-[10px] font-mono text-neutral-500 mb-4 uppercase tracking-widest">{module.label}</div>
+                        <h4 class="text-lg font-bold text-white mb-3 group-hover:text-red-500 transition-colors">{module.title}</h4>
+                        <p class="text-xs text-neutral-400 leading-relaxed">
+                            {module.desc}
+                        </p>
+                    </div>
+                {/each}
             </div>
         </section>
 
         <!-- Impact Section -->
         <section id="impact" class="max-w-6xl mx-auto py-24 px-6">
-            <h3 class="text-xs uppercase tracking-[0.2em] text-cyan-500 mb-8 font-bold">Impact</h3>
-            <h2 class="text-4xl font-medium text-white mb-6">Transforming educational outcomes.</h2>
-            <p class="text-neutral-400 max-w-2xl mb-12">
-                The Impart Education platform has successfully helped thousands of students achieve their learning goals, with measurable improvements in engagement, comprehension, and overall academic performance across diverse student populations.
-            </p>
+            <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-8 font-bold">Social Proof</h3>
+            <h2 class="text-4xl font-medium text-white mb-12 text-center">Community Reception</h2>
 
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-8">
-                    <div class="text-5xl font-bold text-cyan-500 mb-2">85%</div>
-                    <p class="text-sm text-neutral-400">Course completion rate, significantly above industry average</p>
-                </div>
-                <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-8">
-                    <div class="text-5xl font-bold text-cyan-500 mb-2">2.5x</div>
-                    <p class="text-sm text-neutral-400">Increase in student engagement compared to traditional learning methods</p>
-                </div>
-            </div>
-
-            <div class="mt-12 bg-neutral-900 p-8 rounded-xl border-l-4 border-cyan-500 italic text-sm text-neutral-300">
-                "This platform made learning engaging and accessible. I could learn at my own pace and really understand the material instead of just memorizing it."
-                <div class="mt-4 text-[10px] not-italic text-neutral-500">— Student</div>
+                {#each testimonials as t}
+                    <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-8 relative">
+                         <div class="text-4xl absolute top-4 right-8 text-neutral-800 font-serif">"</div>
+                        <p class="text-neutral-300 text-lg leading-relaxed mb-8 italic">
+                            {t.quote}
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <div class={`w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-xs bg-gradient-to-br ${t.color}`}>
+                                {t.initials}
+                            </div>
+                            <div>
+                                <div class="text-white font-bold text-sm">{t.name}</div>
+                                <div class="text-neutral-500 text-xs">{t.role}</div>
+                            </div>
+                        </div>
+                    </div>
+                {/each}
             </div>
         </section>
     </div>
@@ -247,14 +257,19 @@
 <style>
     .gradient-bg {
         pointer-events: none;
-        background: radial-gradient(ellipse at top, rgba(0, 170, 255, 0.25) 0%, rgba(6, 182, 212, 0) 85%);
+        background: radial-gradient(ellipse at top, rgba(239, 68, 68, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
     }
 
     section {
-        scroll-margin-top: 2rem;
+        scroll-margin-top: 5rem;
     }
 
     h1, h2 {
-        letter-spacing: -0.02em;
+        letter-spacing: -0.03em;
+    }
+
+    @keyframes wave {
+        0%, 100% { transform: scaleY(1); opacity: 0.3; }
+        50% { transform: scaleY(1.5); opacity: 0.6; }
     }
 </style>
