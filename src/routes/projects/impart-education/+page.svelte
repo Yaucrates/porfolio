@@ -1,6 +1,7 @@
 <script lang="ts">
     import { navState } from "$lib/components/navigation/nav-state.svelte";
     import OnMount from "$lib/components/OnMount.svelte";
+    import Showcase from "$lib/components/Showcase.svelte";
     import { fly } from "svelte/transition";
 
     navState.sections = [
@@ -25,121 +26,98 @@
 
         <!-- Main Showcase -->
         <section id="showcase" class="max-w-6xl mx-auto pb-24 px-6 relative">
-            <!-- Browser Window Frame -->
-            <div class="relative mx-auto w-full aspect-[16/10] border border-neutral-800 rounded-[40px] bg-neutral-900/20 backdrop-blur-sm p-4 shadow-2xl overflow-hidden">
-
-                <!-- Browser Chrome -->
-                <div class="w-full h-full bg-neutral-850 rounded-xl shadow-2xl overflow-hidden flex flex-col border border-neutral-800">
-
-                    <!-- Toolbar -->
-                    <div class="h-10 bg-neutral-850 flex items-center px-4 gap-4 border-b border-neutral-800">
-                        <div class="flex gap-2">
-                            <div class="w-3 h-3 rounded-full bg-[#ff5f57]"></div>
-                            <div class="w-3 h-3 rounded-full bg-[#ffbd2e]"></div>
-                            <div class="w-3 h-3 rounded-full bg-[#28c940]"></div>
+            <Showcase showBrowserChrome>
+                {#snippet children()}
+                    <!-- Impart Nav -->
+                    <nav class="absolute top-6 left-10 flex items-center gap-6 z-10">
+                        <div class="flex items-center gap-2 font-bold tracking-tighter text-xl">
+                            <span class="text-cyan-500">|</span>IMPART
                         </div>
-                        <div class="flex-1 max-w-xl bg-[#171717] h-6 rounded-md border border-neutral-800 flex items-center px-3 gap-2">
-                            <div class="w-2 h-2 rounded-full border border-neutral-500"></div>
-                            <div class="h-2 w-32 bg-neutral-700 rounded-full"></div>
+                        <span class="text-neutral-400 text-sm font-medium border-l border-neutral-700 pl-6">Learning Platform</span>
+                    </nav>
+
+                    <!-- Main Content -->
+                    <div class="text-center max-w-2xl z-10 px-6">
+                        <h2 class="text-4xl font-bold my-8">Empowering students through interactive learning</h2>
+                        <p class="text-neutral-400 text-sm leading-relaxed mb-8 px-4 md:px-10">
+                            A comprehensive learning platform designed to make education accessible, engaging, and personalized for students of all backgrounds.
+                        </p>
+
+                        <button class="px-8 py-3 bg-gradient-to-r from-[#0ea5e9] to-[#06b6d4] rounded-full font-bold text-sm flex items-center gap-2 mx-auto hover:scale-105 transition-all duration-300 shadow-lg shadow-cyan-500/20">
+                            Explore the Platform
+                            <span class="text-lg">→</span>
+                        </button>
+
+                        <p class="mt-4 text-[10px] text-neutral-500 uppercase tracking-widest font-semibold">
+                            Available on Web, iOS, and Android<br/>
+                            Trusted by educators and students worldwide
+                        </p>
+                    </div>
+
+                    <!-- Education Illustration -->
+                    <div class="absolute left-1/4 top-1/2 -translate-y-1/2 opacity-30 grayscale hidden lg:block">
+                        <div class="text-6xl rotate-12">📚</div>
+                    </div>
+
+                    <!-- Platform Preview Image -->
+                    <div class="mt-auto w-[65%] max-w-lg mb-[-10%] pointer-events-none drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-10">
+                        <div class="w-full aspect-video bg-neutral-800/50 border border-neutral-700 rounded-lg flex items-center justify-center text-neutral-600 text-sm">
+                            [Platform Screenshot/Mockup]
+                        </div>
+                    </div>
+                {/snippet}
+
+                {#snippet leftCard()}
+                    <div class="w-6 h-6 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-xs font-bold mb-4">1</div>
+                    <p class="text-sm font-medium mb-4 text-neutral-200">
+                        Personalized Learning Paths
+                    </p>
+
+                    <div class="bg-[#171717] rounded-xl p-4 border border-neutral-800 mb-4">
+                        <div class="w-full aspect-video border-2 border-dashed border-neutral-800 rounded relative flex items-center justify-center text-xs text-neutral-600">
+                            [ Learning Path UI ]
                         </div>
                     </div>
 
-                    <!-- Web Content -->
-                    <div class="flex-1 bg-[#0c0c0c] relative flex flex-col items-center pt-12 overflow-hidden">
+                    <p class="text-[10px] text-neutral-400 leading-tight italic">
+                        AI-powered recommendations adapt to each student's learning style and pace.
+                    </p>
+                {/snippet}
 
-                        <!-- Impart Nav -->
-                        <nav class="absolute top-6 left-10 flex items-center gap-6 z-10">
-                            <div class="flex items-center gap-2 font-bold tracking-tighter text-xl">
-                                <span class="text-cyan-500">|</span>IMPART
+                {#snippet rightCard()}
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex items-center gap-2 text-xs font-semibold text-cyan-400">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                            Interactive Learning Features
+                        </div>
+                        <button class="text-neutral-500 hover:text-white transition-colors duration-300">×</button>
+                    </div>
+
+                    <h4 class="text-sm font-bold mb-2 text-white">Real-time Progress Tracking</h4>
+                    <p class="text-[11px] text-neutral-400 mb-4 leading-relaxed">
+                        Students can monitor their progress with instant feedback, detailed analytics, and milestone celebrations.
+                    </p>
+
+                    <div class="bg-[#171717] rounded-xl p-4 border border-neutral-800 aspect-video relative flex items-center justify-center mb-4">
+                        <div class="w-full h-full flex items-center justify-center">
+                            <div class="w-12 h-12 rounded-full border-2 border-cyan-500 animate-pulse shadow-[0_0_15px_rgba(6,182,212,0.5)] flex items-center justify-center">
+                                <span class="text-[10px] text-cyan-400 font-bold">85%</span>
                             </div>
-                            <span class="text-neutral-400 text-sm font-medium border-l border-neutral-700 pl-6">Learning Platform</span>
-                        </nav>
-
-                        <!-- Main Content -->
-                        <div class="text-center max-w-2xl z-10 px-6">
-                            <h2 class="text-4xl font-bold my-8">Empowering students through interactive learning</h2>
-                            <p class="text-neutral-400 text-sm leading-relaxed mb-8 px-4 md:px-10">
-                                A comprehensive learning platform designed to make education accessible, engaging, and personalized for students of all backgrounds.
-                            </p>
-
-                            <button class="px-8 py-3 bg-gradient-to-r from-[#0ea5e9] to-[#06b6d4] rounded-full font-bold text-sm flex items-center gap-2 mx-auto hover:scale-105 transition-all duration-300 shadow-lg shadow-cyan-500/20">
-                                Explore the Platform
-                                <span class="text-lg">→</span>
-                            </button>
-
-                            <p class="mt-4 text-[10px] text-neutral-500 uppercase tracking-widest font-semibold">
-                                Available on Web, iOS, and Android<br/>
-                                Trusted by educators and students worldwide
-                            </p>
                         </div>
+                    </div>
 
-                        <!-- Education Illustration -->
-                        <div class="absolute left-1/4 top-1/2 -translate-y-1/2 opacity-30 grayscale hidden lg:block">
-                            <div class="text-6xl rotate-12">📚</div>
-                        </div>
-
-                        <!-- Platform Preview Image -->
-                        <div class="mt-auto w-[65%] max-w-lg mb-[-10%] pointer-events-none drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-10">
-                            <div class="w-full aspect-video bg-neutral-800/50 border border-neutral-700 rounded-lg flex items-center justify-center text-neutral-600 text-sm">
-                                [Platform Screenshot/Mockup]
+                    <div class="flex justify-between items-center">
+                        <button class="text-[10px] text-cyan-400 underline decoration-cyan-400/30 underline-offset-4 hover:text-cyan-300 transition-colors duration-300">Learn More</button>
+                        <div class="flex items-center gap-4">
+                            <div class="flex gap-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-cyan-500"></div>
+                                <div class="w-1.5 h-1.5 rounded-full bg-neutral-700"></div>
                             </div>
+                            <button class="px-4 py-1.5 bg-cyan-500 hover:bg-cyan-600 rounded text-[11px] font-bold transition-all duration-300">Next</button>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <!-- LEFT FLOATING CARD -->
-            <div class="hidden md:block absolute -left-10 top-1/2 -translate-y-1/2 w-64 bg-neutral-900/90 backdrop-blur-xl border border-neutral-800 rounded-2xl p-5 shadow-lg shadow-neutral-700/50 z-20">
-                <div class="w-6 h-6 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-xs font-bold mb-4">1</div>
-                <p class="text-sm font-medium mb-4 text-neutral-200">
-                    Personalized Learning Paths
-                </p>
-
-                <div class="bg-[#171717] rounded-xl p-4 border border-neutral-800 mb-4">
-                    <div class="w-full aspect-video border-2 border-dashed border-neutral-800 rounded relative flex items-center justify-center text-xs text-neutral-600">
-                        [ Learning Path UI ]
-                    </div>
-                </div>
-
-                <p class="text-[10px] text-neutral-400 leading-tight italic">
-                    AI-powered recommendations adapt to each student's learning style and pace.
-                </p>
-            </div>
-
-            <!-- RIGHT FLOATING CARD -->
-            <div class="hidden md:block absolute -right-10 bottom-10 w-80 bg-neutral-900/90 backdrop-blur-xl border border-neutral-800 rounded-2xl p-5 shadow-lg shadow-neutral-700/50 z-20">
-                <div class="flex justify-between items-start mb-4">
-                    <div class="flex items-center gap-2 text-xs font-semibold text-cyan-400">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                        Interactive Learning Features
-                    </div>
-                    <button class="text-neutral-500 hover:text-white transition-colors duration-300">×</button>
-                </div>
-
-                <h4 class="text-sm font-bold mb-2 text-white">Real-time Progress Tracking</h4>
-                <p class="text-[11px] text-neutral-400 mb-4 leading-relaxed">
-                    Students can monitor their progress with instant feedback, detailed analytics, and milestone celebrations.
-                </p>
-
-                <div class="bg-[#171717] rounded-xl p-4 border border-neutral-800 aspect-video relative flex items-center justify-center mb-4">
-                    <div class="w-full h-full flex items-center justify-center">
-                        <div class="w-12 h-12 rounded-full border-2 border-cyan-500 animate-pulse shadow-[0_0_15px_rgba(6,182,212,0.5)] flex items-center justify-center">
-                            <span class="text-[10px] text-cyan-400 font-bold">85%</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex justify-between items-center">
-                    <button class="text-[10px] text-cyan-400 underline decoration-cyan-400/30 underline-offset-4 hover:text-cyan-300 transition-colors duration-300">Learn More</button>
-                    <div class="flex items-center gap-4">
-                        <div class="flex gap-1.5">
-                            <div class="w-1.5 h-1.5 rounded-full bg-cyan-500"></div>
-                            <div class="w-1.5 h-1.5 rounded-full bg-neutral-700"></div>
-                        </div>
-                        <button class="px-4 py-1.5 bg-cyan-500 hover:bg-cyan-600 rounded text-[11px] font-bold transition-all duration-300">Next</button>
-                    </div>
-                </div>
-            </div>
+                {/snippet}
+            </Showcase>
         </section>
 
         <!-- Project Details -->
