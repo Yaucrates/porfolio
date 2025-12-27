@@ -11,15 +11,15 @@
         // Configuration for automatic ETA
         initial_eta = 0.5;
         decay_rate = 0.05;
-        epoch = 0;
+        epoch = $state(0);
         
         eta = $state(0.5);
         train = $state(false);
 
         layer_count: number;
         sizes = [2, 3, 2];
-        weights: Matrix[] = $state([]);
-        biases: Matrix[] = $state([]);
+        weights: Matrix[] = [];
+        biases: Matrix[] = [];
 
         constructor() {
             this.layer_count = this.sizes.length;

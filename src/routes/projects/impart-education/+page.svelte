@@ -17,6 +17,11 @@
     ];
 </script>
 
+<svelte:head>
+	<title>Impart Education | Case Study</title>
+	<meta name="description" content="This is a case study breaking down Impart Education, a side project that I've been working on." />
+</svelte:head>
+
 <OnMount>
     <div class="w-full min-h-screen absolute top-0 gradient-bg"></div>
     <div in:fly={{ y: 200, duration: 1300 }} class="text-[#e5e5e5] min-h-screen pt-44 pb-24">
@@ -30,100 +35,102 @@
             </header>
 
             <!-- Main Showcase -->
-            <Showcase showBrowserChrome>
-                {#snippet children()}
-                    <!-- Impart Landing Page Mock -->
-                    <div class="w-full h-full bg-[#0a0a0a] flex flex-col items-center justify-center relative overflow-hidden pt-20 p-8">
-                        <!-- BG Glow -->
-                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-red-500/10 blur-[100px] rounded-full"></div>
+            <div class="w-full p-0 md:p-6">
+                <Showcase showBrowserChrome>
+                    {#snippet children()}
+                        <!-- Impart Landing Page Mock -->
+                        <div class="w-full h-full bg-[#0a0a0a] flex flex-col items-center justify-center relative overflow-hidden pt-20 p-8">
+                            <!-- BG Glow -->
+                            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-red-500/10 blur-[100px] rounded-full"></div>
 
-                        <!-- Nav -->
-                        <nav class="absolute top-6 left-10 flex items-center gap-6 z-10">
-                            <div class="flex items-center gap-2 font-black tracking-tighter text-xl text-white">
-                                <span class="text-red-600">|</span>IMPART
+                            <!-- Nav -->
+                            <nav class="absolute top-6 left-10 flex items-center gap-6 z-10">
+                                <div class="flex items-center gap-2 font-black tracking-tighter text-xl text-white">
+                                    <span class="text-red-600">|</span>IMPART
+                                </div>
+                            </nav>
+
+                            <!-- Hero Content -->
+                            <div class="text-center z-10 max-w-xl">
+                                <div class="mb-4 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/20">
+                                    <span class="flex h-1.5 w-1.5 rounded-full bg-orange-500 animate-pulse"></span>
+                                    <span class="text-orange-300 text-[10px] font-bold uppercase tracking-wider">Presale Coming Soon</span>
+                                </div>
+                                <h2 class="text-5xl font-bold text-white tracking-tight leading-[1.1] mb-6">
+                                    Computer Science, <br />
+                                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400">Decoded.</span>
+                                </h2>
+                                <p class="text-neutral-400 text-sm leading-relaxed mb-8 px-10">
+                                    We're building the curriculum we wish we had.
+                                    Deep theory taught with the visual clarity of a world-class production.
+                                </p>
+                                <button class="px-8 py-3 bg-white text-black rounded-lg font-bold text-sm hover:scale-105 transition-transform">
+                                    Notify Me ($24 Early Bird)
+                                </button>
                             </div>
-                        </nav>
 
-                        <!-- Hero Content -->
-                        <div class="text-center z-10 max-w-xl">
-                            <div class="mb-4 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/20">
-                                <span class="flex h-1.5 w-1.5 rounded-full bg-orange-500 animate-pulse"></span>
-                                <span class="text-orange-300 text-[10px] font-bold uppercase tracking-wider">Presale Coming Soon</span>
-                            </div>
-                            <h2 class="text-5xl font-bold text-white tracking-tight leading-[1.1] mb-6">
-                                Computer Science, <br />
-                                <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400">Decoded.</span>
-                            </h2>
-                            <p class="text-neutral-400 text-sm leading-relaxed mb-8 px-10">
-                                We're building the curriculum we wish we had.
-                                Deep theory taught with the visual clarity of a world-class production.
-                            </p>
-                            <button class="px-8 py-3 bg-white text-black rounded-lg font-bold text-sm hover:scale-105 transition-transform">
-                                Notify Me ($24 Early Bird)
-                            </button>
-                        </div>
-
-                        <!-- Twirling Tiles Placeholder (Visual Hook) -->
-                        <div class="mt-12 flex gap-2">
-                           {#each Array(5) as _, i}
-                                <div class="w-8 h-32 bg-gradient-to-b from-red-500/20 to-transparent border-t border-red-500/40 rounded-full"
-                                     style="animation: wave 2s ease-in-out infinite {i * 0.2}s"></div>
-                           {/each}
-                        </div>
-                    </div>
-                {/snippet}
-
-                {#snippet leftCard()}
-                    <div class="flex items-center gap-2 mb-4">
-                        <div class="p-2 rounded bg-red-500/10 border border-red-500/20 text-red-500">
-                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-                        </div>
-                        <span class="text-xs font-mono text-neutral-500 uppercase tracking-widest">Unit 01</span>
-                    </div>
-                    <p class="text-sm font-bold mb-2 text-white">The Foundations</p>
-                    <p class="text-[11px] text-neutral-400 leading-relaxed mb-6">
-                        Master the building blocks: Functions, Variables, Conditionals, and Loops.
-                    </p>
-                    <div class="h-1 w-full bg-neutral-800 rounded-full overflow-hidden">
-                        <div class="h-full w-1/3 bg-red-500"></div>
-                    </div>
-                    <div class="flex justify-between mt-2">
-                        <span class="text-[9px] text-red-500 font-bold uppercase">Work in Progress</span>
-                        <span class="text-[9px] text-neutral-600">33% Complete</span>
-                    </div>
-                {/snippet}
-
-                {#snippet rightCard()}
-                    <div class="flex justify-between items-start mb-6">
-                        <div>
-                            <span class="text-red-500 font-bold tracking-wider text-[10px] uppercase mb-1 block">Presale Pricing</span>
-                            <div class="flex items-baseline gap-2">
-                                <span class="text-3xl font-bold text-white">$24</span>
-                                <span class="text-sm text-neutral-500 line-through">$95</span>
+                            <!-- Twirling Tiles Placeholder (Visual Hook) -->
+                            <div class="mt-12 flex gap-2">
+                            {#each Array(5) as _, i}
+                                    <div class="w-8 h-32 bg-gradient-to-b from-red-500/20 to-transparent border-t border-red-500/40 rounded-full"
+                                        style="animation: wave 2s ease-in-out infinite {i * 0.2}s"></div>
+                            {/each}
                             </div>
                         </div>
-                        <div class="bg-red-500/10 text-red-400 text-[9px] font-bold px-2 py-1 rounded border border-red-500/20">
-                            75% OFF
+                    {/snippet}
+
+                    {#snippet leftCard()}
+                        <div class="flex items-center gap-2 mb-4">
+                            <div class="p-2 rounded bg-red-500/10 border border-red-500/20 text-red-500">
+                                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+                            </div>
+                            <span class="text-xs font-mono text-neutral-500 uppercase tracking-widest">Unit 01</span>
                         </div>
-                    </div>
+                        <p class="text-sm font-bold mb-2 text-white">The Foundations</p>
+                        <p class="text-[11px] text-neutral-400 leading-relaxed mb-6">
+                            Master the building blocks: Functions, Variables, Conditionals, and Loops.
+                        </p>
+                        <div class="h-1 w-full bg-neutral-800 rounded-full overflow-hidden">
+                            <div class="h-full w-1/3 bg-red-500"></div>
+                        </div>
+                        <div class="flex justify-between mt-2">
+                            <span class="text-[9px] text-red-500 font-bold uppercase">Work in Progress</span>
+                            <span class="text-[9px] text-neutral-600">33% Complete</span>
+                        </div>
+                    {/snippet}
 
-                    <ul class="space-y-3 mb-6">
-                        {#each ['Lifetime access', 'Discord access', 'Interactive Labs'] as feat}
-                        <li class="flex items-center gap-2 text-[10px] text-neutral-300 font-medium">
-                            <svg class="w-3 h-3 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
-                            {feat}
-                        </li>
-                        {/each}
-                    </ul>
+                    {#snippet rightCard()}
+                        <div class="flex justify-between items-start mb-6">
+                            <div>
+                                <span class="text-red-500 font-bold tracking-wider text-[10px] uppercase mb-1 block">Presale Pricing</span>
+                                <div class="flex items-baseline gap-2">
+                                    <span class="text-3xl font-bold text-white">$24</span>
+                                    <span class="text-sm text-neutral-500 line-through">$95</span>
+                                </div>
+                            </div>
+                            <div class="bg-red-500/10 text-red-400 text-[9px] font-bold px-2 py-1 rounded border border-red-500/20">
+                                75% OFF
+                            </div>
+                        </div>
 
-                    <button class="w-full py-2 bg-neutral-100 hover:bg-white text-black text-xs font-bold rounded transition-colors">
-                        Join Waitlist
-                    </button>
-                {/snippet}
-            </Showcase>
+                        <ul class="space-y-3 mb-6">
+                            {#each ['Lifetime access', 'Discord access', 'Interactive Labs'] as feat}
+                            <li class="flex items-center gap-2 text-[10px] text-neutral-300 font-medium">
+                                <svg class="w-3 h-3 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                                {feat}
+                            </li>
+                            {/each}
+                        </ul>
+
+                        <button class="w-full py-2 bg-neutral-100 hover:bg-white text-black text-xs font-bold rounded transition-colors">
+                            Join Waitlist
+                        </button>
+                    {/snippet}
+                </Showcase>
+            </div>
 
             <!-- Project Meta -->
-            <div class="max-w-4xl mx-auto mt-8 grid md:grid-cols-3 gap-8 border-t border-neutral-900 pt-12">
+            <div class="max-w-4xl mx-auto mt-8 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-neutral-900 pt-12">
                 <div>
                     <h3 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-3 font-bold">Scope</h3>
                     <p class="text-sm text-neutral-400">Full-stack Side Project & Curriculum Design</p>
@@ -135,6 +142,22 @@
                 <div>
                     <h3 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-3 font-bold">Stack</h3>
                     <p class="text-sm text-neutral-400">Node.js, SvelteKit, Tailwind CSS, PostgreSQL, TypeScript, Figma, Stripe</p>
+                </div>
+                <div>
+                    <h3 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-3 font-bold">Links</h3>
+                    <div class="flex flex-col gap-2">
+                        <a 
+                            href="https://dormdojo.vercel.app/"
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="text-sm text-neutral-400 hover:text-white transition-colors flex items-center gap-2 group"
+                        >
+                            Live Site 
+                            <svg class="w-3 h-3 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
 
