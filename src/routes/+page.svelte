@@ -25,7 +25,8 @@
             id: 'tva',
             name: 'Tennessee Valley Authority',
             status: 'past',
-            logoSrc: '/experience-images/TennesseeValleyAuthorityLogo.svg'
+            logoSrc: '/experience-images/TennesseeValleyAuthorityLogo.svg',
+            link: 'https://www.tva.com/'
         }
     ];
 
@@ -46,7 +47,7 @@
             description: 'A headless e-commerce storefront built with the Shopify API. The original store is no longer active, so the live demo uses placeholder products.',
             techStack: ['Shopify API', 'e-commerce', 'headless', 'storefront'],
             imageSrc: '/projects/DormDojoHomepage.webp',
-            link: 'https://github.com/Yaucrates/dormdojo'
+            link: 'https://dormdojo.vercel.app/'
         }
     ];
 
@@ -70,7 +71,7 @@
             <h1 class="text-5xl md:text-4xl font-bold text-neutral-200">Hey! I'm <span class="text-cyan-500">Yousif Abdulhussein</span></h1>
             <p class="text-lg text-neutral-400">
                 I'm currently working as a SWE @ <a href="https://www.asknexus.ai/" class="text-cyan-500 underline decoration-dashed decoration-1 transition-all duration-300">Nexus</a>.
-                I love writing software actually helps people. Currently, I’m diving into the
+                I love writing software that actually helps people. Currently, I’m diving into the
                 world of indie hacking and am focused on creating software that empowers people
                 to take control of their own <a href="https://www.imparteducation.com/" class="text-cyan-500 underline decoration-dashed decoration-1 transition-all duration-300">education</a>.
             </p>

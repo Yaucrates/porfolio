@@ -10,7 +10,7 @@
         { id: "highlights", label: "Highlights" },
         { id: "context", label: "Context" },
         { id: "problem", label: "The Problem" },
-        { id: "challenge", label: "The Challenge" },
+        { id: "objective", label: "The Objective" },
         { id: "principles", label: "Principles" },
         { id: "vizulaizer", label: "The Vizualizer" },
         { id: "impact", label: "Current Status" }
@@ -148,10 +148,10 @@
                 </p>
 
                 <p class="text-lg">
-                    I've spent my spare hours creating a complete demo module called "Neural Networks from Scratch" to prove the 
-                    interactive concept. This isn't a sample lesson; it's a functional, interactive learning experience 
-                    featuring custom visualizations and GPU-accelerated graphics. This demo is the cornerstone of my 
-                    presale strategy: showing that there is a demand for high-end technical education.
+                    I've spent my spare hours creating a complete demo course called "Neural Networks from Scratch" to
+                    prove the interactive concept. This isn't a sample lesson; it's a functional, interactive learning
+                    experience featuring custom visualizations and GPU-accelerated graphics. This demo is the cornerstone
+                    of my presale strategy: showing that there is a demand for high-end technical education.
                 </p>
 
                 <p class="text-lg">
@@ -225,7 +225,7 @@
 
         <!-- 03. THE PROBLEM -->
         <section id="problem" class="max-w-6xl mx-auto px-6 py-24">
-            <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-4 font-bold">03. The Challenge</h3>
+            <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-4 font-bold">03. The Problem</h3>
             <h2 class="text-4xl font-medium text-white mb-8">Establishing trust as an independent creator.</h2>
             <p class="text-neutral-400 leading-relaxed max-w-3xl mb-12">
                 Preparing for a presale as a solo dev means solving several problems at once: establishing credibility, choosing the right 
@@ -262,8 +262,8 @@
             </div>
         </section>
 
-        <!-- 04. THE CHALLENGE -->
-        <section id="challenge" class="max-w-6xl mx-auto py-24 px-6">
+        <!-- 04. THE OBJECTIVE -->
+        <section id="objective" class="max-w-6xl mx-auto py-24 px-6">
             <div class="bg-neutral-900 border border-neutral-800 rounded-3xl p-12 relative overflow-hidden">
                 <div class="absolute top-0 right-0 w-64 h-64 bg-red-500/5 blur-3xl rounded-full"></div>
                 <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-4 font-bold">04. The Objective</h3>
