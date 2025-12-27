@@ -5,23 +5,6 @@
     import Showcase from "$lib/components/Showcase.svelte";
     import { fly } from "svelte/transition";
 
-    const testimonials = [
-        {
-            name: "Alex Rivera",
-            role: "Self-Taught Dev",
-            initials: "AR",
-            quote: "I’ve spent years in tutorial hell. Impart’s approach to memory management was the first time the concepts actually 'clicked' for me.",
-            color: "from-red-600 to-orange-600"
-        },
-        {
-            name: "Jordan Smith",
-            role: "Software Engineer",
-            initials: "JS",
-            quote: "The production value here is insane. It’s like watching a high-end documentary, but you can actually play with the code as it runs.",
-            color: "from-zinc-700 to-zinc-900"
-        }
-    ];
-
     navState.sections = [
         { id: "overview", label: "Overview" },
         { id: "highlights", label: "Highlights" },
@@ -29,10 +12,8 @@
         { id: "problem", label: "The Problem" },
         { id: "challenge", label: "The Challenge" },
         { id: "principles", label: "Principles" },
-        { id: "backbone", label: "The Backbone" },
-        { id: "iteration", label: "Iteration" },
-        { id: "solution", label: "The Solution" },
-        { id: "impact", label: "Impact" }
+        { id: "vizulaizer", label: "The Vizualizer" },
+        { id: "impact", label: "Current Status" }
     ];
 </script>
 
@@ -44,8 +25,8 @@
         <section id="overview" class="max-w-6xl mx-auto px-6">
             <header class="text-center mb-16">
                 <h1 class="text-5xl md:text-6xl font-medium text-white tracking-tight mb-4 italic">Impart Education</h1>
-                <p class="text-neutral-500 text-lg uppercase tracking-widest font-light">From Concept to Presale</p>
-                <p class="text-neutral-600 text-sm mt-4 font-medium">Full Stack Engineer — May 2025</p>
+                <p class="text-neutral-500 text-lg uppercase tracking-widest font-light">A Side Project in Development</p>
+                <p class="text-neutral-600 text-sm mt-4 font-medium">Independent Developer — May 2025 to Present</p>
             </header>
 
             <!-- Main Showcase -->
@@ -67,7 +48,7 @@
                         <div class="text-center z-10 max-w-xl">
                             <div class="mb-4 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/20">
                                 <span class="flex h-1.5 w-1.5 rounded-full bg-orange-500 animate-pulse"></span>
-                                <span class="text-orange-300 text-[10px] font-bold uppercase tracking-wider">Presale Live</span>
+                                <span class="text-orange-300 text-[10px] font-bold uppercase tracking-wider">Presale Coming Soon</span>
                             </div>
                             <h2 class="text-5xl font-bold text-white tracking-tight leading-[1.1] mb-6">
                                 Computer Science, <br />
@@ -78,7 +59,7 @@
                                 Deep theory taught with the visual clarity of a world-class production.
                             </p>
                             <button class="px-8 py-3 bg-white text-black rounded-lg font-bold text-sm hover:scale-105 transition-transform">
-                                Pre-order Course ($24)
+                                Notify Me ($24 Early Bird)
                             </button>
                         </div>
 
@@ -107,7 +88,7 @@
                         <div class="h-full w-1/3 bg-red-500"></div>
                     </div>
                     <div class="flex justify-between mt-2">
-                        <span class="text-[9px] text-red-500 font-bold uppercase">Free Preview</span>
+                        <span class="text-[9px] text-red-500 font-bold uppercase">Work in Progress</span>
                         <span class="text-[9px] text-neutral-600">33% Complete</span>
                     </div>
                 {/snippet}
@@ -136,7 +117,7 @@
                     </ul>
 
                     <button class="w-full py-2 bg-neutral-100 hover:bg-white text-black text-xs font-bold rounded transition-colors">
-                        Lock in Price
+                        Join Waitlist
                     </button>
                 {/snippet}
             </Showcase>
@@ -145,11 +126,11 @@
             <div class="max-w-4xl mx-auto mt-8 grid md:grid-cols-3 gap-8 border-t border-neutral-900 pt-12">
                 <div>
                     <h3 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-3 font-bold">Scope</h3>
-                    <p class="text-sm text-neutral-400">Full-stack Platform Development & Curriculum Design</p>
+                    <p class="text-sm text-neutral-400">Full-stack Side Project & Curriculum Design</p>
                 </div>
                 <div>
                     <h3 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-3 font-bold">Timeline</h3>
-                    <p class="text-sm text-neutral-400">4 Months (Discovery to Pre-sale Launch)</p>
+                    <p class="text-sm text-neutral-400">Ongoing (Worked on in spare time)</p>
                 </div>
                 <div>
                     <h3 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-3 font-bold">Stack</h3>
@@ -160,27 +141,23 @@
             <!-- Overview Text -->
             <div class="max-w-4xl mx-auto space-y-6 mt-16 text-neutral-300 leading-relaxed">
                 <p class="text-lg">
-                    How do you sell a course that doesn't exist yet? This was the challenge I faced with Impart Education.
-                    As an unknown creator with no track record, I needed to convince people to pay upfront for a vision of
-                    better technical education. Most presales rely on polished mockups and marketing promises. I took a
-                    different approach: <span class="text-white font-bold">I built the product first.</span>
+                    How do you build a premium educational platform in your spare time? Impart Education is a passion project focused on 
+                    creating the real-world curriculum I wish I had. Currently, I am preparing for a presale to validate 
+                    interest in a full "Introduction to Programming" course. Instead of just making promises, 
+                    <span class="text-white font-bold">I am building the core product first.</span>
                 </p>
 
                 <p class="text-lg">
-                    Over four months, I created a complete demo course—Neural Networks from Scratch—to prove the concept.
-                    This wasn't a teaser or a sample lesson. It was a fully functional, interactive learning experience
-                    featuring custom-built visualizations, GPU-accelerated graphics, and a teaching methodology that made
-                    complex concepts intuitive. The demo course became the centerpiece of my presale strategy: if people
-                    could see and interact with the real thing, they wouldn't need to trust promises. They could trust
-                    the evidence.
+                    I've spent my spare hours creating a complete demo module called "Neural Networks from Scratch" to prove the 
+                    interactive concept. This isn't a sample lesson; it's a functional, interactive learning experience 
+                    featuring custom visualizations and GPU-accelerated graphics. This demo is the cornerstone of my 
+                    presale strategy: showing that there is a demand for high-end technical education.
                 </p>
 
                 <p class="text-lg">
-                    The presale was actually for a different course, Introduction to Programming, but the neural networks
-                    demo showcased what made Impart different. It combined three elements that had to work in harmony:
-                    exceptional course content (2+ months of curriculum design), cutting-edge interactive platform features
-                    (PixiJS visualizations, custom graphing library), and professional design that signaled credibility.
-                    The result: we reached our funding goal the week of the launch.
+                    While the eventual goal is a full-scale curriculum, I am currently focused on selling real, 
+                    tangible learning modules. The project combines three major efforts: curriculum design, 
+                    a custom interactive platform (using PixiJS), and a professional aesthetic.
                 </p>
             </div>
         </section>
@@ -188,11 +165,11 @@
         <!-- 01. HIGHLIGHTS -->
         <section id="highlights" class="max-w-6xl mx-auto px-6 py-24">
             <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-4 font-bold">01. Highlights</h3>
-            <h2 class="text-4xl font-medium text-white mb-8">Three pillars of a successful presale.</h2>
+            <h2 class="text-4xl font-medium text-white mb-8">Pillars of the development journey.</h2>
             <p class="text-neutral-400 leading-relaxed max-w-3xl mb-12">
-                The presale success came from balancing three elements: a complete demo course that proved the teaching methodology,
-                a cutting-edge interactive platform that showcased technical innovation, and professional design that built trust
-                and credibility with potential customers.
+                The preparation for the upcoming presale focuses on three areas: a complete demo course that proves the teaching methodology,
+                an interactive platform that showcases technical innovation, and a professional design that builds trust
+                with early adopters.
             </p>
 
             <div class="grid md:grid-cols-3 gap-8">
@@ -217,7 +194,7 @@
                         <svg class="w-6 h-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
                     </div>
                     <h4 class="text-white font-bold mb-3">The Professional Polish</h4>
-                    <p class="text-sm text-neutral-400 leading-relaxed">Typography, spacing, and animations were made to give a premium feel to the platform. The design signaled credibility and trustworthiness. This was especially essential for an unknown creator asking people to pay upfront for a course that didn't exist yet.</p>
+                    <p class="text-sm text-neutral-400 leading-relaxed">Typography, spacing, and animations were made to give a premium feel to the platform. The design is meant to signal credibility and trustworthiness. This is especially essential for an unknown creator asking people to pay upfront for a course that doesn't exist yet.</p>
                 </div>
             </div>
         </section>
@@ -234,13 +211,13 @@
                 </p>
 
                 <p class="text-neutral-400 leading-relaxed mb-12 max-w-3xl relative z-10">
-                    Before building anything, I spent weeks in online communities researching what actually frustrated learners. I noticed a recurring pattern: people wanted to self-study college-level computer science courses and were willing to invest in quality education when they could see real value. People buy expensive textbooks and course certificates. The problem wasn't the price but the product. Traditional learning material promised to teach concepts but didn't deliver everything they were seeking.
+                    Before building anything, I spent weeks in online communities researching what actually frustrated learners. I noticed a recurring pattern: people wanted to self-study college-level courses and were willing to invest in quality education when they could see real value. People buy expensive textbooks and course certificates. The problem wasn't the price but the product. Traditional learning material promised to teach concepts but didn't deliver everything they were seeking.
                 </p>
 
                 <div class="mt-12 p-8 bg-red-500/5 border border-red-500/20 rounded-xl relative z-10">
-                    <h4 class="text-red-500 font-bold mb-3 text-sm uppercase tracking-wider">The Insight</h4>
+                    <h4 class="text-red-500 font-bold mb-3 text-sm uppercase tracking-wider">The Strategy</h4>
                     <p class="text-neutral-300 leading-relaxed">
-                        People were willing to pay good prices for great courses, if I could prove it what I was offering was real. The presale strategy became clear: build a complete demo course that showcased the methodology, then ask people to fund the full curriculum. If the demo delivered on the promise of an intuitive premium learning, the presale would fund itself. If it didn't, I'd know before wasting months building the wrong thing.
+                        The upcoming presale is the ultimate test. By building a high-fidelity demo course first, I am letting the product prove its own worth. If the interactive demo resonates with learners, it will fund the development of the full curriculum. If not, I'll have learned valuable lessons without over-committing.
                     </p>
                 </div>
             </div>
@@ -248,39 +225,38 @@
 
         <!-- 03. THE PROBLEM -->
         <section id="problem" class="max-w-6xl mx-auto px-6 py-24">
-            <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-4 font-bold">03. The Problem</h3>
-            <h2 class="text-4xl font-medium text-white mb-8">The presale paradox: proving quality before it exists.</h2>
+            <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-4 font-bold">03. The Challenge</h3>
+            <h2 class="text-4xl font-medium text-white mb-8">Establishing trust as an independent creator.</h2>
             <p class="text-neutral-400 leading-relaxed max-w-3xl mb-12">
-                Launching a presale as an unknown creator meant solving three interconnected challenges: establishing credibility
-                without a track record, choosing the right demo to showcase the methodology, and delivering something complete
-                without building the entire product first.
+                Preparing for a presale as a solo dev means solving several problems at once: establishing credibility, choosing the right 
+                starting point to showcase the methodology, and managing a limited timeline around a full-time schedule.
             </p>
 
             <div class="grid md:grid-cols-3 gap-6">
                 <div class="bg-neutral-900/50 border border-white/5 rounded-xl p-6">
                     <div class="flex items-center gap-3 mb-4">
-                        <h4 class="text-white font-bold text-sm">Proving Quality Without Track Record</h4>
+                        <h4 class="text-white font-bold text-sm">Proving Polish</h4>
                     </div>
                     <p class="text-sm text-neutral-400 leading-relaxed">
-                        How do you convince people to pay upfront for a course that doesn't exist from a creator they've never heard of? Marketing copy wouldn't cut it. I needed to show, not tell—which meant building real, working software before asking for money.
+                        In an era of AI-generated content, quality is the only differentiator. My focus is on ensuring every interaction feels intentional and every visualization is accurate.
                     </p>
                 </div>
 
                 <div class="bg-neutral-900/50 border border-white/5 rounded-xl p-6">
                     <div class="flex items-center gap-3 mb-4">
-                        <h4 class="text-white font-bold text-sm">Building the Right Demo</h4>
+                        <h4 class="text-white font-bold text-sm">Demo vs. Distraction</h4>
                     </div>
                     <p class="text-sm text-neutral-400 leading-relaxed">
-                        The demo topic needed to be impressive enough to wow people but complex enough to showcase the teaching methodology. Too simple and it wouldn't demonstrate the value. Too complex and it would take months to build. Neural networks hit the sweet spot.
+                        The demo needs to be complex enough to prove the platform works, but focused enough to actually ship. Neural networks provided the perfect technical "wow" factor.
                     </p>
                 </div>
 
                 <div class="bg-neutral-900/50 border border-white/5 rounded-xl p-6">
                     <div class="flex items-center gap-3 mb-4">
-                        <h4 class="text-white font-bold text-sm">Balancing Scope and Timeline</h4>
+                        <h4 class="text-white font-bold text-sm">Presale Transparency</h4>
                         </div>
                     <p class="text-sm text-neutral-400 leading-relaxed">
-                        I couldn't spend a year building the full Introduction to Programming curriculum before validating demand. But a half-baked demo would undermine trust. The solution: ship one complete, polished module that proved the concept definitively.
+                        I am being fully transparent about the project's status. The presale is to fund the completion of an Introduction to Programming course.
                     </p>
                 </div>
             </div>
@@ -290,9 +266,9 @@
         <section id="challenge" class="max-w-6xl mx-auto py-24 px-6">
             <div class="bg-neutral-900 border border-neutral-800 rounded-3xl p-12 relative overflow-hidden">
                 <div class="absolute top-0 right-0 w-64 h-64 bg-red-500/5 blur-3xl rounded-full"></div>
-                <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-4 font-bold">04. The Challenge</h3>
+                <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-4 font-bold">04. The Objective</h3>
                 <h2 class="text-3xl font-medium text-white mb-12 max-w-2xl leading-tight">
-                    Build a demo course compelling enough to fund the development of the real product—without knowing if anyone would actually pay for it.
+                    Build an interactive experience compelling enough to validate a full-scale educational platform.
                 </h2>
             </div>
         </section>
@@ -300,9 +276,9 @@
         <!-- 05. NORTH STAR PRINCIPLES -->
         <section id="principles" class="max-w-6xl mx-auto px-6 py-24">
             <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-4 font-bold">05. Principles</h3>
-            <h2 class="text-4xl font-medium text-white mb-8">I established three non-negotiables for the demo.</h2>
+            <h2 class="text-4xl font-medium text-white mb-8">Non-negotiables for the platform.</h2>
             <p class="text-neutral-400 leading-relaxed max-w-3xl mb-12">
-                The Neural Networks from Scratch demo course had to prove the concept definitively. This would either validate the methodology or reveal its flaws before the presale.
+                As I build out the curriculum in my spare time, these principles guide every decision I make regarding the interactive experience.
             </p>
 
             <div class="grid md:grid-cols-3 gap-8">
@@ -312,7 +288,7 @@
                         <div class="text-6xl font-bold text-red-500/20 mb-4">01</div>
                         <h4 class="text-white font-bold text-xl mb-4">Interactive Textbook</h4>
                         <p class="text-sm text-neutral-400 leading-relaxed">
-                            It's like an interactive textbook. Video has not yet been added, but the written content and interactive elements create a hands-on learning experience.
+                            A focus on high-fidelity written content and embedded interactive tools. Videos may come later, but the core must be hands-on.
                         </p>
                     </div>
                 </div>
@@ -321,9 +297,9 @@
                     <div class="absolute -inset-px bg-gradient-to-b from-red-500/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                     <div class="relative bg-neutral-900 border border-neutral-800 rounded-2xl p-8 h-full">
                         <div class="text-6xl font-bold text-red-500/20 mb-4">02</div>
-                        <h4 class="text-white font-bold text-xl mb-4">Curiosity-Driven Learning</h4>
+                        <h4 class="text-white font-bold text-xl mb-4">Visual Questioning</h4>
                         <p class="text-sm text-neutral-400 leading-relaxed">
-                            Interactive demos are supposed to be interesting and raise natural questions that we address in the following sections.
+                            Interactive demos should raise natural questions. Students should "see" a problem visually before the text explains the theory.
                         </p>
                     </div>
                 </div>
@@ -332,20 +308,19 @@
                     <div class="absolute -inset-px bg-gradient-to-b from-red-500/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                     <div class="relative bg-neutral-900 border border-neutral-800 rounded-2xl p-8 h-full">
                         <div class="text-6xl font-bold text-red-500/20 mb-4">03</div>
-                        <h4 class="text-white font-bold text-xl mb-4">Premium Aesthetic</h4>
+                        <h4 class="text-white font-bold text-xl mb-4">Credibility via Design</h4>
                         <p class="text-sm text-neutral-400 leading-relaxed">
-                            Premium aesthetic. High-quality design, intentional spacing, and polished visuals signal credibility and create an elevated learning experience.
+                            Polish isn't just aesthetic; it signals commitment. High production value ensures learners take the curriculum as seriously as I do.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 06. THE BACKBONE -->
-<!-- Interactive Lab Concept -->
-        <section class="max-w-6xl mx-auto px-6 py-24">
+        <!-- 06. THE VISUALIZER -->
+        <section id="vizulaizer" class="max-w-6xl mx-auto px-6 py-24">
+            <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-4 font-bold">06. The Vizualizer</h3>
             <div class="bg-neutral-900 border border-neutral-800 rounded-[2.5rem] overflow-hidden relative">
-                <!-- Ambient background glow -->
                 <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-red-500/5 blur-[120px] rounded-full -mr-48 -mt-48"></div>
                 
                 <div class="p-8 md:p-14 relative z-10">
@@ -360,9 +335,9 @@
                             
                             <div class="space-y-8">
                                 <div>
-                                    <h5 class="text-white font-bold text-lg mb-3">The Tech Stack Decision</h5>
+                                    <h5 class="text-white font-bold text-lg mb-3">Side Project Constraints</h5>
                                     <p class="text-neutral-400 leading-relaxed text-sm">
-                                        I needed to make sure I could render render complex network visualizations. PixiJS provided WebGL support with graceful fallback to Canvas. Existing graphing libraries were too heavy, so I built a custom one on top of PixiJS for precise control.
+                                        I chose PixiJS because it allows me to build complex visualizations without fighting heavy frameworks. Since this is a part-time project, I need tools that are performant and easy to maintain over long stretches.
                                     </p>
                                 </div>
 
@@ -372,14 +347,14 @@
                                             <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                                         </div>
                                         <h6 class="text-white font-bold text-xs mb-2 uppercase tracking-wide">Svelte Reactive Layer</h6>
-                                        <p class="text-[11px] text-neutral-500 leading-relaxed">State management automatically re-renders visualizations.</p>
+                                        <p class="text-[11px] text-neutral-500 leading-relaxed">Svelte's state management handles the bridge between UI sliders and the WebGL renderer.</p>
                                     </div>
                                     <div class="bg-neutral-800/40 border border-white/5 rounded-2xl p-5 hover:border-white/10 transition-colors">
                                         <div class="text-red-500 mb-3">
                                             <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
                                         </div>
                                         <h6 class="text-white font-bold text-xs mb-2 uppercase tracking-wide">Custom Matrix Math</h6>
-                                        <p class="text-[11px] text-neutral-500 leading-relaxed">Implemented forward/backward propagation in TypeScript for educational transparency.</p>
+                                        <p class="text-[11px] text-neutral-500 leading-relaxed">Implemented forward/backward propagation and gradient descent to create the demo.</p>
                                     </div>
                                 </div>
 
@@ -389,7 +364,7 @@
                                     </div>
                                     <h6 class="text-red-500 font-bold text-sm mb-2 uppercase tracking-wider">The Performance Challenge</h6>
                                     <p class="text-xs text-neutral-400 leading-relaxed relative z-10">
-                                        Rendering neurons all of their connections while running real-time predictions was the biggest technical hurdle. By batching draw calls and using GPU acceleration, we maintained smooth performance even on modest hardware.
+                                        Rendering neurons all of their connections while running real-time predictions was the biggest technical hurdle. With GPU acceleration and caching, we maintained smooth performance even on modest hardware.
                                     </p>
                                 </div>
                             </div>
@@ -400,232 +375,50 @@
             </div>
         </section>
 
-        <!-- 07. ITERATION & REFINEMENT -->
-        <section id="iteration" class="max-w-6xl mx-auto px-6 py-24">
-            <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-4 font-bold">07. Iteration & Refinement</h3>
-            <h2 class="text-4xl font-medium text-white mb-8">The hand-wired breakthrough.</h2>
-            <p class="text-neutral-400 leading-relaxed max-w-3xl mb-12">
-                The defining moment in the demo's development came from iterating on how to teach neural networks. Early versions
-                abstracted away too much—students followed along but didn't truly understand. The solution was counterintuitive:
-                make students work harder, not less.
-            </p>
-
-            <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-12 relative overflow-hidden mb-12">
-                <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-red-500/5 blur-3xl rounded-full"></div>
-
-                <!-- Placeholder for iteration screenshots -->
-                <div class="grid md:grid-cols-2 gap-8 mb-8 relative z-10">
-                    <div>
-                        <div class="bg-neutral-950 border border-white/5 rounded-xl aspect-video mb-4 flex items-center justify-center">
-                            <div class="text-center">
-                                <div class="w-12 h-12 bg-red-500/10 rounded-full flex items-center justify-center mx-auto mb-3">
-                                    <svg class="w-6 h-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
-                                </div>
-                                <p class="text-neutral-600 text-xs">V1: The "Black Box" Approach</p>
-                            </div>
-                        </div>
-                        <h4 class="text-white font-bold mb-2">The Abstract Model</h4>
-                        <p class="text-sm text-neutral-400 mb-2">High-level network diagrams with automated training. Students watched the network learn but couldn't interact with individual parameters.</p>
-                        <p class="text-xs text-red-400 font-bold">Feedback: "I feel like I'm magic-ing it. I don't know what weights or biases actually do."</p>
-                    </div>
-
-                    <div>
-                        <div class="bg-neutral-950 border border-white/5 rounded-xl aspect-video mb-4 flex items-center justify-center">
-                            <div class="text-center">
-                                <div class="w-12 h-12 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-3">
-                                    <svg class="w-6 h-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                                </div>
-                                <p class="text-neutral-600 text-xs">V2: The "Hand-Wired" Approach</p>
-                            </div>
-                        </div>
-                        <h4 class="text-white font-bold mb-2">The Atomic Model</h4>
-                        <p class="text-sm text-neutral-400 mb-2">Students started with a single neuron, manually adjusting weights and bias to minimize error. They saw immediate visual feedback: decision boundary shifts, loss changes, prediction updates.</p>
-                        <p class="text-xs text-green-400 font-bold">Feedback: "Now I understand what a 'bias' actually does—it shifts the decision boundary!"</p>
-                    </div>
-                </div>
-
-                <div class="p-8 bg-green-500/5 border border-green-500/20 rounded-xl relative z-10 mb-8">
-                    <h4 class="text-green-500 font-bold mb-3 text-sm uppercase tracking-wider">The Aha Moment</h4>
-                    <p class="text-neutral-300 leading-relaxed mb-4">
-                        By having students manually adjust a single neuron's weights to reduce error, they experienced the fundamental insight: <span class="text-white font-bold">training is just optimization.</span> Gradient descent became intuitive, not mysterious—they'd already done it manually with sliders. Automation just scaled what they understood.
-                    </p>
-                    <p class="text-neutral-300 leading-relaxed">
-                        The feedback loop was immediate: adjust weight → see decision boundary shift → see loss change → see prediction update. This multi-sensory reinforcement made abstract math concrete. It also proved the interactive visualizer wasn't just eye candy—it was pedagogically essential.
-                    </p>
-                </div>
-
-                <div class="relative z-10">
-                    <h4 class="text-white font-bold text-lg mb-4">Building the Interactive Controls</h4>
-                    <p class="text-sm text-neutral-400 leading-relaxed mb-6">
-                        The UI challenge was making weight adjustment intuitive without overwhelming users. I tested sliders, dials, and direct manipulation. Sliders won for precision, but I added real-time visual feedback to every interaction—highlighting the active neuron, animating the decision boundary transform, and updating the loss graph simultaneously.
-                    </p>
-                    <div class="grid md:grid-cols-3 gap-4">
-                        <div class="bg-neutral-950/50 border border-white/5 rounded-lg p-4 text-center">
-                            <div class="text-red-500 font-bold text-sm mb-2">Visual Element 1</div>
-                            <p class="text-xs text-neutral-500">Decision Boundary</p>
-                        </div>
-                        <div class="bg-neutral-950/50 border border-white/5 rounded-lg p-4 text-center">
-                            <div class="text-red-500 font-bold text-sm mb-2">Visual Element 2</div>
-                            <p class="text-xs text-neutral-500">Loss Graph</p>
-                        </div>
-                        <div class="bg-neutral-950/50 border border-white/5 rounded-lg p-4 text-center">
-                            <div class="text-red-500 font-bold text-sm mb-2">Visual Element 3</div>
-                            <p class="text-xs text-neutral-500">Prediction Output</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 08. THE FINAL SOLUTION -->
-        <section id="solution" class="max-w-6xl mx-auto py-24 px-6">
-            <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-4 font-bold">08. The Presale Package</h3>
-            <h2 class="text-4xl font-medium text-white mb-8">Showing, not telling.</h2>
-            <p class="text-neutral-400 leading-relaxed max-w-3xl mb-12">
-                When visitors landed on the site, they didn't see promises or marketing hype. They saw working software. The landing page featured an embedded neural network visualizer they could interact with immediately, followed by a link to the complete demo course. The presale offer came after they'd already experienced the quality firsthand.
-            </p>
-
-            <!-- Main Platform Screenshot Placeholder -->
-            <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-12 mb-12 relative overflow-hidden">
-                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-red-500/5 blur-3xl rounded-full"></div>
-                <div class="bg-neutral-950 border border-white/5 rounded-xl aspect-video flex items-center justify-center relative z-10">
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-red-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg class="w-8 h-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"/></svg>
-                        </div>
-                        <p class="text-neutral-600 text-sm">Course Interface: Real-time Memory Visualizer</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-neutral-900/50 border border-white/5 rounded-xl p-8">
-                    <h4 class="text-white font-bold text-lg mb-4">The Landing Page</h4>
-                    <p class="text-sm text-neutral-400 leading-relaxed mb-6">
-                        Professional design with crisp typography, intentional spacing, and smooth animations signaled credibility. The embedded neural network visualizer let visitors try the interactive platform immediately—no signup required. The value proposition was clear: "See what makes Impart different, right now."
-                    </p>
-                    <!-- Landing Page Screenshot Placeholder -->
-                    <div class="bg-neutral-950 border border-white/5 rounded-lg aspect-video flex items-center justify-center">
-                        <div class="w-8 h-8 bg-red-500/10 rounded-full flex items-center justify-center">
-                            <svg class="w-4 h-4 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-neutral-900/50 border border-white/5 rounded-xl p-8">
-                    <h4 class="text-white font-bold text-lg mb-4">The Demo Course</h4>
-                    <p class="text-sm text-neutral-400 leading-relaxed mb-6">
-                        Neural Networks from Scratch was completely accessible—not a teaser or limited preview. Visitors could work through the entire module: theory, interactive visualizations, and code implementation. The decision boundary visualizer served as centerpiece, proving the interactive elements weren't vaporware.
-                    </p>
-                    <!-- Modules Screenshot Placeholder -->
-                    <div class="bg-neutral-950 border border-white/5 rounded-lg aspect-video flex items-center justify-center">
-                        <div class="w-8 h-8 bg-red-500/10 rounded-full flex items-center justify-center">
-                            <svg class="w-4 h-4 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-neutral-900/50 border border-white/5 rounded-xl p-8">
-                    <h4 class="text-white font-bold text-lg mb-4">The Presale Offer</h4>
-                    <p class="text-sm text-neutral-400 leading-relaxed mb-6">
-                        Introduction to Programming—the actual presale product—showed its roadmap with module counts and lesson outlines but remained locked. Transparent about timeline and delivery. Presale pricing justified by early access and founding member status. The ask: fund the development of more courses using the proven methodology.
-                    </p>
-                    <!-- Pricing Screenshot Placeholder -->
-                    <div class="bg-neutral-950 border border-white/5 rounded-lg aspect-video flex items-center justify-center">
-                        <div class="w-8 h-8 bg-red-500/10 rounded-full flex items-center justify-center">
-                            <svg class="w-4 h-4 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 09. IMPACT & RETROSPECTIVE -->
+        <!-- 07. IMPACT & RETROSPECTIVE -->
         <section id="impact" class="max-w-6xl mx-auto py-24 px-6">
-            <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-4 font-bold">09. Impact & Retrospective</h3>
-            <h2 class="text-4xl font-medium text-white mb-8">The demo-first strategy worked.</h2>
+            <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-4 font-bold">09. Current Status</h3>
+            <h2 class="text-4xl font-medium text-white mb-8">The road to launch.</h2>
             <p class="text-neutral-400 leading-relaxed max-w-3xl mb-12">
-                The presale launch validated the core hypothesis: when you prove quality upfront, people will pay for more. Building the demo course first wasn't just about reducing risk—it fundamentally changed the nature of the presale from "trust me" to "you've already seen it."
+                This project remains something I do in my free time for fun. I'm currently focused on polishing the
+                demo course and setting up the infrastructure for the presale. Currently, since I have not launched,
+                the website is in a bit of disarray as I rework a lot of things while heading towards a prelaunch.
+                Here is where the project stands today.
             </p>
 
             <!-- Metrics -->
             <div class="grid md:grid-cols-2 gap-8 mb-16">
                 <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-12 relative overflow-hidden">
-                    <div class="absolute top-0 right-0 w-64 h-64 bg-green-500/5 blur-3xl rounded-full"></div>
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-red-500/5 blur-3xl rounded-full"></div>
                     <div class="relative z-10">
-                        <h4 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-4 font-bold">Presale Success</h4>
-                        <div class="text-5xl font-bold text-white mb-4">140<span class="text-green-500">%</span></div>
-                        <p class="text-sm text-neutral-400">Exceeded our initial funding goal within the first 72 hours, with strong conversion rates from landing page visitors.</p>
+                        <h4 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-4 font-bold">Project State</h4>
+                        <div class="text-5xl font-bold text-white mb-4">Beta<span class="text-red-500">_</span></div>
+                        <p class="text-sm text-neutral-400">The first module is functionally complete. I am currently integrating Stripe for the upcoming presale launch.</p>
                     </div>
                 </div>
 
                 <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-12 relative overflow-hidden">
                     <div class="absolute bottom-0 left-0 w-64 h-64 bg-red-500/5 blur-3xl rounded-full"></div>
                     <div class="relative z-10">
-                        <h4 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-4 font-bold">Qualitative Validation</h4>
-                        <p class="text-lg text-white font-medium italic mb-4">"I've never understood training algorithms until now. Seeing the decision boundary move as I adjusted weights made it click instantly."</p>
-                        <p class="text-sm text-neutral-400">Recurring theme from demo course users.</p>
+                        <h4 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-4 font-bold">Learner Feedback</h4>
+                        <p class="text-lg text-white font-medium italic mb-4">"The visual approach to weights and biases actually makes sense. I can't wait for the full course."</p>
+                        <p class="text-sm text-neutral-400">Feedback from early beta testers.</p>
                     </div>
                 </div>
-            </div>
-
-            <!-- What Worked -->
-            <div class="mb-16">
-                <h3 class="text-2xl font-medium text-white mb-8">What Made the Presale Work</h3>
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="bg-neutral-900/50 border border-white/5 rounded-xl p-6">
-                        <h4 class="text-white font-bold mb-3">Showing, Not Telling</h4>
-                        <p class="text-sm text-neutral-400 leading-relaxed">The interactive demo on the landing page was the breakthrough. People didn't have to trust promises—they could try the visualizer immediately and experience the teaching quality firsthand.</p>
-                    </div>
-                    <div class="bg-neutral-900/50 border border-white/5 rounded-xl p-6">
-                        <h4 class="text-white font-bold mb-3">The Demo Topic Choice</h4>
-                        <p class="text-sm text-neutral-400 leading-relaxed">Neural networks were impressive and showcased the methodology perfectly. Complex enough to wow people, but self-contained enough to ship as a standalone module.</p>
-                    </div>
-                    <div class="bg-neutral-900/50 border border-white/5 rounded-xl p-6">
-                        <h4 class="text-white font-bold mb-3">Production Quality</h4>
-                        <p class="text-sm text-neutral-400 leading-relaxed">Professional design, smooth 60fps animations, and thoughtful typography built trust. The polish signaled this wasn't another abandoned side project.</p>
-                    </div>
-                    <div class="bg-neutral-900/50 border border-white/5 rounded-xl p-6">
-                        <h4 class="text-white font-bold mb-3">Transparency</h4>
-                        <p class="text-sm text-neutral-400 leading-relaxed">Clear about what was ready (neural networks demo) vs. what was planned (intro to coding). Honest about timeline and delivery. No bait-and-switch.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Community Reception -->
-            <h3 class="text-2xl font-medium text-white mb-8">Voice of the Learner</h3>
-            <div class="grid md:grid-cols-2 gap-8 mb-16">
-                {#each testimonials as t}
-                    <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-8 relative">
-                         <div class="text-4xl absolute top-4 right-8 text-neutral-800 font-serif">"</div>
-                        <p class="text-neutral-300 text-lg leading-relaxed mb-8 italic">
-                            {t.quote}
-                        </p>
-                        <div class="flex items-center gap-4">
-                            <div class={`w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-xs bg-gradient-to-br ${t.color}`}>
-                                {t.initials}
-                            </div>
-                            <div>
-                                <div class="text-white font-bold text-sm">{t.name}</div>
-                                <div class="text-neutral-500 text-xs">{t.role}</div>
-                            </div>
-                        </div>
-                    </div>
-                {/each}
             </div>
 
             <!-- What I Learned -->
             <div class="bg-gradient-to-br from-red-600/10 to-orange-600/10 border border-red-500/20 rounded-3xl p-12 relative overflow-hidden">
                 <div class="absolute bottom-0 right-0 w-96 h-96 bg-red-500/10 blur-3xl rounded-full"></div>
-                <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-6 font-bold relative z-10">Founder's Note</h3>
+                <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-6 font-bold relative z-10">Developer's Note</h3>
                 <p class="text-neutral-300 text-lg leading-relaxed max-w-3xl relative z-10 mb-6">
-                    I spent 2+ months building a demo course with no guarantee anyone would pay for it. That risk felt enormous at the time. But proving quality upfront was the only way to build trust as an unknown creator. In a world of abandoned Kickstarters and broken promises, showing working software first became the differentiator.
+                    Building a side project in a crowded space like education is a daunting challenge. But I've found that the best way to stand out is through sheer quality and a unique point of view. I'm not racing to finish—I'm building this on and off because I enjoy the problem-solving involved in making complex things simple.
                 </p>
                 <p class="text-neutral-300 text-lg leading-relaxed max-w-3xl relative z-10 mb-6">
-                    Most course presales rely on marketing copy and mockups. I took the opposite approach: build something real, then ask people to fund more of it. The demo course took months, but it proved the concept in a way no landing page ever could. The presale wasn't selling a dream—it was selling access to more of what people had already experienced.
+                    As I prepare for the presale, the goal is simple: find the learners who value depth over speed. I'm excited to see if this "demo-first" approach can turn a side project into something more.
                 </p>
                 <p class="text-white text-xl font-medium relative z-10 italic">
-                    The lesson: In education, clarity is the product. If you can prove you deliver clarity better than anyone else, people will pay premium prices for it.
+                    The lesson: Even as a solo dev working in your spare time, you can build things that feel premium if you care enough about the details.
                 </p>
             </div>
         </section>
