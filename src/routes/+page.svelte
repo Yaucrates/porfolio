@@ -36,7 +36,7 @@
             description: 'Architected a scalable web-based education platform using SvelteKit and Node.js. Developed interactive demo content to showcase software capabilities.',
             techStack: ['SvelteKit', 'Node.js', 'education', 'web-platform'],
             imageSrc: '/projects/impart-education-new.webp',
-            link: 'https://www.imparteducation.com/'
+            link: '/projects/impart-education'
         },
         {
             id: 'dormdojo',

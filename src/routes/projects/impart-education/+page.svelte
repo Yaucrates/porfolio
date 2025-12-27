@@ -44,7 +44,7 @@
             <header class="text-center mb-16">
                 <h1 class="text-5xl md:text-6xl font-medium text-white tracking-tight mb-4 italic">Impart Education</h1>
                 <p class="text-neutral-500 text-lg uppercase tracking-widest font-light">Computer Science, Decoded</p>
-                <p class="text-neutral-600 text-sm mt-4 font-medium">Founding Designer & UX Engineer — January 2025</p>
+                <p class="text-neutral-600 text-sm mt-4 font-medium">Full Stack Engineer — May 2025</p>
             </header>
 
             <!-- Main Showcase -->
@@ -144,7 +144,7 @@
             <div class="max-w-4xl mx-auto mt-8 grid md:grid-cols-3 gap-8 border-t border-neutral-900 pt-12">
                 <div>
                     <h3 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-3 font-bold">My Role</h3>
-                    <p class="text-sm text-neutral-400">Product Strategy, UX/UI Design, Interaction Engineering (SvelteKit/GSAP), Curriculum Visualization</p>
+                    <p class="text-sm text-neutral-400">Product Strategy, UX/UI Design, and Demo Creation</p>
                 </div>
                 <div>
                     <h3 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-3 font-bold">Timeline</h3>
@@ -152,7 +152,7 @@
                 </div>
                 <div>
                     <h3 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-3 font-bold">Tech Stack</h3>
-                    <p class="text-sm text-neutral-400">SvelteKit, Tailwind CSS, GSAP, Canvas API</p>
+                    <p class="text-sm text-neutral-400">SvelteKit, Tailwind CSS, PostgreSQL, TypeScript, Figma, Node.js</p>
                 </div>
             </div>
 
@@ -161,7 +161,8 @@
                 <p class="text-lg">
                     Following the stagnation of traditional online Computer Science education, a massive gap emerged between high-level "bootcamp" shortcuts and dry, academic university lectures. Students were left with two choices: pay $50,000 for a degree where professors teach via whiteboards, or watch 3-hour YouTube "crash courses" that lead to passive consumption rather than active mastery.
                 </p>
-                <p>
+
+                <p class="text-lg">
                     I led the end-to-end design and technical architecture for Impart Education, a revolutionary learning platform designed to replace passive video lectures with tactile, interactive mental models. By the time the presale launched in early 2025, the platform had achieved a viral community reception, proving that there is a massive hunger for deep technical theory when paired with world-class visual clarity.
                 </p>
             </div>

@@ -24,7 +24,7 @@
 
 <a
 	href={project.link}
-	target="_blank"
+	target={project.link?.startsWith("/") ? "_self" : "_blank"}
 	rel="noopener noreferrer"
 	class="group relative rounded-xl border border-neutral-800 hover:border-neutral-700 bg-neutral-900 overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-neutral-700/50"
 >

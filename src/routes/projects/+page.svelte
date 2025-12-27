@@ -11,7 +11,7 @@
 
 <OnMount>
     <div in:fly={{ y: 200, duration: 1300 }} class="py-16 gap-12 h-full flex flex-col justify-center items-center">
-        <ProjectCard href="https://www.imparteducation.com/" title="Impart Education" subtitle="Web Project -- May 25'" description="Designing a Virtual School to allow students to learn advanced college courses." src="/projects/impart-education-new.webp" />
+        <ProjectCard href="/projects/impart-education" target="_self" title="Impart Education" subtitle="Web Project -- May 25'" description="Designing a Virtual School to allow students to learn advanced college courses." src="/projects/impart-education-new.webp" />
         <ProjectCard href="https://github.com/Yaucrates/runGPT" title="RunGPT" subtitle="July 25'" description="Built a clone of GPT-2 to run only using Numpy to get a foundational understanding of modern LLM and how they work." src="/projects/NeuralNetworksFromScratch.webp" githubLink="https://github.com/Yaucrates/runGPT" />
         <ProjectCard href="https://cali-dojo.vercel.app/" title="CaliDojo" subtitle="January 25'" description="Designed a mockup for a website that provides calisthenics information along with an affiliate marketing shopping page as a demo for a client." src="/projects/CaliDojo.webp" githubLink="https://github.com/Yaucrates/CaliDojo" />
         <ProjectCard href="https://ceptionlabs.vercel.app/" title="Ception Labs" subtitle="December 24'" description="My own web development agency which I did some projects (such as CaliDojo) under!" src="/projects/CeptionLabs.webp" githubLink="https://github.com/Yaucrates/ceptionlabs" />
