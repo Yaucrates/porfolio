@@ -21,7 +21,7 @@
 <SideNav />
 <div class="md:ml-48 h-full flex flex-col">
     <Header />
-    <div class="flex-grow relative">
+    <div class="flex-grow">
         {@render children()}
         <Footer />
     </div>
