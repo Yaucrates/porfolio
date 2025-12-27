@@ -47,7 +47,7 @@
             description: 'A headless e-commerce storefront built with the Shopify API. The original store is no longer active, so the live demo uses placeholder products.',
             techStack: ['Shopify API', 'e-commerce', 'headless', 'storefront'],
             imageSrc: '/projects/DormDojoHomepage.webp',
-            link: 'https://dormdojo.vercel.app/'
+            link: '/projects/dorm-dojo'
         }
     ];
 

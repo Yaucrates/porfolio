@@ -147,7 +147,7 @@
                     <h3 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-3 font-bold">Links</h3>
                     <div class="flex flex-col gap-2">
                         <a 
-                            href="https://dormdojo.vercel.app/"
+                            href="https://www.imparteducation.com/"
                             target="_blank" 
                             rel="noopener noreferrer"
                             class="text-sm text-neutral-400 hover:text-white transition-colors flex items-center gap-2 group"
