@@ -19,7 +19,7 @@
 </script>
 
 <SideNav />
-<div class="md:ml-48 h-full flex flex-col">
+<div class="md:ml-48 h-full flex flex-col relative">
     <Header />
     <div class="flex-grow">
         {@render children()}
