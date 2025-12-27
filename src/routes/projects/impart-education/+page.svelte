@@ -376,7 +376,7 @@
         </section>
 
         <!-- 07. IMPACT & RETROSPECTIVE -->
-        <section id="impact" class="max-w-6xl mx-auto py-24 px-6">
+        <section id="impact" class="max-w-6xl mx-auto pt-24 px-6">
             <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-4 font-bold">09. Current Status</h3>
             <h2 class="text-4xl font-medium text-white mb-8">The road to launch.</h2>
             <p class="text-neutral-400 leading-relaxed max-w-3xl mb-12">
@@ -405,21 +405,6 @@
                         <p class="text-sm text-neutral-400">Feedback from early beta testers.</p>
                     </div>
                 </div>
-            </div>
-
-            <!-- What I Learned -->
-            <div class="bg-gradient-to-br from-red-600/10 to-orange-600/10 border border-red-500/20 rounded-3xl p-12 relative overflow-hidden">
-                <div class="absolute bottom-0 right-0 w-96 h-96 bg-red-500/10 blur-3xl rounded-full"></div>
-                <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-6 font-bold relative z-10">Developer's Note</h3>
-                <p class="text-neutral-300 text-lg leading-relaxed max-w-3xl relative z-10 mb-6">
-                    Building a side project in a crowded space like education is a daunting challenge. But I've found that the best way to stand out is through sheer quality and a unique point of view. I'm not racing to finish—I'm building this on and off because I enjoy the problem-solving involved in making complex things simple.
-                </p>
-                <p class="text-neutral-300 text-lg leading-relaxed max-w-3xl relative z-10 mb-6">
-                    As I prepare for the presale, the goal is simple: find the learners who value depth over speed. I'm excited to see if this "demo-first" approach can turn a side project into something more.
-                </p>
-                <p class="text-white text-xl font-medium relative z-10 italic">
-                    The lesson: Even as a solo dev working in your spare time, you can build things that feel premium if you care enough about the details.
-                </p>
             </div>
         </section>
     </div>
