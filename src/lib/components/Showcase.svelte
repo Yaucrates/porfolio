@@ -49,7 +49,7 @@
 
 			<!-- Web Content -->
 			<div
-				class="flex-1 bg-[#0c0c0c] relative flex flex-col items-center pt-12 overflow-hidden"
+				class="flex-1 relative flex flex-col items-center overflow-hidden"
 			>
 				{@render children()}
 			</div>
