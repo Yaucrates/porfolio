@@ -50,7 +50,7 @@
 
                 <!-- Resume Card -->
                 <a
-                    href="https://drive.google.com/file/d/1KgpZ0OZzMXn-Iai7J4Ts6UM09v9HCU0l/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1VrnV95pz4pYFHU2YXCdbPAfF3l7y1ifd/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="group relative overflow-hidden border border-neutral-800 bg-neutral-900/50 rounded-lg p-8 hover:border-cyan-500/50 transition-all duration-300"
