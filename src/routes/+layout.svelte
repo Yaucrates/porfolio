@@ -18,6 +18,13 @@
     });
 </script>
 
+<svelte:head>
+    <meta property="og:title" content="Yousif Abdulhussein's Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/open-graph.png" />
+    <meta property="og:url" content="https://www.yousifabdulhussein.com/" />
+</svelte:head>
+
 <SideNav />
 <div class="md:ml-48 h-full flex flex-col relative">
     <Header />

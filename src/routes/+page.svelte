@@ -61,11 +61,6 @@
 <svelte:head>
 	<title>Yousif Abdulhussein</title>
 	<meta name="description" content="My SWE portfolio." />
-
-    <meta property="og:title" content="Yousif Abdulhussein's Portfolio" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/open-graph.png" />
-    <meta property="og:url" content="https://www.yousifabdulhussein.com/" />
 </svelte:head>
 
 <div in:fly={{ y: 200, duration: 1300 }} class="max-w-6xl mx-auto px-8 pt-44 pb-24 space-y-20">
