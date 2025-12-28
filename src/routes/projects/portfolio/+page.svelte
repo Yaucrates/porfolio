@@ -189,46 +189,6 @@
                     </div>
                 </div>
 
-                <!-- Case Studies Preview -->
-                <div class="border border-neutral-800 rounded-3xl bg-neutral-900/20 backdrop-blur-sm p-8 shadow-xl">
-                    <div class="flex justify-between items-center mb-6">
-                        <h3 class="text-2xl font-semibold text-white flex items-center gap-2">
-                            <span class="text-cyan-500"><StarIcon scale={0.9} /></span>
-                            Case Studies Showcase
-                        </h3>
-                        <span class="text-sm text-neutral-500">Dynamic Content</span>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <!-- Impart Education Preview -->
-                        <div class="rounded-xl border border-neutral-800 bg-neutral-900/50 overflow-hidden group hover:border-neutral-700 transition-colors">
-                            <div class="relative h-48 bg-gradient-to-br from-cyan-900/20 to-transparent overflow-hidden">
-                                <div class="absolute inset-0 flex items-center justify-center">
-                                    <div class="text-6xl text-neutral-700 font-bold">IE</div>
-                                </div>
-                            </div>
-                            <div class="p-6">
-                                <h4 class="text-lg font-semibold text-neutral-200 mb-2">Impart Education</h4>
-                                <p class="text-sm text-neutral-400">Scalable education platform with interactive content</p>
-                            </div>
-                        </div>
-
-                        <!-- Dorm Dojo Preview -->
-                        <div class="rounded-xl border border-neutral-800 bg-neutral-900/50 overflow-hidden group hover:border-neutral-700 transition-colors">
-                            <div class="relative h-48 bg-gradient-to-br from-cyan-900/20 to-transparent overflow-hidden">
-                                <div class="absolute inset-0 flex items-center justify-center">
-                                    <div class="text-6xl text-neutral-700 font-bold">DD</div>
-                                </div>
-                            </div>
-                            <div class="p-6">
-                                <h4 class="text-lg font-semibold text-neutral-200 mb-2">Dorm Dojo</h4>
-                                <p class="text-sm text-neutral-400">Headless e-commerce with Shopify integration</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <!-- Project Meta -->
             <div class="max-w-4xl mx-auto mt-8 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-neutral-900 pt-12">
                 <div>
