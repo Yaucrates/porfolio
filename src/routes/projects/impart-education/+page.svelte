@@ -3,18 +3,21 @@
     import { navState } from "$lib/components/navigation/nav-state.svelte";
     import OnMount from "$lib/components/OnMount.svelte";
     import Showcase from "$lib/components/Showcase.svelte";
+    import { onMount } from "svelte";
     import { fly } from "svelte/transition";
 
-    navState.sections = [
-        { id: "overview", label: "Overview" },
-        { id: "highlights", label: "Highlights" },
-        { id: "context", label: "Context" },
-        { id: "problem", label: "The Problem" },
-        { id: "objective", label: "The Objective" },
-        { id: "principles", label: "Principles" },
-        { id: "vizulaizer", label: "The Vizualizer" },
-        { id: "impact", label: "Current Status" }
-    ];
+    onMount(() => {
+        navState.sections = [
+            { id: "overview", label: "Overview" },
+            { id: "highlights", label: "Highlights" },
+            { id: "context", label: "Context" },
+            { id: "problem", label: "The Problem" },
+            { id: "objective", label: "The Objective" },
+            { id: "principles", label: "Principles" },
+            { id: "vizulaizer", label: "The Vizualizer" },
+            { id: "impact", label: "Current Status" }
+        ];
+    });
 </script>
 
 <svelte:head>

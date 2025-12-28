@@ -5,6 +5,9 @@ interface navState {
     }[];
 }
 
+/**
+ * YOU NEED TO BE MOUNTED BEFORE UPDATING THIS.
+ */
 export const navState: navState = $state({
     sections: []
 });
