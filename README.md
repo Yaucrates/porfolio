@@ -1,7 +1,7 @@
 # Todo:
 1. FeaturedProjectCard.svelte rework
 2. Make project colors match case study colors.
-3. Update the resume to fix typo and stay consistent.
+3. Update the resume to fix typo and stay consistent. Impart education -> CeptionLabs
 4. OG Images and Favicon
 5. Color Schema Consistency?
 6. Update LinkedIn
