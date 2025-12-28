@@ -4,3 +4,4 @@
 3. Update the resume to fix typo and stay consistent.
 4. OG Images and Favicon
 5. Color Schema Consistency?
+6. Update LinkedIn

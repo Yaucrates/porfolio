@@ -9,14 +9,15 @@
         background_src: string,
         logo_src: string,
         href?: string,
+        blur?: 'none' | 'sm' | 'md' | 'lg';
     }
 
-    let { header, title, description, background_src, logo_src, href }: Props = $props();
+    let { header, title, description, background_src, logo_src, href, blur = 'none' }: Props = $props();
 </script>
 
 <OnMount>
     <a target="_blank" in:fly={{ y: 200, duration: 1300 }} class="min-h-[500px] w-5/6 md:w-4/5 lg:w-3/4 border-2 flex flex-col rounded-lg bg-neutral-850 border-neutral-800 relative hover:shadow-2xl hover:shadow-neutral-700 transition-all duration-300 overflow-hidden" {href}>
-        <img src={background_src} alt="work background" class="w-full h-full absolute bottom-0 left-0 opacity-40 rounded-lg object-cover"/>
+        <img src={background_src} alt="work background" class="w-full h-full absolute bottom-0 left-0 opacity-40 rounded-lg object-cover blur-{blur}"/>
         
         <header class="flex justify-between items-center py-8 px-12 z-10">
             <h1 class="uppercase">{header}</h1>

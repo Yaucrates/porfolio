@@ -11,15 +11,15 @@
             id: 'nexus',
             name: 'Nexus',
             status: 'current',
-            logoSrc: '/experience-images/NexusAILogo.png',
+            logoSrc: '/experience-images/NexusAILogo.jpg',
             link: 'https://www.asknexus.ai/'
         },
         {
-            id: 'impart-education',
-            name: 'Impart Education',
+            id: 'ceptionlabs',
+            name: 'CeptionLabs',
             status: 'past',
-            logoSrc: '/experience-images/ImpartLogo.svg',
-            link: 'https://www.imparteducation.com/'
+            logoSrc: '/experience-images/CeptionLabsFavicon.png',
+            link: 'https://ceptionlabs.vercel.app/'
         },
         {
             id: 'tva',

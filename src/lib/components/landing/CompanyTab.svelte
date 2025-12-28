@@ -21,7 +21,7 @@
 	rel={company.link ? 'noopener noreferrer' : undefined}
 >
 	<div
-		class="w-8 h-8 rounded-full bg-neutral-700 flex items-center justify-center overflow-hidden"
+		class="w-8 h-8 rounded-full flex items-center justify-center overflow-hidden"
 	>
 		<img src={company.logoSrc} alt={company.name} class="w-full h-full object-contain" />
 	</div>
