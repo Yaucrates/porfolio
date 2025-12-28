@@ -1,5 +1,5 @@
 <script lang="ts">
-    import FeaturedProjectCard, { type FeaturedProject } from '$lib/components/landing/FeaturedProjectCard.svelte';
+    import CaseStudyCard, { type CaseStudy } from '$lib/components/landing/CaseStudyCard.svelte';
 	import CompanyTab, { type Company } from '$lib/components/landing/CompanyTab.svelte';
     import GithubIcon from '$lib/components/icons/GithubIcon.svelte';
     import LinkedInIcon from '$lib/components/icons/LinkedInIcon.svelte';
@@ -30,7 +30,7 @@
         }
     ];
 
-    const featuredProjects: FeaturedProject[] = [
+    const caseStudies: CaseStudy[] = [
         {
             id: 'impart-education',
             title: 'Impart Education',
@@ -115,11 +115,11 @@
         </div>
     </section>
 
-    <!-- FEATURED PROJECTS -->
+    <!-- CASE STUDIES -->
     <section class="space-y-8">
         <div class="w-full flex justify-between items-center">
             <h2 class="text-2xl font-semibold text-neutral-200 flex items-center gap-2">
-                <span class="text-cyan-500"><StarIcon scale={0.9} /></span> Featured Projects
+                <span class="text-cyan-500"><StarIcon scale={0.9} /></span> Case Studies
             </h2>
             <a
                 href="/projects"
@@ -130,8 +130,8 @@
         </div>
 
         <div class="grid md:grid-cols-2 gap-6">
-            {#each featuredProjects as project}
-                <FeaturedProjectCard {project} />
+            {#each caseStudies as caseStudy}
+                <CaseStudyCard {caseStudy} />
             {/each}
         </div>
     </section>

@@ -1,5 +1,5 @@
 # Todo:
-1. FeaturedProjectCard.svelte rework
+1. CaseStudyCard.svelte rework
 2. Make project colors match case study colors.
 3. Update the resume to fix typo and stay consistent. Impart education -> CeptionLabs
 4. OG Images and Favicon
