@@ -9,7 +9,7 @@
     navState.sections = [
         { id: "overview", label: "Overview" },
         { id: "highlights", label: "Highlights" },
-        { id: "principles", label: "Principles" },
+        { id: "architecture", label: "Architecture" },
         { id: "impact", label: "Current Status" }
     ];
 </script>
@@ -28,7 +28,7 @@
             <header class="text-center mb-16">
                 <h1 class="text-5xl md:text-6xl font-medium text-white tracking-tight mb-4 italic">Dorm Dojo</h1>
                 <p class="text-neutral-500 text-lg uppercase tracking-widest font-light">Elevating the College Experience</p>
-                <p class="text-neutral-600 text-sm mt-4 font-medium">Founder & Lead Developer — Freshman Year 2025</p>
+                <p class="text-neutral-600 text-sm mt-4 font-medium">Developer and Designer — Freshman Year 2023</p>
             </header>
 
             <!-- Main Showcase: Accurate Dorm Dojo UI -->
@@ -160,11 +160,11 @@
                 </div>
                 <div>
                     <h3 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-3 font-bold">Timeline</h3>
-                    <p class="text-sm text-neutral-400">Freshman Year — 2025</p>
+                    <p class="text-sm text-neutral-400">Freshman Year — 2023</p>
                 </div>
                 <div>
                     <h3 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-3 font-bold">Stack</h3>
-                    <p class="text-sm text-neutral-400">SvelteKit, Tailwind, Shopify, TS</p>
+                    <p class="text-sm text-neutral-400">Next.js, Tailwind, Shopify, TS</p>
                 </div>
                 <div>
                     <h3 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-3 font-bold">Links</h3>
@@ -198,20 +198,24 @@
             <!-- Overview Text -->
             <div class="max-w-4xl mx-auto space-y-6 mt-16 text-neutral-300 leading-relaxed">
                 <p class="text-lg">
-                    Dorm Dojo was born from a simple realization: the transition to college is overwhelming, and dorm shopping is chaotic.
-                    I wanted to build a platform that didn't just sell products, but provided a
-                    <span class="text-white font-bold">curated blueprint for college living.</span>
+                    DormDojo started from a gap I noticed while preparing for college: every dorm shopping site seemed designed to cater to women.
+                    The market was saturated with more feminine-focused products, but there was nothing for students who wanted a more
+                    <span class="text-white font-bold">gender-neutral approach to college essentials.</span>
                 </p>
 
                 <p class="text-lg">
-                    The challenge was balancing a massive catalog of items with a high-end, lifestyle-first user interface.
-                    Unlike traditional retailers, Dorm Dojo organizes the shopping experience by "vibe" and "necessity,"
-                    ensuring students get exactly what they need without the clutter.
+                    The biggest challenge was integrating Shopify's Storefront API to use it as a headless CMS. This architectural decision gave me
+                    <span class="text-white font-bold">complete control over the frontend experience</span> but required mastering Shopify's GraphQL API from scratch.
+                    Learning GraphQL query syntax, understanding connection-based pagination, and optimizing queries to avoid over-fetching was a significant
+                    learning curve. Building custom checkout flows meant implementing cart mutations, managing checkout sessions, and syncing product inventory
+                    in real-time across the Next.js application. The complexity was worth it: I could combine Shopify's reliable e-commerce backend to handle
+                    payments, inventory, and order fulfillment while also having a premium, custom-designed Next.js webapp that matched my vision.
                 </p>
 
                 <p class="text-lg">
-                    Built on Shopify's backend infrastructure, the platform combines the reliability of established e-commerce
-                    with a custom-designed frontend that feels premium, intentional, and made specifically for college students.
+                    Rather than overwhelming students with thousands of products, DormDojo focused on quality over quantity. I researched what actually
+                    gets used in dorm rooms, prioritizing essentials that fit typical dorm layouts. The result was a curated catalog with pre-made bundles
+                    like "The Freshmen Set" which contains everything needed for move-in day.
                 </p>
             </div>
         </section>
@@ -221,8 +225,8 @@
             <h3 class="text-xs uppercase tracking-[0.2em] text-blue-500 mb-4 font-bold">01. Highlights</h3>
             <h2 class="text-4xl font-medium text-white mb-8">Pillars of the platform.</h2>
             <p class="text-neutral-400 leading-relaxed max-w-3xl mb-12">
-                Dorm Dojo combines curated product selection with educational resources and premium design
-                to create a comprehensive platform for college students preparing for dorm life.
+                DormDojo was built around three core pillars: thoughtful product curation, educational content
+                that goes beyond shopping, and a gender-neutral design aesthetic that set it apart from competitors.
             </p>
 
             <div class="grid md:grid-cols-3 gap-8">
@@ -231,7 +235,7 @@
                         <svg class="w-6 h-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg>
                     </div>
                     <h4 class="text-white font-bold mb-3">Curated Essentials</h4>
-                    <p class="text-sm text-neutral-400 leading-relaxed">A data-driven approach to move-in lists. We analyzed thousands of dorm layouts to recommend products that actually fit and serve a purpose.</p>
+                    <p class="text-sm text-neutral-400 leading-relaxed">Quality over quantity. Instead of overwhelming students with thousands of options, I researched what actually gets used in dorm rooms and built a focused catalog of essentials that fit typical college layouts.</p>
                 </div>
 
                 <div class="bg-neutral-900/50 p-8 rounded-2xl border border-white/5">
@@ -239,7 +243,7 @@
                         <svg class="w-6 h-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                     </div>
                     <h4 class="text-white font-bold mb-3">The Crash Course</h4>
-                    <p class="text-sm text-neutral-400 leading-relaxed">Beyond shopping, we provide a "Dorm Living Crash Course"—interactive guides on laundry, roommate etiquette, and space optimization.</p>
+                    <p class="text-sm text-neutral-400 leading-relaxed">More than just e-commerce. The platform included a "Dorm Living Crash Course" with guides on everything they would need for move in.</p>
                 </div>
 
                 <div class="bg-neutral-900/50 p-8 rounded-2xl border border-white/5">
@@ -247,50 +251,108 @@
                         <svg class="w-6 h-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                     </div>
                     <h4 class="text-white font-bold mb-3">Premium UX</h4>
-                    <p class="text-sm text-neutral-400 leading-relaxed">The site feels like a high-end lookbook. Smooth transitions, large imagery, and minimal copy keep the focus on the lifestyle aspiration.</p>
+                    <p class="text-sm text-neutral-400 leading-relaxed">Designed to compete with established retailers. Clean, minimal, gender-neutral aesthetic built with Tailwind CSS, featuring smooth page transitions via Next.js App Router and mobile-first responsive design. The frontend was architected for 90+ Lighthouse scores while maintaining rich interactivity, feeling premium yet approachable for college students.</p>
                 </div>
             </div>
         </section>
 
-        <!-- 02. PRINCIPLES -->
-        <section id="principles" class="max-w-6xl mx-auto px-6 py-24">
-            <h3 class="text-xs uppercase tracking-[0.2em] text-blue-500 mb-4 font-bold">02. Principles</h3>
-            <h2 class="text-4xl font-medium text-white mb-8">The Dojo Way.</h2>
-            <p class="text-neutral-400 leading-relaxed max-w-3xl mb-12">
-                Every decision in building Dorm Dojo was guided by these core principles that keep the
-                platform focused on what students actually need.
-            </p>
+        <!-- 02. ARCHITECTURE -->
+        <section id="architecture" class="max-w-6xl mx-auto px-6 py-24">
+            <h3 class="text-xs uppercase tracking-[0.2em] text-blue-500 mb-4 font-bold">02. Architecture</h3>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="relative group">
-                    <div class="absolute -inset-px bg-gradient-to-b from-blue-500/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    <div class="relative bg-neutral-900 border border-neutral-800 rounded-2xl p-8 h-full">
-                        <div class="text-6xl font-bold text-blue-500/20 mb-4">01</div>
-                        <h4 class="text-white font-bold text-xl mb-4">Simplicity First</h4>
-                        <p class="text-sm text-neutral-400 leading-relaxed">
-                            A college student's life is already complex. The shopping experience should be the exact opposite.
-                        </p>
+            <div class="bg-neutral-900 border border-neutral-800 rounded-3xl overflow-hidden relative">
+                <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/5 blur-[120px] rounded-full -mr-48 -mt-48"></div>
+
+                <div class="p-8 md:p-14 relative z-10">
+                    <h2 class="text-4xl font-medium text-white mb-6">Building a Headless E-commerce Platform.</h2>
+
+                    <p class="text-neutral-400 leading-relaxed max-w-3xl mb-12">
+                        The technical foundation of DormDojo was built on a headless architecture, decoupling Shopify's
+                        reliable e-commerce backend from a fully custom Next.js frontend. This approach provided complete
+                        control over the user experience while leveraging Shopify's battle-tested infrastructure for payments,
+                        inventory, and order management.
+                    </p>
+
+                    <!-- Architecture Cards Grid -->
+                    <div class="grid md:grid-cols-2 gap-6 mb-10">
+                        <!-- Card 1: Headless Shopify Integration -->
+                        <div class="bg-neutral-800/40 border border-white/5 rounded-2xl p-6 hover:border-white/10 transition-colors">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-10 h-10 bg-blue-500/10 rounded-lg flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
+                                    </svg>
+                                </div>
+                                <h4 class="text-white font-bold text-sm">Headless Shopify Integration</h4>
+                            </div>
+                            <p class="text-sm text-neutral-400 leading-relaxed">
+                                Instead of using Shopify's hosted storefront, I integrated the Storefront API to use Shopify as a
+                                headless CMS. This meant building all UI from scratch while Shopify handled product data, inventory,
+                                and checkout. The tradeoff: complete frontend freedom at the cost of increased complexity.
+                            </p>
+                        </div>
+
+                        <!-- Card 2: GraphQL Query Optimization -->
+                        <div class="bg-neutral-800/40 border border-white/5 rounded-2xl p-6 hover:border-white/10 transition-colors">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-10 h-10 bg-blue-500/10 rounded-lg flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                                    </svg>
+                                </div>
+                                <h4 class="text-white font-bold text-sm">GraphQL Query Optimization</h4>
+                            </div>
+                            <p class="text-sm text-neutral-400 leading-relaxed">
+                                Learning Shopify's GraphQL API was the steepest learning curve. I had to master query structure,
+                                pagination, and caching strategies to minimize API calls. Each product page required careful query
+                                design to fetch variants, images, and metadata in a single request.
+                            </p>
+                        </div>
+
+                        <!-- Card 3: State Management Architecture -->
+                        <div class="bg-neutral-800/40 border border-white/5 rounded-2xl p-6 hover:border-white/10 transition-colors">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-10 h-10 bg-blue-500/10 rounded-lg flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/>
+                                    </svg>
+                                </div>
+                                <h4 class="text-white font-bold text-sm">State Management Architecture</h4>
+                            </div>
+                            <p class="text-sm text-neutral-400 leading-relaxed">
+                                Managing cart state across the Next.js application required careful synchronization between local
+                                state and Shopify's checkout API. I implemented a custom React Context that handled cart updates,
+                                inventory checks, and checkout flow while maintaining consistency across page navigation.
+                            </p>
+                        </div>
+
+                        <!-- Card 4: Performance Engineering -->
+                        <div class="bg-neutral-800/40 border border-white/5 rounded-2xl p-6 hover:border-white/10 transition-colors">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-10 h-10 bg-blue-500/10 rounded-lg flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                    </svg>
+                                </div>
+                                <h4 class="text-white font-bold text-sm">Performance Engineering</h4>
+                            </div>
+                            <p class="text-sm text-neutral-400 leading-relaxed">
+                                Optimized the entire stack for mobile performance: Next.js image optimization for product photos,
+                                incremental static regeneration for product pages, API response caching, and bundle size optimization.
+                                The goal was sub-2-second page loads even on slower connections.
+                            </p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="relative group">
-                    <div class="absolute -inset-px bg-gradient-to-b from-blue-500/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    <div class="relative bg-neutral-900 border border-neutral-800 rounded-2xl p-8 h-full">
-                        <div class="text-6xl font-bold text-blue-500/20 mb-4">02</div>
-                        <h4 class="text-white font-bold text-xl mb-4">Visual Truth</h4>
-                        <p class="text-sm text-neutral-400 leading-relaxed">
-                            We use real student dorm photos, not sterile studio shots. Authenticity builds trust.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="relative group">
-                    <div class="absolute -inset-px bg-gradient-to-b from-blue-500/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    <div class="relative bg-neutral-900 border border-neutral-800 rounded-2xl p-8 h-full">
-                        <div class="text-6xl font-bold text-blue-500/20 mb-4">03</div>
-                        <h4 class="text-white font-bold text-xl mb-4">Speed is UX</h4>
-                        <p class="text-sm text-neutral-400 leading-relaxed">
-                            Mobile-first optimization for the student on the go. Instant search and one-click checkouts.
+                    <!-- GraphQL Challenge Callout -->
+                    <div class="p-8 bg-blue-500/5 border border-blue-500/10 rounded-2xl relative overflow-hidden group">
+                        <h6 class="text-blue-500 font-bold text-sm mb-3 uppercase tracking-wider">The GraphQL Learning Curve</h6>
+                        <p class="text-sm text-neutral-300 leading-relaxed relative z-10">
+                            The biggest technical hurdle was understanding Shopify's GraphQL API structure. Unlike REST endpoints,
+                            GraphQL required thinking in terms of query depth, field selection, and connection pagination. Debugging
+                            over-fetching issues, implementing proper error handling, and optimizing query performance was a significant
+                            challenge. The breakthrough came when I built a custom GraphQL client wrapper that handled common patterns like
+                            cart mutations and product queries, reducing code duplication and standardizing error handling across the application.
                         </p>
                     </div>
                 </div>
@@ -300,10 +362,12 @@
         <!-- 03. STATUS -->
         <section id="impact" class="max-w-6xl mx-auto pt-24 px-6">
             <h3 class="text-xs uppercase tracking-[0.2em] text-blue-500 mb-4 font-bold">03. Current Status</h3>
-            <h2 class="text-4xl font-medium text-white mb-8">Ready for Move-In.</h2>
+            <h2 class="text-4xl font-medium text-white mb-8">Launch & Learnings.</h2>
             <p class="text-neutral-400 leading-relaxed max-w-3xl mb-12">
-                Dorm Dojo successfully launched during my freshman year and continues to help students
-                navigate the overwhelming process of preparing for college dorm life.
+                DormDojo successfully launched in Fall 2023, serving as both a functional e-commerce platform and
+                a comprehensive learning experience in full-stack development, third-party integrations, and product design.
+                It is now no longer active, and the shopify store has been shut down. Place holders have been put in place
+                on the website.
             </p>
 
             <!-- Metrics -->
@@ -313,16 +377,16 @@
                     <div class="relative z-10">
                         <h4 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-4 font-bold">Launch Status</h4>
                         <div class="text-5xl font-bold text-white mb-4">V1.0<span class="text-blue-500">_</span></div>
-                        <p class="text-sm text-neutral-400">Successfully soft-launched for the 2025 Winter Semester. Scaling operations for the Summer rush.</p>
+                        <p class="text-sm text-neutral-400">Successfully launched Fall 2023. The project achieved its core mission: shipping a complete, polished product while mastering Shopify integration and modern e-commerce architecture.</p>
                     </div>
                 </div>
 
                 <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-12 relative overflow-hidden">
                     <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/5 blur-3xl rounded-full"></div>
                     <div class="relative z-10">
-                        <h4 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-4 font-bold">Student Feedback</h4>
-                        <p class="text-lg text-white font-medium italic mb-4">"Literally saved my move-in day. The checklists are a lifesaver."</p>
-                        <p class="text-sm text-neutral-400">Feedback from early users during beta testing.</p>
+                        <h4 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-4 font-bold">Key Takeaway</h4>
+                        <p class="text-lg text-white font-medium mb-4">Built a production-ready e-commerce platform integrating Shopify's backend with a custom Next.js frontend. It handled real transactions, inventory management, and checkout flows.</p>
+                        <p class="text-sm text-neutral-400">Primary learning: the technical execution was solid, but a real business requires equal focus on marketing and customer acquisition.</p>
                     </div>
                 </div>
             </div>
