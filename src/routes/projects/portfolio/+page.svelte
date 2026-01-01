@@ -155,7 +155,7 @@
                             </div>
                             <h4 class="text-white font-bold mb-3">Lightning Fast</h4>
                             <p class="text-sm text-neutral-400 leading-relaxed">
-                                95+ Lighthouse score with optimized images, code splitting, and minimal JavaScript.
+                                Strong performance optimization through code splitting and image optimization.
                             </p>
                             <div class="mt-4 flex items-center gap-2">
                                 <div class="flex-1 h-2 bg-neutral-800 rounded-full overflow-hidden">
