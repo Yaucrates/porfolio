@@ -10,7 +10,7 @@
         {
             id: 'nexus',
             name: 'Nexus',
-            status: 'current',
+            status: 'past',
             logoSrc: '/experience-images/NexusAILogo.jpg',
             link: 'https://www.asknexus.ai/'
         },
@@ -70,9 +70,9 @@
         <div class="max-w-3xl flex flex-col gap-6">
             <h1 class="text-5xl md:text-4xl font-bold text-neutral-200">Hey! I'm <span class="text-cyan-500">Yousif Abdulhussein</span></h1>
             <p class="text-lg text-neutral-400">
-                I'm currently working as a SWE @ <a href="https://www.asknexus.ai/" class="text-cyan-500 underline decoration-dashed decoration-1 transition-all duration-300">Nexus</a>.
-                I love writing software that actually helps people. Currently, I’m diving into the
-                world of indie hacking and am focused on creating software that empowers people
+                I'm currently looking for <span class="text-cyan-500 underline decoration-dashed decoration-1 transition-all duration-300">New Grad SWE</span> positions.
+                If you're interesting in working together, <a href="/contact" class="text-cyan-500 underline decoration-dashed decoration-1 transition-all duration-300">reach out</a>!
+                In the meantime, I’m diving into the world of indie hacking and am focused on creating software that empowers people
                 to take control of their own <a href="https://www.imparteducation.com/" class="text-cyan-500 underline decoration-dashed decoration-1 transition-all duration-300">education</a>.
             </p>
 
