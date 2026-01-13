@@ -15,6 +15,7 @@
             { id: "objective", label: "The Objective" },
             { id: "principles", label: "Principles" },
             { id: "vizulaizer", label: "The Vizualizer" },
+            { id: "checkout-flow", label: "Checkout Flow" },
             { id: "impact", label: "Current Status" }
         ];
     });
@@ -33,7 +34,7 @@
         <section id="overview" class="max-w-6xl mx-auto px-6">
             <header class="text-center mb-16">
                 <h1 class="text-5xl md:text-6xl font-medium text-white tracking-tight mb-4 italic">Impart Education</h1>
-                <p class="text-neutral-500 text-lg uppercase tracking-widest font-light">A Side Project in Development</p>
+                <p class="text-neutral-500 text-lg uppercase tracking-widest font-light">A UI/UX Case Study</p>
                 <p class="text-neutral-600 text-sm mt-4 font-medium">Independent Developer — May 2025 to Present</p>
             </header>
 
@@ -136,7 +137,7 @@
             <div class="max-w-4xl mx-auto mt-8 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-neutral-900 pt-12">
                 <div>
                     <h3 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-3 font-bold">Scope</h3>
-                    <p class="text-sm text-neutral-400">Full-stack Side Project & Curriculum Design</p>
+                    <p class="text-sm text-neutral-400">UI/UX Design & Full-stack Development</p>
                 </div>
                 <div>
                     <h3 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-3 font-bold">Timeline</h3>
@@ -167,23 +168,22 @@
             <!-- Overview Text -->
             <div class="max-w-4xl mx-auto space-y-6 mt-16 text-neutral-300 leading-relaxed">
                 <p class="text-lg">
-                    How do you build a premium educational platform in your spare time? Impart Education is a passion project focused on 
-                    creating the real-world curriculum I wish I had. Currently, I am preparing for a presale to validate 
-                    interest in a full "Introduction to Programming" course. Instead of just making promises, 
-                    <span class="text-white font-bold">I am building the core product first.</span>
+                    This case study explores the UI/UX design journey of Impart Education, an educational platform
+                    built in my spare time. The challenge was designing a complete checkout experience that could
+                    <span class="text-white font-bold">convert visitors into paying customers for a course that didn't exist yet.</span>
                 </p>
 
                 <p class="text-lg">
-                    I've spent my spare hours creating a complete demo course called "Neural Networks from Scratch" to
-                    prove the interactive concept. This isn't a sample lesson; it's a functional, interactive learning
-                    experience featuring custom visualizations and GPU-accelerated graphics. This demo is the cornerstone
-                    of my presale strategy: showing that there is a demand for high-end technical education.
+                    The design had to accomplish two things: demonstrate the quality of the eventual product through
+                    a polished demo course, and guide users through a checkout flow that built trust despite being
+                    from an unknown creator. Every design decision—from the landing page to the payment confirmation—was
+                    crafted to reduce friction and establish credibility.
                 </p>
 
                 <p class="text-lg">
-                    While the eventual goal is a full-scale curriculum, I am currently focused on selling real, 
-                    tangible learning modules. The project combines three major efforts: curriculum design, 
-                    a custom interactive platform (using PixiJS), and a professional aesthetic.
+                    The project combined three design challenges: an interactive learning platform using PixiJS
+                    and GPU-accelerated graphics, a landing page that communicated value, and a checkout flow
+                    with trust signals, social proof, and clear value emphasis.
                 </p>
             </div>
         </section>
@@ -191,11 +191,11 @@
         <!-- 01. HIGHLIGHTS -->
         <section id="highlights" class="max-w-6xl mx-auto px-6 py-24">
             <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-4 font-bold">01. Highlights</h3>
-            <h2 class="text-4xl font-medium text-white mb-8">Pillars of the development journey.</h2>
+            <h2 class="text-4xl font-medium text-white mb-8">Design pillars of the project.</h2>
             <p class="text-neutral-400 leading-relaxed max-w-3xl mb-12">
-                The preparation for the upcoming presale focuses on three areas: a complete demo course that proves the teaching methodology,
-                an interactive platform that showcases technical innovation, and a professional design that builds trust
-                with early adopters.
+                The design challenge centered on three interconnected areas: a demo course that proved the teaching methodology,
+                an interactive platform showcasing technical innovation, and a checkout flow designed to build trust
+                with potential customers.
             </p>
 
             <div class="grid md:grid-cols-3 gap-8">
@@ -204,7 +204,7 @@
                         <svg class="w-6 h-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
                     </div>
                     <h4 class="text-white font-bold mb-3">The Demo Course</h4>
-                    <p class="text-sm text-neutral-400 leading-relaxed">Neural Networks from Scratch served as proof of concept. Interactive demos let students manually adjust weights and biases to understand that training is just optimization. This makes gradient descent intuitive rather than mysterious.</p>
+                    <p class="text-sm text-neutral-400 leading-relaxed">Neural Networks from Scratch served as a design proof of concept. Interactive demos let students manually adjust weights and biases, demonstrating the visual-first learning philosophy that would define the platform's UX.</p>
                 </div>
 
                 <div class="bg-neutral-900/50 p-8 rounded-2xl border border-white/5">
@@ -212,15 +212,15 @@
                         <svg class="w-6 h-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
                     </div>
                     <h4 class="text-white font-bold mb-3">The Interactive Platform</h4>
-                    <p class="text-sm text-neutral-400 leading-relaxed">Built on PixiJS with GPU acceleration and a custom graphing library, the neural network visualizer rendered decision boundaries and gave real-time predictions.</p>
+                    <p class="text-sm text-neutral-400 leading-relaxed">Built on PixiJS with GPU acceleration and a custom graphing library. The visualizer design prioritized performance and responsiveness to ensure smooth interactions across devices.</p>
                 </div>
 
                 <div class="bg-neutral-900/50 p-8 rounded-2xl border border-white/5">
                     <div class="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-6">
                         <svg class="w-6 h-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
                     </div>
-                    <h4 class="text-white font-bold mb-3">The Professional Polish</h4>
-                    <p class="text-sm text-neutral-400 leading-relaxed">Typography, spacing, and animations were made to give a premium feel to the platform. The design is meant to signal credibility and trustworthiness. This is especially essential for an unknown creator asking people to pay upfront for a course that doesn't exist yet.</p>
+                    <h4 class="text-white font-bold mb-3">The Checkout Experience</h4>
+                    <p class="text-sm text-neutral-400 leading-relaxed">Typography, spacing, and trust signals were carefully crafted for the checkout flow. The design needed to establish credibility for an unknown creator asking for payment upfront on an unfinished product.</p>
                 </div>
             </div>
         </section>
@@ -230,20 +230,20 @@
             <div class="bg-neutral-900 border border-neutral-800 rounded-3xl p-12 relative overflow-hidden">
                 <div class="absolute bottom-0 left-0 w-96 h-96 bg-red-500/5 blur-3xl rounded-full"></div>
                 <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-4 font-bold">02. Context</h3>
-                <h2 class="text-3xl font-medium text-white mb-8">People were willing to pay good prices for great courses.</h2>
+                <h2 class="text-3xl font-medium text-white mb-8">Research that informed the design decisions.</h2>
 
                 <p class="text-neutral-400 leading-relaxed mb-6 max-w-3xl relative z-10">
-                    I was solving my own problem. I always preferred online courses over traditional college education, spending countless hours on MOOCs and platforms like Udemy. But I kept hitting the same wall: courses that were dated, clunky, and frustrating to use. Meanwhile, platforms like edX and Coursera were charging premium prices for certificates rather than comprehension.
+                    I was solving my own problem. I always preferred online courses over traditional college education, spending countless hours on MOOCs and platforms like Udemy. But I kept hitting the same wall: courses that were dated, clunky, and frustrating to use. This experience shaped my approach to the platform's UX—every design decision was made to address these pain points.
                 </p>
 
                 <p class="text-neutral-400 leading-relaxed mb-12 max-w-3xl relative z-10">
-                    Before building anything, I spent weeks in online communities researching what actually frustrated learners. I noticed a recurring pattern: people wanted to self-study college-level courses and were willing to invest in quality education when they could see real value. People buy expensive textbooks and course certificates. The problem wasn't the price but the product. Traditional learning material promised to teach concepts but didn't deliver everything they were seeking.
+                    Before designing anything, I spent weeks in online communities researching what actually frustrated learners. The insights directly informed the checkout flow: people were willing to pay for quality education, but they needed to see real value before committing. This led to the decision to build a complete demo course first, letting users experience the product before being asked to purchase.
                 </p>
 
                 <div class="mt-12 p-8 bg-red-500/5 border border-red-500/20 rounded-xl relative z-10">
-                    <h4 class="text-red-500 font-bold mb-3 text-sm uppercase tracking-wider">The Strategy</h4>
+                    <h4 class="text-red-500 font-bold mb-3 text-sm uppercase tracking-wider">The Design Approach</h4>
                     <p class="text-neutral-300 leading-relaxed">
-                        The upcoming presale is the ultimate test. By building a high-fidelity demo course first, I am letting the product prove its own worth. If the interactive demo resonates with learners, it will fund the development of the full curriculum. If not, I'll have learned valuable lessons without over-committing.
+                        The checkout experience was designed around a simple principle: let the product prove its own worth. Rather than relying on marketing copy, the demo course would demonstrate quality, and the checkout flow would reinforce trust through clear pricing, social proof, and secure payment indicators.
                     </p>
                 </div>
             </div>
@@ -252,37 +252,37 @@
         <!-- 03. THE PROBLEM -->
         <section id="problem" class="max-w-6xl mx-auto px-6 py-24">
             <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-4 font-bold">03. The Problem</h3>
-            <h2 class="text-4xl font-medium text-white mb-8">Establishing trust as an independent creator.</h2>
+            <h2 class="text-4xl font-medium text-white mb-8">Design challenges for checkout credibility.</h2>
             <p class="text-neutral-400 leading-relaxed max-w-3xl mb-12">
-                Preparing for a presale as a solo dev means solving several problems at once: establishing credibility, choosing the right 
-                starting point to showcase the methodology, and managing a limited timeline around a full-time schedule.
+                Designing a checkout flow for an unknown creator selling an unfinished product required solving several UX challenges:
+                establishing visual credibility, balancing information density, and handling different user authentication states.
             </p>
 
             <div class="grid md:grid-cols-3 gap-6">
                 <div class="bg-neutral-900/50 border border-white/5 rounded-xl p-6">
                     <div class="flex items-center gap-3 mb-4">
-                        <h4 class="text-white font-bold text-sm">Proving Polish</h4>
+                        <h4 class="text-white font-bold text-sm">Visual Trust Signals</h4>
                     </div>
                     <p class="text-sm text-neutral-400 leading-relaxed">
-                        In an era of AI-generated content, quality is the only differentiator. My focus is on ensuring every interaction feels intentional and every visualization is accurate.
+                        In an era of AI-generated content and scams, the checkout needed clear trust indicators: secure payment badges, money-back guarantees, and testimonials from beta testers.
                     </p>
                 </div>
 
                 <div class="bg-neutral-900/50 border border-white/5 rounded-xl p-6">
                     <div class="flex items-center gap-3 mb-4">
-                        <h4 class="text-white font-bold text-sm">Demo vs. Distraction</h4>
+                        <h4 class="text-white font-bold text-sm">Information Balance</h4>
                     </div>
                     <p class="text-sm text-neutral-400 leading-relaxed">
-                        The demo needs to be complex enough to prove the platform works, but focused enough to actually ship. Neural networks provided the perfect technical "wow" factor.
+                        The checkout needed enough information to justify the purchase without overwhelming users. Visual hierarchy guided attention to value proposition, then pricing, then action.
                     </p>
                 </div>
 
                 <div class="bg-neutral-900/50 border border-white/5 rounded-xl p-6">
                     <div class="flex items-center gap-3 mb-4">
-                        <h4 class="text-white font-bold text-sm">Presale Transparency</h4>
+                        <h4 class="text-white font-bold text-sm">Authentication Flow</h4>
                         </div>
                     <p class="text-sm text-neutral-400 leading-relaxed">
-                        I am being fully transparent about the project's status. The presale is to fund the completion of an Introduction to Programming course.
+                        Unauthenticated users needed a seamless path: checkout first, then account creation. This reduced friction while ensuring purchasers could access their course.
                     </p>
                 </div>
             </div>
@@ -294,7 +294,7 @@
                 <div class="absolute top-0 right-0 w-64 h-64 bg-red-500/5 blur-3xl rounded-full"></div>
                 <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-4 font-bold">04. The Objective</h3>
                 <h2 class="text-3xl font-medium text-white mb-12 max-w-2xl leading-tight">
-                    Build an interactive experience compelling enough to validate a full-scale educational platform.
+                    Design a checkout experience that builds trust and clearly communicates value for an unfinished product.
                 </h2>
             </div>
         </section>
@@ -401,15 +401,97 @@
             </div>
         </section>
 
-        <!-- 07. IMPACT & RETROSPECTIVE -->
-        <section id="impact" class="max-w-6xl mx-auto pt-24 px-6">
-            <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-4 font-bold">09. Current Status</h3>
-            <h2 class="text-4xl font-medium text-white mb-8">The road to launch.</h2>
+        <!-- 07. THE CHECKOUT FLOW -->
+        <section id="checkout-flow" class="max-w-6xl mx-auto px-6 py-24">
+            <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-4 font-bold">07. The Checkout Flow</h3>
+            <h2 class="text-4xl font-medium text-white mb-8">Designing the purchase journey.</h2>
             <p class="text-neutral-400 leading-relaxed max-w-3xl mb-12">
-                This project remains something I do in my free time for fun. I'm currently focused on polishing the
-                demo course and setting up the infrastructure for the presale. Currently, since I have not launched,
-                the website is in a bit of disarray as I rework a lot of things while heading towards a prelaunch.
-                Here is where the project stands today.
+                The checkout experience was designed to handle two distinct user flows while maintaining trust and reducing friction
+                at every step. Each design decision was informed by the unique challenge of selling an unfinished product.
+            </p>
+
+            <!-- User Flows -->
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-8">
+                    <h4 class="text-white font-bold mb-4 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        Authenticated Users
+                    </h4>
+                    <div class="flex items-center gap-2 text-sm text-neutral-400 flex-wrap">
+                        <span class="px-3 py-1 bg-neutral-800 rounded-full">Landing Page</span>
+                        <span class="text-red-500">→</span>
+                        <span class="px-3 py-1 bg-neutral-800 rounded-full">Course Page</span>
+                        <span class="text-red-500">→</span>
+                        <span class="px-3 py-1 bg-neutral-800 rounded-full">Checkout</span>
+                        <span class="text-red-500">→</span>
+                        <span class="px-3 py-1 bg-green-500/20 text-green-400 rounded-full">Success</span>
+                    </div>
+                    <p class="text-sm text-neutral-500 mt-4">Streamlined 4-step flow for returning users with existing accounts.</p>
+                </div>
+
+                <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-8">
+                    <h4 class="text-white font-bold mb-4 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                        New Users
+                    </h4>
+                    <div class="flex items-center gap-2 text-sm text-neutral-400 flex-wrap">
+                        <span class="px-3 py-1 bg-neutral-800 rounded-full">Landing</span>
+                        <span class="text-red-500">→</span>
+                        <span class="px-3 py-1 bg-neutral-800 rounded-full">Course</span>
+                        <span class="text-red-500">→</span>
+                        <span class="px-3 py-1 bg-neutral-800 rounded-full">Checkout</span>
+                        <span class="text-red-500">→</span>
+                        <span class="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full">Email Login</span>
+                        <span class="text-red-500">→</span>
+                        <span class="px-3 py-1 bg-green-500/20 text-green-400 rounded-full">Success</span>
+                    </div>
+                    <p class="text-sm text-neutral-500 mt-4">Purchase-first flow: complete checkout, then create account to access course.</p>
+                </div>
+            </div>
+
+            <!-- Design Decisions -->
+            <h3 class="text-2xl font-medium text-white mb-8">Key design decisions</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-neutral-900/50 border border-white/5 rounded-xl p-6">
+                    <div class="w-10 h-10 bg-red-500/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    </div>
+                    <h4 class="text-white font-bold text-sm mb-2">Trust Signals</h4>
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        Secure payment badges, "Powered by Stripe" indicator, and money-back guarantee positioned prominently near the payment button.
+                    </p>
+                </div>
+
+                <div class="bg-neutral-900/50 border border-white/5 rounded-xl p-6">
+                    <div class="w-10 h-10 bg-red-500/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h4 class="text-white font-bold text-sm mb-2">Value Emphasis</h4>
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        Presale pricing displayed with strikethrough regular price. Visual hierarchy draws eye to discount percentage before the actual price.
+                    </p>
+                </div>
+
+                <div class="bg-neutral-900/50 border border-white/5 rounded-xl p-6">
+                    <div class="w-10 h-10 bg-red-500/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/></svg>
+                    </div>
+                    <h4 class="text-white font-bold text-sm mb-2">Social Proof</h4>
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        Testimonials from beta testers placed strategically to validate the learning methodology before users reach the payment step.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 08. CURRENT STATUS -->
+        <section id="impact" class="max-w-6xl mx-auto pt-24 px-6">
+            <h3 class="text-xs uppercase tracking-[0.2em] text-red-500 mb-4 font-bold">08. Current Status</h3>
+            <h2 class="text-4xl font-medium text-white mb-8">Project archived.</h2>
+            <p class="text-neutral-400 leading-relaxed max-w-3xl mb-12">
+                The design work for this project is complete. The full checkout flow, landing page, course platform,
+                and interactive visualizer were all built and deployed. The project now serves as a showcase of the
+                UI/UX design process for an educational presale experience.
             </p>
 
             <!-- Metrics -->
@@ -418,8 +500,8 @@
                     <div class="absolute top-0 right-0 w-64 h-64 bg-red-500/5 blur-3xl rounded-full"></div>
                     <div class="relative z-10">
                         <h4 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-4 font-bold">Project State</h4>
-                        <div class="text-5xl font-bold text-white mb-4">Beta<span class="text-red-500">_</span></div>
-                        <p class="text-sm text-neutral-400">The first module is functionally complete. I am currently integrating Stripe for the upcoming presale launch.</p>
+                        <div class="text-5xl font-bold text-white mb-4">Archived<span class="text-red-500">_</span></div>
+                        <p class="text-sm text-neutral-400">The demo course, checkout flow, and platform design are complete. The project is now on hold.</p>
                     </div>
                 </div>
 
@@ -428,7 +510,7 @@
                     <div class="relative z-10">
                         <h4 class="text-xs uppercase tracking-[0.2em] text-neutral-600 mb-4 font-bold">Learner Feedback</h4>
                         <p class="text-lg text-white font-medium italic mb-4">"The visual approach to weights and biases actually makes sense. I can't wait for the full course."</p>
-                        <p class="text-sm text-neutral-400">Feedback from early beta testers.</p>
+                        <p class="text-sm text-neutral-400">Feedback from early beta testers validated the learning platform design.</p>
                     </div>
                 </div>
             </div>
